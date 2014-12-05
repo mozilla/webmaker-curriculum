@@ -1,7 +1,7 @@
 Webmaker Clubs curriculum (alpha)
 =================================
 
-*Star this repository to be informed of updates!*
+*Click on the 'watch' button to be informed of updates!*
 
 In 2015, Mozilla is working with the community on [Webmaker Clubs](https://wiki.mozilla.org/Webmaker/2015/Mentors/Clubs) (name TBC). The idea is to address the following problems:
 
