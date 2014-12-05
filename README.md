@@ -54,7 +54,6 @@ A community club attracts audiences who are likely to be as interested in  socia
 ###University clubs
 This kind of club tends to aim it’s programming to helping participants gain real world experience to extend the theoretical learning the university provides. Often these clubs are like After School clubs in that participants stick around for an academic year or semester. However this club can also provide the social aspect of a community club, so the type of programming determines the culture of the club. 
 
-<br>
 
 #Contents
 
