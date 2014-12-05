@@ -1,7 +1,7 @@
 #Webmaker Clubs curriculum (alpha)
 
 
-*Click on the 'watch' button to be informed of updates!*
+*Taken from [http://mzl.la/club_curriculum](http://mzl.la/club_curriculum). Click on the 'watch' button to be informed of updates!*
 
 
 ##Meta
