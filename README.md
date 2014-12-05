@@ -56,10 +56,18 @@ This kind of club tends to aim it’s programming to helping participants gain r
 
 <br>
 
-----
+#Contents
 
-Remix this!
+1. [Collecting assets](https://github.com/dajbelshaw/curriculum/blob/master/Web%20Literacy%20Basics/Part%20A/01.%20Collecting%20Assets.md) (3 units)
+2. [Level up via Remix](https://github.com/dajbelshaw/curriculum/blob/master/Web%20Literacy%20Basics/Part%20A/02.%20Level%20up%20via%20Remix.md) (3 units)
+3. [Collaborating and Ideation](https://github.com/dajbelshaw/curriculum/blob/master/Web%20Literacy%20Basics/Part%20A/03.%20Collaboration%20and%20Ideation.md) (3 units)
+4. [Project planning](https://github.com/dajbelshaw/curriculum/blob/master/Web%20Literacy%20Basics/Part%20A/04.%20Project%20planning.md) (3 units)
+5. Paper prototyping and feedback *(coming soon!)*
+
 -----
+
+#Remix this!
+
 
 Create your own version of the curriculum by forking this repository:
 
