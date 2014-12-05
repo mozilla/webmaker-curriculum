@@ -3,7 +3,6 @@
 
 *Click on the 'watch' button to be informed of updates!*
 
-----
 
 ##Meta
 
@@ -18,7 +17,6 @@ There will be a number of different kinds of clubs, all of which require initial
 
 <img src="https://i.imgur.com/5zHxJkb.png" alt="Curriculum arc" width="100%">
 
-<br>
 
 Introduction
 -----
@@ -34,7 +32,6 @@ Once you’ve run through the units included in each module, your learners will 
 Once you’ve run through the units included in each module, your learners will have enough evidence to submit applications for achievements  included under “Learning Objectives and Assessment”. At the end of each module, remind your participants of the achievements they should apply for.
 Choose your Club Archetype
 
-<br>
 
 
 ##Types of Webmaker Club
