@@ -7,7 +7,7 @@
 ##Meta
 
 
-In 2015, Mozilla is working with the community on [Webmaker Clubs](https://wiki.mozilla.org/Webmaker/2015/Mentors/Clubs) (name TBC). The idea is to address the following questions:
+In 2015, Mozilla is working with the community on [Web Literacy Clubs](https://wiki.mozilla.org/Webmaker/2015/Mentors/Clubs) (name TBC). The idea is to address the following questions:
 
 * **higher quality teaching and learning.** How can the teaching and learning experience be improved for mentors and learners?
 * **local community networks.** How can local learning communities grow stronger and more networked through Webmaker?
