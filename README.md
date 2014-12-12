@@ -1,4 +1,4 @@
-#Webmaker Clubs curriculum (alpha)
+#Web Literacy Clubs curriculum (alpha)
 
 
 *Taken from [http://mzl.la/club_curriculum](http://mzl.la/club_curriculum). Click on the 'watch' button to be informed of updates!*
