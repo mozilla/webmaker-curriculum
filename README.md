@@ -1,9 +1,5 @@
 #Web Literacy Clubs curriculum (alpha)
 
-
-*Taken from [http://mzl.la/club_curriculum](http://mzl.la/club_curriculum). Click on the 'watch' button to be informed of updates!*
-
-
 ##Meta
 
 
@@ -65,11 +61,8 @@ This kind of club tends to aim it’s programming to helping participants gain r
 
 #Contents
 
-1. [Collecting assets](https://github.com/mozilla/webmaker-curriculum/blob/master/Web%20Literacy%20Basics/01.%20Collecting%20Assets.md) (3 units)
-2. [Level up via Remix](https://github.com/mozilla/webmaker-curriculum/blob/master/Web%20Literacy%20Basics/02.%20Level%20up%20via%20Remix.md) (3 units)
-3. [Collaborating and Ideation](https://github.com/mozilla/webmaker-curriculum/blob/master/Web%20Literacy%20Basics/03.%20Collaboration%20and%20Ideation.md) (3 units)
-4. [Project planning](https://github.com/mozilla/webmaker-curriculum/blob/master/Web%20Literacy%20Basics/04.%20Project%20planning.md) (3 units)
-5. [Paper prototyping and feedback] (https://github.com/mozilla/webmaker-curriculum/blob/master/Web%20Literacy%20Basics/05.%20Paper%20prototyping%20and%20feedback.md)(3 units)
+1. [Web Literacy Basics](https://github.com/mozilla/webmaker-curriculum/blob/master/WebLiteracyBasics/LearningObjectives.md) (6 sessions + 5 Extensions)
+2. [Web Literacy Intermediate](https://github.com/mozilla/webmaker-curriculum/blob/master/WebLiteracyIntermediate) (9 sessions)
 
 -----
 
@@ -87,6 +80,8 @@ For the third step, you can edit each document in-situ on GitHub (easiest), or y
 If you have changes to suggest to *this* repository, please fork it and then submit a pull request. Guidance on how to do this can be found in the [GitHub help section](https://help.github.com/articles/using-pull-requests/).
 
 -----
+
+*Taken from [http://mzl.la/club_curriculum](http://mzl.la/club_curriculum). Click on the 'watch' button to be informed of updates!*
 
 <p align="center"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
 
