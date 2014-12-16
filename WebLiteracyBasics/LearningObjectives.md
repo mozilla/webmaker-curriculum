@@ -52,41 +52,41 @@ Learners should be able to identify and use HTML tags, structure a web page, cre
 ##Basic Agendas
 
 
-[**Session 1: The Web is like Legos (45 mins)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/session01.md)
+[**Session 1: The Web is like Legos (45 mins)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/session01-basics.md)
 
-[**Session 2: Remixathon (45 mins)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/session02.md)
+[**Session 2: Remixathon (45 mins)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/session02-remixathon.md)
 
-[**Session 3: Search and Store (45 mins)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/session03.md)
+[**Session 3: Search and Store (45 mins)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/session03-search.md)
 
-[**Session 4: Remixing HTML (45 mins)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/session04.md)
+[**Session 4: Remixing HTML (45 mins)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/session04-html.md)
 
-[**Session 5: Remixing CSS (45 mins)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/session05.md)
+[**Session 5: Remixing CSS (45 mins)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/session05-css.md)
 
-[**Session 6: Remixing Video (45 mins)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/session06.md)
+[**Session 6: Remixing Video (45 mins)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/session06-remixvideo.md)
 
 
 ##Extension Agendas
 
 
-[**Extension 1: Web Mechanics and Search Engines (45 mins)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/extension01.md)
+[**Extension 1: Web Mechanics and Search Engines (45 mins)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/extensions/extension01-mechanics-and-search.md)
 
-[**Extension 2: Web Fonts and CSS Tricks (45 mins)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/extension02.md)
+[**Extension 2: Web Fonts and CSS Tricks (45 mins)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/extensions/extension02-css-tricks.md)
+
+[**Extension 3: Remixing Javascript (45 mins)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/extensions/extension03-remixing-javascript.md)
+
+[**Extension 4: Intro to Javascript (45 mins)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/extensions/extension04-intro-javascript.md)
+
+[**Extension 5: Visual Programming with Scratch (45 mins)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/extensions/extension05-scratch.md)
+
+##Club Type Specific Agendas
 
 
-##Swap Agendas
+[**Session 1: The Web is like legos (Mozilla Supporter)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/club-type-specific/session01-community.md)
 
+[**Session 1: The Web is like Legos (GLAM)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/club-type-specific/session01-GLAM.md)
 
-[**Session 1: The Web is like legos (Mozilla Supporter)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/session01-supporter.md)
+[**Session 4: Remixing HTML (After School)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/club-type-specific/session04-afterschool.md)
 
-[**Session 1: The Web is like Legos (GLAM)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/session01-GLAM.md)
-
-[**Session 4: Remixing HTML (After School)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/session04-afterschool.md)
-
-[**Extension 2: First steps with Javascript (supporter)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/extension02-supporter.md)
-
-[**Extension 2: Remixing Javascript (informal)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/extension02-informal.md)
-
-[**Extension 2: Visual Programming with Scratch (GLAM)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/extension02-GLAM.md)
 
 
 
