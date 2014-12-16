@@ -31,28 +31,15 @@ By the end of this module, the learner should be able to access the web using th
 ##Agendas
 
 
-**Unit 1: The Web is like Legos (45 mins)**
+[**Unit 1: The Web is like Legos (45 mins)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/Module01-CollectingAssets/unit01.md)
 
-**Unit 2: Remixathon (45 mins)**
+[**Unit 2: Remixathon (45 mins)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/Module01-CollectingAssets/unit02.md)
 
-**Unit 3: Search and Store (45 mins)**
+[**Unit 3: Search and Store (45 mins)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/Module01-CollectingAssets/unit03.md)
 
-**Extension: Web Mechanics and Search Engines (45 mins)**
+[**Extension: Web Mechanics and Search Engines (45 mins)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/Module01-CollectingAssets/module01-extension.md)
+
+[**Unit 1: The Web is like legos (Mozilla Supporter)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/Module01-CollectingAssets/unit01-supporter.md)
+
+[**Unit 1: The Web is like Legos (GLAM)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/Module01-CollectingAssets/unit01-GLAM.md)
 -----
-
-##Swap
-
-
-**Unit 1: The Web is like legos (Mozilla Supporter)**
-
-1. (5 mins) [Introduction round](https://laura.makes.org/thimble/introductions-and-setup ) (create new activity like this branded Webmaker Club. Include “rules”)
-
-2. (20 mins) [Your first hack](https://tbx.makes.org/thimble/your-first-hack)
-
-3. (20 mins) [Your first hack part 2](https://tbx.makes.org/thimble/maker-party-your-first-hack-pt-2)
-
-**Unit 1: The Web is like Legos (GLAM)**
-
-1. (5 mins) [Introduction round](https://laura.makes.org/thimble/introductions-and-setup ) (create new activity like this branded Webmaker Club. Include “rules”)
-
-2. (40 mins) [Design Challenge: Activating Culture](https://keyboardkat.makes.org/thimble/design-challenge-activate-culture)
