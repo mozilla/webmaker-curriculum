@@ -31,42 +31,13 @@ By the end of this module, the learner should be able to access the web using th
 ##Agendas
 
 
-**Unit 1: The Web is like Legos (45 mins)** *This unit helps learners understand that any webpage can be taken apart and reconstructed due to the open nature of the web.*
+**Unit 1: The Web is like Legos (45 mins)**
 
-1. (5 mins) [Introduction round](https://laura.makes.org/thimble/introductions-and-setup) (create new activity like this branded Webmaker Club. Include “rules”)
- 
-2. (20 mins) [How to Hack the Robot Dance](https://mozteach.makes.org/thimble/how-to-hack-the-robot-dance)
+**Unit 2: Remixathon (45 mins)**
 
-3. (20 mins) [Hack the Web with the Goggles](https://mozteach.makes.org/thimble/hack-the-web-with-the-goggles)
+**Unit 3: Search and Store (45 mins)**
 
-
-**Unit 2: Remixathon (45 mins)** *This unit helps learners understand each of the basic building blocks of the web by having them rearrange a webpage.*
-
-1. (5 mins) Introduction round (always say hello first!)
-
-2. (40 mins) Remixathon: Save the Open Web https://mozteach.makes.org/thimble/remixathon-save-the-open-web
-
-**Unit 3: Search and Store (45 mins)** *This unit has learners practice searching and saving assets from the web, so that they can be more effective at finding media assets and reusing them.*
-
-1. (5 mins) Introduction round (always say hello first!)
-
-2. (20 mins) [How do you find images?](https://cogdog.makes.org/thimble/LTE4OTY5Mzk1MjA=/image-finding-discussion-activity)
-
-3. (20 mins) Learners surf the web, fill and organize a folder with stuff they like. Learners should keep track of website authors and owners for any assets they collect.
-
------
-
-##Extension 
-
-
-**Web Mechanics and Search Engines** *The extension for Module 1 explores more of the basic web mechanics and the functionality of searching through a fun, hands-on game and silly project.*
-
-1. (5 mins) Introduction round (always say hello first!)
-
-2. (15 mins) [Web Mechanics speed dating](https://juliahivenyc.makes.org/thimble/MTgwOTQ0ODk2/web-mechanics-speed-dating)
-
-3. (25 mins) [SEO Battle](https://katermouse.makes.org/thimble/MjUyOTAzNjgw/seo-battle)
-
+**Extension: Web Mechanics and Search Engines (45 mins)**
 -----
 
 ##Swap
