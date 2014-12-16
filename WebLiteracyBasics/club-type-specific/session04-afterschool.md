@@ -1,4 +1,4 @@
-**Session 4: Remixing HTML (After School)** *This session demystifies HTML.*
+**Session 4: Remixing HTML (After School Club)** *This session demystifies HTML.*
 
 <ol>
 <li>(5 mins) <strong>Introduction round</strong></li>
