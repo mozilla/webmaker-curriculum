@@ -53,10 +53,10 @@ This kind of club tends to aim it’s programming to helping participants gain r
 *Choosing a club type reveals general resources for each type, getting permission, funding, space tips, etc.*
 
 
-#Choose your Persona
+#What's your persona?
 ![Personas](https://i.imgur.com/pfGNVZ5.png)
 
-*Choosing a persona type reveals the agenda/kit for that type. Some modules might be the same, but we likely have enough resources to curate specific agendas for specific personas. Additionally, we can give certain personas more/less instruction.*
+*We would love to know what kind of user stories are out there, so if you're using this curriculum, remixing it, inspired by it or otherwise reading this, let us know by filing [a GitHub issue](https://github.com/mozilla/webmaker-curriculum/issues) or joining us in [our community forum](http://discourse.webmaker.org). We're eager for your feedback!*
 
 
 #Contents
