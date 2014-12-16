@@ -1,4 +1,4 @@
-**Extension: Web Mechanics and Search Engines** *The extension for Module 1 explores more of the basic web mechanics and the functionality of searching through a fun, hands-on game and silly project.*
+**Extension: Web Mechanics and Search Engines** *This extension explores more of the basic web mechanics and the functionality of searching through a fun, hands-on game and a silly project.*
 
 1. (5 mins) Introduction round (always say hello first!)
 

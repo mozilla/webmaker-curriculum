@@ -1,4 +1,4 @@
-**Unit 1: The Web is like legos (Mozilla Supporter)**
+**Session 1: The Web is like legos (Mozilla Supporter)**
 
 1. (5 mins) [Introduction round](https://laura.makes.org/thimble/introductions-and-setup ) (create new activity like this branded Webmaker Club. Include “rules”)
 

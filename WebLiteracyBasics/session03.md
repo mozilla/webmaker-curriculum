@@ -1,4 +1,4 @@
-**Unit 3: Search and Store (45 mins)** *This unit has learners practice searching and saving assets from the web, so that they can be more effective at finding media assets and reusing them.*
+**Session 3: Search and Store (45 mins)** *This session has learners practice searching and saving assets from the web, so that they can be more effective at finding media assets and reusing them.*
 
 1. (5 mins) Introduction round (always say hello first!)
 
