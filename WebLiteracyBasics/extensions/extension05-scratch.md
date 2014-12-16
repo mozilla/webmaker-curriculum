@@ -1,4 +1,4 @@
-**Extension: Visual Programming with Scratch (GLAM)** *This extension shows learners how to use special fonts and design elements like drop shadows to improve the readability of their webpages.*
+**Extension: Visual Programming with Scratch** *This extension uses Scratch to teach remixing and computational thinking.*
 
 <ol>
 <li>(5 mins) <strong>Introduction round</strong></li>

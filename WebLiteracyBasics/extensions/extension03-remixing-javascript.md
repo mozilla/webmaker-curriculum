@@ -1,4 +1,4 @@
-**Extension: Remixing Javascript (informal)** *This extension shows learners how to use special fonts and design elements like drop shadows to improve the readability of their webpages.*
+**Extension: Remixing Javascript** *This extension shows learners how to remix a javascript quiz and tinker around with the programming language.*
 
 <ol>
 <li>(5 mins) <strong>Introduction round</strong></li>

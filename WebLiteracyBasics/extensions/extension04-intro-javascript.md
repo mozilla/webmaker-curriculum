@@ -1,4 +1,4 @@
-**Extension: First steps with Javascript (supporter)** *This extension shows learners how to use special fonts and design elements like drop shadows to improve the readability of their webpages.*
+**Extension: First steps with Javascript** *This extension shows learners how to use special fonts and design elements like drop shadows to improve the readability of their webpages.*
 
 <ol>
 <li>(5 mins) <strong>Introduction round</strong></li>
