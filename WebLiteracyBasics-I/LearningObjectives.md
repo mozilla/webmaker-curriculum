@@ -1,22 +1,29 @@
-#Web Literacy Basics I (3 sessions)
+##Web Literacy Basics I
+In this module, learners begin to find out about the foundations of the web. Discovering what makes the web a unique place to find and gather information, they'll learn about how the web is constructed. 
 
-In this module, learners begin to learn about what makes the web a unique place to find and gather information. They'll learn about how the web is constructed, and  together, we'll begin collecting assets to build a webby projects around.
+##Big Ideas
+The web is like lego, so you can remix it's building blocks to make your first web page. You can use technology to search for, organize and use resources to be expressive creatively. When using other people's media, you should attribute their contribution to your work, ideas or projects.
+
+#Tools
+* the Browser
+* [X-Ray Goggles](http://goggles.webmaker.org)
 
 ##Learning Objectives and Assessment
 
 By the end of this module, learners should be able to: 
 
-* access the web using the common features of web browsers
-* use hyperlinks to access a range of resources on the web
-* manage information from various sources on the web
-* locate or find desired information within search results
-* research the authorship and ownership of websites and their content.
-
-Learners should also be aware that:
-
-* remixing is a form of derivative artwork.
-* media has influence over culture and society, and cultures and societies have influence over shaping media.
-* the Web is made out of building blocks that they can rearrange to create new things through an iterative process.
+* Install X-Ray Goggles as a bookmarklet
+* Search for an image and discover its URL for including in a remixed web page
+* Use X-Ray Goggles to modify text and images on specific web pages
+* Switch between browser tabs
+* Make use of keyboard shortcuts (i.e. for copying and pasting) 
+* Use X-Ray Goggles to modify text and images on any web page
+* Attribute images, text and other assets used from other websites
+* Choose openly-licensed assets to include in a web page 
+* Publish a remixed web page and make a note of its URL
+* Discover time-sensitive information using a range of search engines
+* Identifying openly-licensed images relating to a specific event
+* Assess the credibility of websites and their content by comparing information from a number of sources
 
 The following competencies of the [Web Literacy Map](https://webmaker.org/resources) are relevant to this module - along with the relevant 'maker' badges.
 
@@ -33,11 +40,7 @@ The following competencies of the [Web Literacy Map](https://webmaker.org/resour
 * **Search:** Locating information, people and resources via the web
 * **Credibility:** Critically evaluating information found on the web
 * **Remixing:** Modifying existing web resources to create something new
-* **Open Practices:** Distinguishing between open and closed licensing 
-
-**Assessing the learning**
-
-By the end of this module, the learner should be able to access the web using the common features of web browsers and use hyperlinks to access a range of resources on the web. They will learn to manage information from various sources on the web, locate or find desired information within search results, and they should be able to research the authorship and ownership of websites and their content. 
+* **Open Practices:** Distinguishing between open and closed licensing  
 
 ##Basic Agendas
 
