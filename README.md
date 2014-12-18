@@ -62,8 +62,6 @@ This kind of club tends to aim it’s programming to helping participants gain r
 
 1. [Web Literacy Basics I](https://github.com/mozilla/webmaker-curriculum/blob/master/WebLiteracyBasics-I/LearningObjectives.md)
 2. [Web Literacy Basics II](https://github.com/mozilla/webmaker-curriculum/blob/master/WebLiteracyBasics-II/LearningObjectives.md) 
-3. [Web Literacy Basics III](https://github.com/mozilla/webmaker-curriculum/blob/master/WebLiteracyBasics-III/LearningObjectives.md) 
------
 
 #Remix this!
 
