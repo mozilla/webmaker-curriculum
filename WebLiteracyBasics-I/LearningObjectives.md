@@ -44,21 +44,21 @@ The following competencies of the [Web Literacy Map](https://webmaker.org/resour
 
 ##Basic Agendas
 
-[**Session 1: The Web is like Legos (45 mins)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/session01-basics.md)
+[**Session 1: The Web is like Legos (45 mins)**](https://github.com/mozilla/webmaker-curriculum/blob/master/WebLiteracyBasics-I/session01-basics.md)
 
-[**Session 2: Remixathon (45 mins)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/session02-remixathon.md)
+[**Session 2: Remixathon (45 mins)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics-I/session02-remixathon.md)
 
-[**Session 3: Search and Store (45 mins)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/session03-search.md)
+[**Session 3: Search and Store (45 mins)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics-I/session03-search.md)
 
 ##Extension Agendas
 
-[**Extension 1: Web Mechanics and Search Engines (45 mins)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/extensions/extension01-mechanics-and-search.md)
+[**Extension 1: Web Mechanics and Search Engines (45 mins)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics-I/extensions/extension01-mechanics-and-search.md)
 
 ##Club Type Specific Agendas
 
-[**Session 1: The Web is like legos (Mozilla Supporter)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/club-type-specific/session01-community.md)
+[**Session 1: The Web is like legos (Mozilla Supporter)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics-I/club-type-specific/session01-community.md)
 
-[**Session 1: The Web is like Legos (GLAM)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics/club-type-specific/session01-GLAM.md)
+[**Session 1: The Web is like Legos (GLAM)**](https://github.com/LauraHilliger/webmaker-curriculum/blob/master/WebLiteracyBasics-I/club-type-specific/session01-GLAM.md)
 
 
 -----

@@ -2,7 +2,6 @@
 
 ##Meta
 
-
 In 2015, Mozilla is working with the community on [Web Literacy Clubs](https://wiki.mozilla.org/Webmaker/2015/Mentors/Clubs) (name TBC). The idea is to address the following questions:
 
 * **higher quality teaching and learning.** How can the teaching and learning experience be improved for mentors and learners?
@@ -61,10 +60,8 @@ This kind of club tends to aim it’s programming to helping participants gain r
 
 #Contents
 
-1. [Web Literacy Basics](https://github.com/mozilla/webmaker-curriculum/blob/master/WebLiteracyBasics/LearningObjectives.md) (6 sessions + 5 Extensions)
-2. [Web Literacy Intermediate](https://github.com/mozilla/webmaker-curriculum/blob/master/WebLiteracyIntermediate) (9 sessions)
-
------
+1. [Web Literacy Basics I](https://github.com/mozilla/webmaker-curriculum/blob/master/WebLiteracyBasics-I/LearningObjectives.md)
+2. [Web Literacy Basics II](https://github.com/mozilla/webmaker-curriculum/blob/master/WebLiteracyBasics-II/LearningObjectives.md) 
 
 #Remix this!
 
