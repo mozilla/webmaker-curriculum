@@ -1,4 +1,4 @@
-**Extension: Remixing Javascript** *This extension shows learners how to remix a javascript quiz and tinker around with the programming language.*
+**Session 6: Remixing Javascript (45 mins)** *This session shows learners how to remix a javascript quiz and tinker around with the programming language.*
 
 <ol>
 <li>(5 mins) <strong>Introduction round</strong></li>
