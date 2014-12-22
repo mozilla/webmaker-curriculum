@@ -1,4 +1,5 @@
-**Session 3: Search and Store (45 mins)** *This session has learners practice searching and saving assets from the web, so that they can be more effective at finding media assets and reusing them.*
+#Session 3: Search and Store (45 mins)
+*This session has learners practice searching and saving assets from the web, so that they can be more effective at finding media assets and reusing them.*
 
 ##Learning Objectives
 

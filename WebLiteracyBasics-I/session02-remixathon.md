@@ -1,4 +1,5 @@
-**Session 2: Remixathon (45 mins)** *This unit helps learners understand each of the basic building blocks of the web by having them rearrange a webpage.*
+#Session 2: Remixathon (45 mins)
+*This unit helps learners understand each of the basic building blocks of the web by having them rearrange a webpage.*
 
 ##Learning Objectives
 
