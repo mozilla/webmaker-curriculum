@@ -6,6 +6,8 @@
 * Identifying openly-licensed images relating to a specific event
 * Assess the credibility of websites and their content by comparing information from a number of sources
 
+##Agenda
+
 1. (5 mins) Introduction round (always say hello first!)
 
 2. (20 mins) [How do you find images?](https://cogdog.makes.org/thimble/LTE4OTY5Mzk1MjA=/image-finding-discussion-activity)
