@@ -1,4 +1,5 @@
-**Session 1: The Web is like Legos (45 mins)** *This session helps learners understand that any webpage can be taken apart and reconstructed due to the open nature of the web.*
+#Session 1: The Web is like Legos (45 mins)
+*This session helps learners understand that any webpage can be taken apart and reconstructed due to the open nature of the web.*
 
 ##Learning Objectives
 
