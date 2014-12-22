@@ -65,6 +65,9 @@ This kind of club tends to aim it’s programming to helping participants gain r
 
 #Remix this!
 
+This repo is built using P2PU's Course in a Box. Learn more at [howto.p2pu.org](http://howto.p2pu.org).
+ 
+---
 
 Create your own version of the curriculum by forking this repository:
 
