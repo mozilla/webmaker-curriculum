@@ -4,10 +4,6 @@ In this module, learners begin to find out about the foundations of the web. Dis
 ##Big Ideas
 The web is like lego, so you can remix it's building blocks to make your first web page. You can use technology to search for, organize and use resources to be expressive creatively. When using other people's media, you should attribute their contribution to your work, ideas or projects.
 
-The reason is that reading is the first act of going online. It is critical to developing literacy to bolster people's agency on the web, and it is a building block to developing higher order skills. 
-
-As part of that, when you read the web, one of the first things you want to know is: can I believe what I'm reading? Is it valid and credible? 
-
 #Tools
 * the Browser
 * [X-Ray Goggles](http://goggles.webmaker.org)
