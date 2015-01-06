@@ -1,0 +1,105 @@
+.wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;  
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  margin-left:auto;
+  margin-right:auto;
+  width:85%;
+}
+
+.wrapper > * {
+  flex: 1 100%;
+}
+
+.footer {
+  background: #eee;
+  min-height:55px;
+}
+
+.main {
+  text-align: left;
+  background: white;
+}
+
+hgroup{
+  padding:20px 50px;
+}
+
+.main div.line{
+	background-color:#3fb58e;
+	height: 55px;
+	padding:0px 0px 5px 0px;
+}
+
+.line p, .agenda p{
+	font-weight: 300;
+	width:75%;
+}
+
+.line p{
+	padding-top:11px;
+	color:white;
+	margin-left:auto;
+	margin-right:auto;
+}
+.aside {
+  background: #506b7b;
+  width:5%;
+  padding:0;
+  color:white;
+}
+
+.aside img{
+	width:100%;
+}
+
+.goals, .literacy{
+	padding:10px 20px;
+}
+
+.goals ul, .agenda ul{
+	padding-left:0;
+}
+
+.agenda ul li div {
+	padding:20px 50px;
+}
+
+.goals ul li{
+	list-style-position:inside;
+	list-style-type: square;
+	font-weight:300;
+	font-size:.9em;
+
+}
+
+.agenda ul li{
+	list-style-position:inside;
+	list-style-type: none;
+	border-bottom: 1px solid #eee;
+}
+
+.literacy-color-credibility{
+	background-color: #FF5984
+}
+
+
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 auto; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; } 
+  .main    { order: 2; }
+  .footer  { order: 3; }
+}
+
+body {
+  padding: 2em; 
+}
