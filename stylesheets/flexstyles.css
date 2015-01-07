@@ -19,6 +19,7 @@
   background: #eee;
   min-height:55px;
   text-align: right;
+  padding:20px 0px;
 }
 
 .main {
@@ -105,11 +106,19 @@ hgroup{
 	margin-top:10%;
 }
 
+.literacy-color-credibility, .literacy-color-search, .literacy-color-composing{
+	color:white;
+}
+
 .literacy-color-credibility{
 	background-color: #FF5984
 }
 .literacy-color-search{
 	background-color: #fe4040
+}
+
+.literacy-color-composing{
+	background-color: #01bc85;
 }
 
 
@@ -127,4 +136,5 @@ hgroup{
 
 body {
   padding: 2em; 
+  background-color:#f1f1f1;
 }
