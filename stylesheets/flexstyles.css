@@ -84,6 +84,9 @@ hgroup{
 	border-bottom: 1px solid #eee;
 }
 
+.agenda ul li ul{
+	padding-left:10px;}
+
 .time{
 	width:60px;
 	height:60px;
