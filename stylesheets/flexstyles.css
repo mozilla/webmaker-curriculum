@@ -41,11 +41,11 @@ hgroup{
 }
 
 .line p{
-	padding-top:11px;
+	padding:11px 50px;
 	color:white;
 	margin-left:auto;
 	margin-right:auto;
-		width:75%;
+	width:100%;
 }
 .aside {
   background: #506b7b;
