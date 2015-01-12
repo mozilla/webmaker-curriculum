@@ -59,6 +59,17 @@ hgroup{
 	width:100%;
 }
 
+.attribution {
+	bottom: 10px;
+	color: #eee;
+	opacity: 0.5;
+	position: relative;
+	top: -30px;
+	transition: all 0.2s ease 0s;
+	float: right;
+	right: 15px;
+}
+
 .goals, .literacy{
 	padding:10px 20px;
 }
@@ -124,7 +135,10 @@ hgroup{
 	background-color: #0097d6;
 }
 
-
+.socialBtns {
+	float:right;
+	width:120px;
+}
 
 @media all and (min-width: 600px) {
   .aside { flex: 1 auto; }
