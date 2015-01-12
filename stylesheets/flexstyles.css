@@ -124,7 +124,10 @@ hgroup{
 	background-color: #0097d6;
 }
 
-
+.socialBtns {
+	float:right;
+	width:120px;
+}
 
 @media all and (min-width: 600px) {
   .aside { flex: 1 auto; }
