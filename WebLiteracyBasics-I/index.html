@@ -4,79 +4,92 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/makerstrap/makerstrap.complete.min.css">
-    <link rel="stylesheet" href="../stylesheets/flexstyles.css">
+    <link rel="stylesheet" href="../stylesheets/styles.css">
 
     <title>Web Literacy Basics I</title>
 </head>
 
 <body>
-	<nav class="navbar navbar-webmaker">
-  <div class="container">
-    <div>
-      <!-- toggle button for mobile -->
-     <button type="button" class="navbar-toggle" ng-click="collapseToggle()">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="fa fa-bars fa-lg"></span>
-      </button>
-      <!-- logo -->
-      <a href="#" class="logo webmaker-logo">
-        <img src="https://webmaker.org/img/logo.png">
-      </a>
-      <ul class="nav navbar-nav navbar-right navbar-collapse text-center-xs collapse">
-        <li><a href="https://twitter.com/hashtag/teachtheweb"><i class="fa fa-twitter"></i> #TeachTheWeb</a></li>
-        <li>
-              <a href="http://discourse.webmaker.org/category/clubs"><i class="fa fa-comments"></i> Discussion</a>
-            </li>
-        <li><a href="https://github.com/mozilla/webmaker-curriculum/blob/master/WebLiteracyBasics-I/session01-credibility.html"><i class="fa fa-github"></i> View on Github</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-    <div class="wrapper">
+    <nav class="navbar navbar-webmaker">
+	    
+        <div class="container">
+            <div>
+                <!-- toggle button for mobile -->
+                	<button type="button" class="navbar-toggle" ng-click="collapseToggle()" data-toggle="collapse" aria-expanded="false" aria-controls="collapseNav" data-target="collapseNav">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="fa fa-bars fa-lg"></span>
+					</button>
+				<!-- logo -->
+                 <a href="#" class="logo webmaker-logo"><img src="https://webmaker.org/img/logo.png"></a>
 
-	<article class="main">
+                <ul class="nav navbar-nav navbar-right navbar-collapse text-center-xs collapse" id="collapseNav">
+                    <li>
+                        <a href="https://twitter.com/hashtag/teachtheweb">#TeachTheWeb</a>
+                    </li>
+
+                    <li>
+                        <a href="http://discourse.webmaker.org/category/clubs">Discussion</a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/mozilla/webmaker-curriculum/blob/master/WebLiteracyBasics-I/session01-credibility.html">View on Github</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <article class="main">
             <div>
                 <hgroup class="text-light">
                     <h1>Web Literacy Basics I</h1>
 
-                    <p id="made-by">Made by the <a href="https://twitter.com/search?f=realtime&q=%23teachtheweb&src=typd">#TeachTheWeb<a></a> team with special thanks to <a href="https://katermouse.makes.org/thimble/LTc4OTExODk3Ng==/kraken-the-code-activity">Mouse</a>.</p>
+                    <p id="made-by">Made by the <a href="https://twitter.com/search?f=realtime&q=%23teachtheweb&src=typd">#TeachTheWeb team with special thanks to <a href="https://katermouse.makes.org/thimble/LTc4OTExODk3Ng==/kraken-the-code-activity">Mouse</a>.
+                    <p>
 
-                    <p class="lead">In this module, learners begin to find out about the foundations of the web. Discovering what makes the web a unique place to find and gather information, they'll learn about how the web is constructed. </p>
+                    <p class="lead">In this module, learners begin to find out about the foundations of the web. Discovering what makes the web a unique place to find and gather information, they'll learn about how the web is constructed.</p></a></p>
                 </hgroup>
             </div>
 
             <div class="line" style="background-color:#013E5F;">
-                <p class="lead">
-                 <a href="https://webmaker.org/en-US/resources/literacy/weblit-Credibility"></a><button class="btn literacy-color-credibility">Credibility</button></a> <a href="https://webmaker.org/en-US/resources/literacy/weblit-Search"></a><button class="btn literacy-color-search">Search</button></a> <a href="https://webmaker.org/en-US/resources/literacy/weblit-Composing"></a><button class="btn literacy-color-composing">Composing</button></a> <a href="https://webmaker.org/en-US/resources/literacy/weblit-OpenPractices"></a><button class="btn literacy-color-practices">Open Practices</button></a>
-                </p>
+                <p class="lead"><a href="https://webmaker.org/en-US/resources/literacy/weblit-Credibility"></a><button class="btn literacy-color-credibility">Credibility</button> <a href="https://webmaker.org/en-US/resources/literacy/weblit-Search"></a><button class="btn literacy-color-search">Search</button> <a href="https://webmaker.org/en-US/resources/literacy/weblit-Composing"></a><button class="btn literacy-color-composing">Composing</button> <a href="https://webmaker.org/en-US/resources/literacy/weblit-OpenPractices"></a><button class="btn literacy-color-practices">Open Practices</button></p>
             </div>
 
             <div class="agenda">
                 <ul>
-	                <li>
-                        <div>
-                            
-                            <h3>Learning Objectives</h3>
-								<ul>
-									<li>Locate relevant information by using search engines</li>
-									<li>Compare and contrast information found using multiple searches</li>
-									<li>Decide on the trustworthiness of information by identifying key indicators</li>
-								</ul>	
-						</div>
-                    </li>
-	                <li>
-                        <div>
-                            
-                            <h3>Tools</h3>
-							<ul>
-								<li>the Browser</li>
-								<li><a href="http://goggles.webmaker.org">X-Ray Goggles</a></li>
-                        </div>
-                    </li>
-                    	
                     <li>
                         <div>
-	                      <h3>Agenda</h3>
+                            <h3>Learning Objectives</h3>
+
+                            <ul>
+                                <li>Locate relevant information by using search engines</li>
+
+                                <li>Compare and contrast information found using multiple searches</li>
+
+                                <li>Decide on the trustworthiness of information by identifying key indicators</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <h3>Tools</h3>
+
+                            <ul>
+                                <li>the Browser</li>
+
+                                <li>
+                                    <a href="http://goggles.webmaker.org">X-Ray Goggles</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <h3>Agenda</h3>
+
                             <div class="time">
                                 <p>45<br>
                                 min</p>
@@ -85,7 +98,9 @@
                             <h5>Reading the Web: Credibility</h5>
 
                             <p><a href="http://mozilla.github.io/webmaker-curriculum/WebLiteracyBasics-I/session01-credibility.html">Run the Credibility session</a></p>
+
                             <h6>OR</h6>
+
                             <p><a href="http://mozilla.github.io/webmaker-curriculum/WebLiteracyBasics-I/session01-credibility.html">Run the Search session</a></p>
                         </div>
                     </li>
@@ -93,32 +108,34 @@
                     <li>
                         <div>
                             <div class="time">
-                                <p>45<br> min</p>
+                                <p>45<br>
+                                min</p>
                             </div>
 
                             <h5>Writing the Web: Composing</h5>
 
-                           <p><a href="http://mozilla.github.io/webmaker-curriculum/WebLiteracyBasics-I/session01-credibility.html">Run the Composing session</a></p>
+                            <p><a href="http://mozilla.github.io/webmaker-curriculum/WebLiteracyBasics-I/session01-credibility.html">Run the Composing session</a></p>
                         </div>
                     </li>
 
                     <li style="border-bottom:none;">
                         <div>
                             <div class="time">
-                                <p>45<br> min</p>
+                                <p>45<br>
+                                min</p>
                             </div>
 
                             <h5>Participating on the Web: Open Practices</h5>
-							<p><a href="credibility-kraken.html">Run the Open Practices session</a></p>
-                           
+
+                            <p><a href="credibility-kraken.html">Run the Open Practices session</a></p>
+                        </div>
                     </li>
-                    
                 </ul>
             </div>
         </article>
 
         <footer class="footer">
-            Next, try teaching <a href="https://webmaker.org/en-US/resources/literacy/weblit-Composing"></a><button class="btn literacy-color-composing">Web Literacy Basics II</button></a>
+            Next, try teaching <a href="https://webmaker.org/en-US/resources/literacy/weblit-Composing"></a><button class="btn literacy-color-composing">Web Literacy Basics II</button>
         </footer>
     </div>
 </body>
