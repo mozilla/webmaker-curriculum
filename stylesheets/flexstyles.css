@@ -70,12 +70,17 @@ hgroup{
 	right: 15px;
 }
 
-.goals, .literacy{
+.goals{
 	padding:10px 20px;
+}
+
+.goals ul, .literacy{
+	margin-bottom:10%;;
 }
 
 .goals ul, .agenda ul{
 	padding-left:0;
+	
 }
 
 .agenda>ul>li>div, footer {
