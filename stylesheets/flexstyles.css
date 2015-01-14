@@ -8,7 +8,7 @@
   flex-flow: row wrap;
   margin-left:auto;
   margin-right:auto;
-  width:85%;
+  max-width:85%;
 }
 
 .wrapper > * {
