@@ -1,144 +1,227 @@
 <!DOCTYPE html>
-<!-- ================================================================
+<!-- 
+===========================================================
 WELCOME TO THE WEBMAKER ACTIVITY TEMPLATE!
-Use this template to create your own activity for learners, educational resource or lesson. 
-Edit the HTML below to add your own content, links and images.
+Use this template to create your own session or educational 
+resource  for learners. Edit the HTML below to add your own 
+content, links and images. We're using the 'Kraken the Code' 
+activity as an example.
+
 Code comments like these will help with hints and guides. 
 Need help? Start here: http://mzl.la/teachingkit-tips
-================================================================ -->
+===========================================================
+-->
 
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta content="teach-activity" name="webmaker:tags">
-    <link href="https://stuff.webmaker.org/webmaker-kits/v2/css/style.css" media="all" rel="stylesheet" type="text/css"><!-- =============================== -->
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/makerstrap/makerstrap.complete.min.css">
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    
     <!-- ADD YOUR TITLE HERE -->
-
-    <title>Kraken the Code</title>
+    <title>Web Literacy Basics | 1.A. Reading the Web: Kraken the Code</title>
 </head>
 
-<body class="activity">
-    <div id="ribbon">
-        Activity
-    </div>
 
-    <header style="background: url('../images/legitometer-header.png') repeat scroll center center / cover  transparent;">
-        <hgroup id="header-group" style="background-color:rgba(0,0,0,0.5);padding-top:25px; padding-bottom:25px;padding-right:50px;padding-left:50px;border-radius:3px;color:white;">
-            <h1>Kraken the Code</h1>
+    <!-- IGNORE THIS FIRST BIT - JUST MAKES SURE IT WORKS WELL ON MOBILE DEVICES! -->
 
-            <h2>Learners will use the Internet to solve the mystery of The Kraken, while also learning about search terms, keywords, and how to assess the validity and relevance of web sources. Level: Beginner</h2>
+<body>
+    <nav class="navbar navbar-webmaker">
+        <div class="container">
+            <div>
+                <button type="button" class="navbar-toggle" ng-click="collapseToggle()"><span class="sr-only">Toggle navigation</span></button> <!-- logo -->
+                 <a href="#" class="logo webmaker-logo"><img src="https://webmaker.org/img/logo.png"></a>
 
-            <p id="made-by">Made by <a href="http://mouse.org" id="author">MOUSE!</a>, remixed by <a href="http://twitter.com/epilepticrabbit">Laura</a>.</p>
-        </hgroup>
-    </header>
-
-    <div class="wrapper">
-        <div class="row">
-	        <main>
-            <section class="step-section">
-                <h2>Steps for the Activity</h2>
-
-                <ol>
+                <ul class="nav navbar-nav navbar-right navbar-collapse text-center-xs collapse">
                     <li>
-                        <strong>Get Started!</strong>
-                        <p>Split learners into groups of 2 or 3 and explain that each group’s challenge is to prove whether or not the legendary monster, The Kraken, is real or a myth.
+                        <a href="https://twitter.com/hashtag/teachtheweb">#TeachTheWeb</a>
                     </li>
 
-                    <li>Groups start by spending 20 minutes researching. Using the guidelines from the <a href="credibility-legit-tip.html">Tip Sheet</a> , groups should evaluate 4 internet sources, documenting their findings on the Legit-o-Meter (either by <a href="https://docs.google.com/a/zythepsary.com/file/d/0B1vyNnSVEMIDbDVLX1E4ZXRmclE/edit">writing on the handout</a> or editing the <a href="https://mousemeredith.makes.org/thimble/LTI1NTI2MjcyMA==/kraken-the-code-legit-o-meter">online template</a>). The Legit-o-meter template helps learners track and evaluate the legitimacy of their sources through prompts like:
+                    <li>
+                        <a href="http://discourse.webmaker.org/category/clubs">Discussion</a>
+                    </li>
 
-                        <div class="example-div">
-                            <ul>
-                                <li>Does the site list an author?</li>
+                    <li>
+                        <a href="https://github.com/mozilla/webmaker-curriculum/blob/master/WebLiteracyBasics-I/session01-credibility.html">View on Github</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-                                <li>When was the information written?</li>
+	<!-- THE SIDEBAR STARTS HERE - GET READY TO EDIT! -->
 
-                                <li>What are the article’s sources?</li>
+    <div class="wrapper">
+        <aside class="aside">
+            <div class="image">
+                <!-- ADD YOUR MAIN IMAGE HERE -->
+                <img src="../images/square-kraken.png"> <a href="http://mouse.org" class="attribution"><span class="fa fa-camera"></span> Mouse</a>
+            </div>
 
-                                <li>Is the site well designed?</li>
-                            </ul>
+            <div class="goals">
+                <div class="literacy">
+                    <!-- LIST THE WEB LITERCY MAP COMPETENCIES YOUR ACTIVITY ALIGNS WITH HERE - SEE http://webmaker.org/resources -->
+                    <h4>Web Literacy Competencies</h4>
+                    <a href="https://webmaker.org/en-US/resources/literacy/weblit-Credibility">
+                    <button class="btn literacy-color-credibility">Credibility</button></a>
+                    <a href="https://webmaker.org/en-US/resources/literacy/weblit-Search"><button class="btn literacy-color-search">Search</button></a>
+                </div>
+
+		<!-- LIST THE MATERIALS REQUIRED FOR THE SESSION HERE -->
+                <h4>Materials</h4>
+                <ul>
+                    <li>Papers and pens</li>
+                    <li>Web browser</li>
+                    <li><a href="https://docs.google.com/a/zythepsary.com/file/d/0B1vyNnSVEMIDbDVLX1E4ZXRmclE/edit">Printed Legit-o-Meter worksheet</a></li>
+                </ul>
+
+		<!-- LIST 3-5 LEARNING OBJECTIVES HERE - SEE https://github.com/mozilla/webmaker-curriculum/wiki/How-to-write-Learning-Objectives -->
+                <h4>Learning Objectives</h4>
+                <ul>
+                    <li>Locate relevant information by using search engines</li>
+                    <li>Compare and contrast information found using multiple searches</li>
+                    <li>Decide on the trustworthiness of information by identifying key indicators</li>
+                </ul>
+
+            </div>
+        </aside>
+
+	<!-- END OF SIDEBAR CONTENT -->
+
+	<!-- THE MAIN CONTENT STARTS HERE -->
+
+        <article class="main">
+            <div>
+                <hgroup class="text-light">
+                
+                <!-- CHANGE THE TITLES (AND LINKS) -->
+                    <h2><a href="http://mozilla.github.io/webmaker-curriculum/WebLiteracyBasics-I/">1. Reading the Web</a></h2>
+                    <br>
+                    <h3> Activity A: Kraken the Code </h3>
+
+		<!-- ADD YOUR NAME AND A LINK TO YOUR PROFILE -->
+                    <p id="made-by">Made by <a href="http://mouse.org/">MOUSE</a> and remixed for Clubs by <a href="https://webmaker.org/mentor">Mozilla</a>.
+
+		<!-- EXPLAIN THE BROAD AIM OF YOUR SESSION AND WHAT PARTICIPANTS WILL LEARN -->
+                    <p class="lead">Learners will use the Internet to solve the mystery of The Kraken, a legendary sea creature, while also <b>learning about search terms, keywords, and how to assess the validity and relevance of web sources.</b></p>
+                </hgroup>
+               <hr>
+            </div>
+          
+         
+
+            <div class="agenda">
+                <ul>
+                    <li>
+                        <div>
+
+			<!-- EXPLAIN WHAT OTHERS WANTING TO RUN THIS ACTIVITY WILL NEED -->
+                            <h4>Preparation</h4>
+                          <ol>
+                            <li>
+                              <b>Do the activity on your own</b> to become familiar with it. 
+                            </li>
+                            <li>
+                              <b>Print out the <a href="https://docs.google.com/a/zythepsary.com/file/d/0B1vyNnSVEMIDbDVLX1E4ZXRmclE/edit">Legit-O-Meter Worksheets</a></b>.
+                            </li>
+                            <li> 
+                              <b>Label three pieces of paper</b> with <em>“Real,” “Imaginary”</em> and <em> “Something In-between,”</em> and hang them on different sides of the room.
+                            </li>
+                            <li>
+                              <b>Complete the pre-activity questionnaire</b> <a href="">for you</a> and <a href"">for the learners</a>. 
+                            </li>
+                          </ol>
                         </div>
                     </li>
 
-                    <li>At the end of the research period, groups will stand under either the “Real,” “Imaginary,” or “Something Inbetween” sign.</li>
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>10<br>
+                                min</p>
+                            </div>
+			
+			<!-- ADD DETAILS OF THE INTRODUCTION TO YOUR SESSION -->
+                            <h4>Introduction</h4>
 
-                    <li>Ask each group what they found out about the Kraken and to defend their opinions using the Legit-o-Meter worksheets they filled out.</li>
+                            <p>Start a <b>brief conversation with your learners about web sources.</b></p>
 
-                    <li>After each group has shared and debated, allow participants to switch their position (if they want).</li>
-                </ol>
-            </section>
+                            <div class="well example">
+                                <ul>
+                                    <li>Is everything you read or watch online true?</li>
 
-            <section>
-                <h1>Share!</h1><img src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"><br>
-                MOUSE's Webmaker resources are provided under a <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution NonCommercial ShareAlike License</a>. Under this license, with proper attribution, educators may use or adapt materials. Note that these resources are intended as iterative and will continually be improved as the MOUSE receives feedback on their effectiveness.
-            </section><!--What is needed to run this activity? Replace the example materials with those your activity needs!-->
-			</main>
-            <aside>
-                <section class="small-checkbox-section">
-                    <h2>Learning Objectives</h2>
+                                    <li>How do you know when information on the internet is reliable?</li>
 
-                    <div>
-                        Learners will be able to:
+                                    <li>How can you tell when it isn’t reliable?</li>
+                                </ul>
+                            </div>
 
-                        <ul>
-                            <li>Learning Objectives...</li>
-                        </ul>
-                    </div>
-                </section>
+                            <p><b>Then review the <a href="credibility-legit-tip.html">Legit-o-Meter Tip Sheet</a></b> to discuss some general rules for determining the credibility of a website.</p>
+                        </div>
+                    </li>
 
-                <section class="materials">
-                    <h2>Materials</h2>
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>25<br>
+                                min</p>
+                            </div>
 
-                    <div class="well checklist">
-                        <ul>
-                            <li>Web-enabled computer(s)</li>
+			<!-- ADD DETAILS OF YOUR MAIN ACTIVITY -->
 
-                            <li>Access to a common search engine (Google, Yahoo, Bing, etc.)</li>
+                            <h4>Kraken the Code: Hunt</h4>
 
-                            <li>
-                                <a href="credibility-legit-tip.html">Legit-o-Meter Tip Sheet</a>
-                            </li>
+                            <p> Split learners into <b>groups of 2 or 3</b> and explain that each group’s challenge is to <b>prove whether or not the legendary monster, The Kraken, is real or a myth.</b> 
+                            </p>
 
-                            <li>
-                                <a href="https://docs.google.com/a/zythepsary.com/file/d/0B1vyNnSVEMIDbDVLX1E4ZXRmclE/edit">Legit-o-Meter</a> (printed out or online at webmaker.org)
-                            </li>
+                            <p> Groups start by <b>spending 20 minutes researching.</b> Using the guidelines from the <a href="credibility-legit-tip.html">Tip Sheet</a>, groups should <b>evaluate 4 internet sources,</b> documenting their findings on the Legit-o-Meter (either by <a href="https://docs.google.com/a/zythepsary.com/file/d/0B1vyNnSVEMIDbDVLX1E4ZXRmclE/edit">writing on the handout</a> or editing the <a href="https://mousemeredith.makes.org/thimble/LTI1NTI2MjcyMA==/kraken-the-code-legit-o-meter">online template</a>).
+                            </p>   
 
-                            <li>Paper & Pens/pencils</li>
-                        </ul>
-                    </div>
-                </section>
+                            <p>
+                            <b>Consider guiding their research</b> with the following prompts: 
 
-                <section class="discussion">
-                    <h2>Discussion</h2>
+                            <div class="well example">
+                                <ul>
+                                    <li>Learners individually to talk through the process of searching for credible information.</li>
 
-                    <div class="well yellow">
-                        <ul>
-                            <li>What were the similarities or differences between the sources you used?</li>
+                                    <li>Do a sample search together and ask the group what to do next.</li>
 
-                            <li>What was the oldest source you found?</li>
+                                    <li>Pair-up learners and ask them to create a screencast explaining their decisions.</li>
+                                </ul>
+                            </p>
+                    </li>
 
-                            <li>What is different about finding sources on the web vs. finding sources elsewhere? Is it the same?</li>
+                    <li style="border-bottom:none;">
+                        <div>
+                            <div class="time">
+                                <p>10<br>
+                                min</p>
+                            </div>
 
-                            <li>Does every reliable source you found follow all of the guidelines on the Tip Sheet? Why or why not?</li>
+			<!-- ADD DETAILS OF HOW YOUR SESSION WILL END -->
+                            <h4>Kraken the Code: Defense</h4>
 
-                            <li>Is everything searchable over Google? Where else can you look for legit sources?</li>
-                        </ul>
-                    </div>
-                </section>
+                            <p> At the end of the research period, <b>groups will stand under one of the signs:</b>  “Real,” “Imaginary,” or “Something In-between” signs.
+                            </p>
 
-                <section class="teach-list">
-                    <h2>Related Activities</h2>
+                            <p> Ask each group what they found out about the Kraken and to <b>defend their opinions</b> using the Legit-o-Meter worksheets they filled out. Participants can <b>change position</b> if they hear convincing arguments. 
+                            </p>
 
-                    <div>
-                        <ul>
-                            <li>In order to get learners familiar with how their computer actually talks to the websites they frequent, try running the <a href="https://katermouse.makes.org/thimble/LTExMDc4MjA1NDQ=/ping-kong-activity">Ping Kong</a> activity!
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-            </aside>
-        </div>
-    </div><script src="https://stuff.webmaker.org/webmaker-kits/v2/js/main.min.js">
-</script>
+                            <p> Conclude by asking the group to reflect on what they found. Complete the <b><a href="">post-activity questionnaire</a></b> with your learners. 
+                            </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+	<!-- ADD A LINK TO WHAT COMPETENCY/SESSION PEOPLE MIGHT LIKE TO EXPLORE NEXT! -->
+
+        <footer class="footer">
+            Next, try <a href="/session01-pingkong.html"><button class="btn literacy-color-webmechanics">Reading the Web: Ping Kong</button></a>
+        </footer>
+    </div>
 </body>
 </html>
