@@ -1,5 +1,5 @@
 #See the wiki
-The [wiki associated with this Github repo](https://github.com/mozilla/webmaker-curriculum/wiki) has tons of information about Web literacy Clubs and links out to other plans and resources. Definitely give it a look!
+The [wiki associated with this Github repo](https://github.com/mozilla/webmaker-curriculum/wiki) has tons of information about Clubs and links out to other plans and resources. Definitely give it a look! What we're currently working on can be found in the [Issues](https://github.com/mozilla/webmaker-curriculum/issues) section.
 
 #Remix this!
 
@@ -15,7 +15,7 @@ If you have changes to suggest to *this* repository, please fork it and then sub
 
 -----
 
-*Taken from [http://mzl.la/club_curriculum](http://mzl.la/club_curriculum). Click on the 'watch' button to be informed of updates!*
+*Click on the 'watch' button to be informed of updates!*
 
 <p align="center"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
 
