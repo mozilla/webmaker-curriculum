@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/mozilla/webmaker-curriculum.png?label=ready&title=Ready)](https://waffle.io/mozilla/webmaker-curriculum)
 #See the wiki
 The [wiki associated with this Github repo](https://github.com/mozilla/webmaker-curriculum/wiki) has tons of information about Clubs and links out to other plans and resources. Definitely give it a look! What we're currently working on can be found in the [Issues](https://github.com/mozilla/webmaker-curriculum/issues) section.
 
