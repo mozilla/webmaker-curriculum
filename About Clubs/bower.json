@@ -1,0 +1,16 @@
+{
+  "name": "webmaker-whitepaper",
+  "author": "@fuzzyfox",
+  "version": "0.0.4",
+  "private": true,
+  "dependencies": {
+    "makerstrap": "mozilla/makerstrap#~0.1.8"
+  },
+  "ignore": [
+    "node_modules/",
+    "dist/",
+    "Gruntfile.js",
+    "server.js",
+    "package.json"
+  ]
+}
