@@ -187,6 +187,26 @@ hr {
   color: white;
 }
 
+.literacy-color-open-practices{
+  background-color: #0097d6;
+  color: white;
+}
+
+.literacy-color-sharing{
+  background-color: #739ab1;
+  color: white;
+}
+
+.literacy-color-community-participation{
+  background-color: #63cfea;
+  color: white;
+}
+
+.literacy-color-collaborating{
+  background-color: #506b7b;
+  color: white;
+}
+
 
 .socialBtns {
   float:right;
