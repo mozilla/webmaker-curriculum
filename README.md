@@ -1,3 +1,6 @@
+#Check out the live pages!
+[Web Literacy Basics I](https://mozilla.github.io/webmaker-curriculum/WebLiteracyBasics-I/)
+
 #See the wiki
 The [wiki associated with this Github repo](https://github.com/mozilla/webmaker-curriculum/wiki) has tons of information about Web literacy Clubs and links out to other plans and resources. Definitely give it a look!
 
