@@ -154,7 +154,8 @@ hr {
 }
 
 .img-thumbnail {
-  width: 50%;
+    width: 30%;
+    float:left;
 }
 
 .literacy-color-credibility, .literacy-color-search, .literacy-color-composing{
