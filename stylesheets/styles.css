@@ -153,6 +153,10 @@ hr {
   padding-bottom: 7px;
 }
 
+.img-thumbnail {
+  width: 50%;
+}
+
 .literacy-color-credibility, .literacy-color-search, .literacy-color-composing{
   color:white;
 }
