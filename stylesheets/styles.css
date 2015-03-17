@@ -22,13 +22,17 @@
   padding:20px 0px;
 }
 
+.footer a:link{
+	float:right;
+}
+
 .main {
   text-align: left;
   background: white;
 }
 
 hgroup{
-  padding:20px 50px;
+  padding:20px 50px 0px 50px;
 }
 
 .main div.line{
@@ -72,6 +76,10 @@ hgroup{
   right: 15px;
 }
 
+.license a:link{
+	float:left;
+}
+
 .goals{
   padding:10px 20px;
 }
@@ -89,7 +97,7 @@ hgroup{
   padding:20px 50px;
 }
 
-.goals ul li{
+.goals ul li, .goals p{
   list-style-position:inside;
   list-style-type: square;
   font-weight:300;
@@ -231,4 +239,10 @@ hr {
 body {
   padding: 2em; 
   background-color:#f1f1f1;
+}
+.leadTime {
+	background-color:#3fb58e;
+	padding:5px;
+	text-align:center;
+	color:white;
 }
