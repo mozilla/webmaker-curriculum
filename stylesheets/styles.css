@@ -22,6 +22,10 @@
   padding:20px 0px;
 }
 
+.footer a:link{
+	float:right;
+}
+
 .main {
   text-align: left;
   background: white;
@@ -70,6 +74,10 @@ hgroup{
   transition: all 0.2s ease 0s;
   float: right;
   right: 15px;
+}
+
+.license a:link{
+	float:left;
 }
 
 .goals{
