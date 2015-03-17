@@ -32,7 +32,7 @@
 }
 
 hgroup{
-  padding:20px 50px;
+  padding:20px 50px 0px 50px;
 }
 
 .main div.line{
@@ -97,7 +97,7 @@ hgroup{
   padding:20px 50px;
 }
 
-.goals ul li{
+.goals ul li, .goals p{
   list-style-position:inside;
   list-style-type: square;
   font-weight:300;
@@ -240,6 +240,9 @@ body {
   padding: 2em; 
   background-color:#f1f1f1;
 }
-.ss-form-title {
-	font-size:1em;
+.leadTime {
+	background-color:#3fb58e;
+	padding:5px;
+	text-align:center;
+	color:white;
 }
