@@ -156,9 +156,17 @@ hr {
 }
 
 .img-example {
-  width: 50%;
-  margin-left: 30%;
+  width: 100%;
   padding-bottom: 7px;
+}
+
+figcaption{
+	font-size:.8em;
+	font-weight: 300;
+	font-style: italic;
+	color: #4d4e53;
+	padding-bottom:2%;
+	float:right;
 }
 
 .img-thumbnail {
