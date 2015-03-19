@@ -1,0 +1,46 @@
+@media print {
+
+img {
+max-width: 300px;
+}
+
+@page {
+margin: 1cm;
+}
+
+@page :left {
+margin: 1cm;
+}
+
+@page :right {
+margin: 1cm;
+}
+
+@page :first {
+  margin: 1cm 2cm;
+}
+
+body {
+font: 12pt Georgia, "Times New Roman", Times, serif;
+line-height: 1.4;
+}
+
+
+h1 {
+font-size: 24pt;
+}
+
+h2 {
+font-size: 14pt;
+margin-top: 25px;
+}
+
+aside h2 {
+font-size: 18pt;
+}
+
+video, iframe, embed, object{
+	display:none;
+}
+
+}
