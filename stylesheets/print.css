@@ -21,13 +21,14 @@ margin: 1cm;
 }
 
 body {
-font: 12pt Georgia, "Times New Roman", Times, serif;
+font: 12pt Georgia, Times, serif;
 line-height: 1.4;
 }
 
 
 h1 {
-font-size: 24pt;
+font-size: 18pt;
+font-weight:bold;
 }
 
 h2 {
@@ -42,5 +43,27 @@ font-size: 18pt;
 video, iframe, embed, object{
 	display:none;
 }
+
+p a:after {
+content: " (" attr(href) ")";
+font-size: 80%;
+}
+
+p a[href^="http://"]:after {
+content: " (" attr(href) ")";
+font-size: 90%;
+}
+
+p a {
+word-wrap: break-word;
+}
+
+aside {
+border-top: 1px solid #bbb;
+margin-top: 30px;
+display: block;
+}
+
+page-break-before: always;
 
 }
