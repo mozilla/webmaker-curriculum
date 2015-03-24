@@ -5,27 +5,27 @@ max-width: 300px;
 }
 
 @page {
-margin: 1cm;
-}
-
-@page :left {
-margin: 1cm;
-}
-
-@page :right {
-margin: 1cm;
-}
-
-@page :first {
-  margin: 1cm 2cm;
+	size:auto;
+margin: .5cm;
 }
 
 body {
-font: 12pt Georgia, Times, serif;
+font: 11pt Georgia, Times, serif;
 line-height: 1.4;
+width:100%;
+margin:0px;
 }
 
-
+ul li{
+	list-style: none;
+	margin:none;
+	padding:none;
+}
+	
+.agenda > ul > li > div {
+	padding: 20px 0px;
+}
+	
 h1 {
 font-size: 18pt;
 font-weight:bold;
@@ -36,29 +36,29 @@ font-size: 14pt;
 margin-top: 25px;
 }
 
-aside h2 {
+.aside h2 {
 font-size: 18pt;
 }
 
-video, iframe, embed, object{
+video, iframe, embed, object, .time{
 	display:none;
 }
 
-p a:after {
-content: " (" attr(href) ")";
-font-size: 80%;
+button:after{
+	word-wrap: break-word;
 }
 
-p a[href^="http://"]:after {
+a:after {
 content: " (" attr(href) ")";
-font-size: 90%;
+font-size: 80%;
+color:#333;
 }
 
 p a {
 word-wrap: break-word;
 }
 
-aside {
+.aside {
 border-top: 1px solid #bbb;
 margin-top: 30px;
 display: block;
@@ -66,4 +66,27 @@ display: block;
 
 page-break-before: always;
 
+.image{
+	width:20%;
+}
+
+.attribution{
+	display:none;
+}
+
+.wrapper{
+	display:table;
+	width:85%;
+}
+.main div.text-light{
+	display:table-header-group;
+}
+.aside{
+	display: table-footer-group;
+}
+.main .agenda{
+	display:table-footer-group;
+}
+
+}
 }
