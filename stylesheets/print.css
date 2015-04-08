@@ -1,0 +1,100 @@
+@import url('https://stuff.webmaker.org/makerstrap/latest/makerstrap.complete.min.css') print;
+@media print {
+
+img {
+max-width: 300px;
+}
+
+@page {
+	size:85%;
+	margin: .5cm;
+}
+
+
+body {
+font: 11pt;
+line-height: 1.4;
+width:90%;
+margin:0px;
+}
+
+ul li{
+	list-style: none;
+	margin:none;
+	padding:none;
+}
+	
+.agenda > ul > li > div {
+	padding: 0px 0px;
+}
+
+.agenda{
+	padding:0;
+	margin:0;
+	}
+	
+h1 {
+font-size: 18pt;
+font-weight:bold;
+}
+
+h2 {
+font-size: 14pt;
+margin-top: 25px;
+}
+
+.aside h2 {
+font-size: 18pt;
+}
+
+video, iframe, embed, object, .time{
+	display:none;
+}
+
+button:after{
+	word-wrap: break-word;
+}
+
+a:after {
+content: " (" attr(href) ")";
+font-size: 80%;
+color:#333;
+}
+
+p a {
+word-wrap: break-word;
+}	
+
+p{
+	width:85%;	
+}
+.aside {
+border-top: 1px solid #bbb;
+margin-top: 30px;
+display: block;
+}
+
+.image{
+	width:20%;
+}
+
+.attribution{
+	display:none;
+}
+
+.wrapper{
+	display:table;
+	width:85%;
+}
+.main div.text-light{
+	display:table-header-group;
+}
+.aside{
+	display: table-footer-group;
+}
+.main .agenda{
+	display:table-footer-group;
+}
+
+}
+}

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Webmaker metas -->
+      <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta content="teach-activity" name="webmaker:tags">
+    <link href="https://stuff.webmaker.org/webmaker-kits/v2/css/style.css" media="all" rel="stylesheet" type="text/css">
+
+    <title>Tips and Tricks for Starting a Club</title>
+    
+</head>
+<body class="activity">
+    <div id="ribbon">
+        Tip Sheet
+    </div>
+
+    <header>
+        <hgroup id="header-group">
+            <h1>Tips and Tricks for Starting a Club</h1>
+
+            <h2>Using these pro-tips, spend some time planning how to develop your Webmaker club and facilitate learning in an informal setting. Then get going and #teachtheweb!</h2>
+
+            <p id="made-by">Made by <a href="http://twitter.com/epilepticrabbit">Laura</a>.</p>
+        </hgroup>
+    </header>
+
+    <div class="wrapper">		        
+    <div class="col-2 clearfix">
+	
+        <div class="tile-container">
+            <div class="interest-box"><a href="https://training.webmakerprototypes.org/en/connecting/concepts/">
+                <img src="http://stuff.webmaker.org/teach-assets/teachtheweb/images/collaborate-tile.png" alt="Collaborate.">
+                <div class="circle">
+                  <h1>Collaborate</h1>
+                  <h2>People = Fun</h2>
+                  <p class="hidden-text">Find people to work with who you find interesting. They can help you plan, facilitate, promote, document &amp; share your experience.</p>  
+                </div>
+            </a>
+            </div>
+        </div>
+
+        <div class="tile-container">
+            <div class="interest-box"><a href="coordinate.html">
+                <img src="http://stuff.webmaker.org/teach-assets/teachtheweb/images/coordinate-tile.png" alt="Coordinate.">
+                <div class="circle">
+                    <h1>Coordinate</h1>
+                  <h2>Dates, Space, Stuff, People</h2>
+                  <p class="hidden-text">Pick your first time &amp; date. Find a cafe, library, or other space where you can be comfortable. Figure out what materials you need (food, drinks, post its, computers, etc), &amp; list people you want to invite.</a></p>
+                  </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="tile-container">
+            <div class="interest-box"><a href="../../index.html">
+                <img src="http://stuff.webmaker.org/teach-assets/teachtheweb/images/deliberate-tile.png" alt="Deliberate">
+                <div class="circle">
+                    <h1>Deliberate</h1>
+                  	<h2>Agenda and Feedback</h2>
+                  <p class="hidden-text">Figure out what you want to teach. Gather input from potential learners, and keep in mind the themes you want to cover. Check out the Clubs curriculum for some input.</p>
+                </div>
+            </a>
+            </div>
+        </div>
+
+        <div class="tile-container">
+            <div class="interest-box"><a href="advocate.html">
+                <img src="http://stuff.webmaker.org/teach-assets/teachtheweb/images/advocate-tile.png" alt="Advocate">
+                <div class="circle">
+                    <h1>Advocate</h1>
+                  <h2>Online and Locally</h2>
+                  <p class="hidden-text"><a href="https://laura.makes.org/popcorn/233l">Share your club plans on social media, set up a web presence, define a hashtag, post flyers and tell any and everyone about your club both online and in your local community.</a></p>
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<style>
+
+    /*
+        This is the start of the pages CSS. Feel free to go through and change values to personalise the look of your book. Start with things such as colors, padding and font-sizes to get a feel for how the page is built.
+  
+  Below you'll also see that we've applied a background image to this website. The image is actually an old map taken from the Flickr Commons, which is a great resource for cultural assets that are publicly available from a wide variety of sources around the world. Original map found here: http://www.flickr.com/photos/mississippi-dept-of-archives-and-history/8513127301/in/photostream/ 
+  
+    */
+
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    body {
+    background:url(http://stuff.webmaker.org/teach-assets/teachtheweb/images/background01.png)repeat top center;
+        color:#333;
+        line-height:1;
+        margin:0;
+    }
+
+    .wrapper {
+        display: block;
+        margin:0px auto 40px;
+        width: 800px;
+    }
+
+
+    .tile-container {
+        overflow:hidden;
+    }
+
+    .interest-box {
+        cursor:pointer;
+        height:400px;
+        position:relative;
+    }
+  a:link, a:visited{
+    color:#333333;
+    text-decoration:none;
+  }
+  a:hover,a:active{
+    color: #666666;
+    text-decoration: none;
+  }
+    /*
+        TASK 2) -  Change the transition properties to customize the hover animations 
+        *****************************************************
+        The code below controls the transition properties. Using these transition properties allows us to animate changes. In this case we are telling the browser to animate all of the elements that are changing for 0.5 seconds and to use the 'ease-out' timing function.
+
+        Change the '0.5s' to a higher number to see how this alters the animation speed.
+    */
+    .interest-box img {
+        height:100%;
+        -webkit-transition: all 0.5s ease-out;
+        -moz-transition: all 0.5s ease-out;
+        -o-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
+        width:100%;
+    }
+
+    .circle {
+       background-color:rgba(255, 255, 255, 0.9);
+       height: 170px;
+	   left: 40%;
+	   margin-left: -150px;
+	   margin-top: 0px;
+	   padding: 10px;
+	   position: absolute;
+	   top: 58%;
+	   transition: all 0.3s ease-in-out 0s;
+	   width: 371px;
+    }
+    
+    .tile-container h1{
+	    text-align:center;
+    }
+
+     .tile-container h2, .tile-container h3 {
+        position:relative;
+        text-align:center;
+        text-transform: lowercase;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+  .tile-container h3{
+    top:50%;
+  }
+
+    .hidden-text {
+        font-size:16px;
+        line-height: 1.3em;
+        font-weight:300;
+        opacity:0;
+        position:relative;
+        margin-top:-20%;
+        text-align:center;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+
+
+    /*
+        TASK 3) -  Learn how the :hover psuedo-class works
+        *****************************************************
+        ':hover' is a pseudo-class. Psuedo classes are great as they allow us to select elements based on a variety of factors. As you have probably worked out, ':hover' allows us to style an element for when it is hovered over. Hover states are good as they allow us to give some visual feedback to the user when they have hovered over something. Hover states are often used to style links.
+
+        The example below tells the browser to change the opacity of the <h2> elements to 0 when the user hovers on the .interest-box element.
+    */
+    .interest-box:hover h2, .interest-box:hover h3 {
+        opacity:0;
+    }
+
+    .interest-box:hover .hidden-text {
+        opacity:1;
+    }
+
+    .tile-container .interest-box:hover .circle {
+        background-color:rgba(255,255,255,0.95);
+    }
+
+    /*
+        TASK 4) -  Change the transform properties to customize how the images scale when hovered
+        *****************************************************
+        Now that we know that 'transitions' control the animation properties, we should learn what 'transforms' do. They control which element should change (or transform) and in which way. Without this transform, there would be nothing to animate, which is why the two proeprties work well together.
+
+        In the example below, we are telling the browser to scale images up slightly when a user hovers over the .interest-box element (as long as the images in question are contained inside this .interest-box element). Try changing the '1.05' integer to something smaller to make the images shrink in size when you hover, or a bigger number to make the images blow-up in size when you hover (e.g. changing it to 0.5 is quite a cool effect).
+    */
+    .interest-box:hover img {
+        -ms-transform:scale(1.05); /* IE 9 */
+        -moz-transform:scale(1.05); /* Firefox */
+        -webkit-transform:scale(1.05); /* Safari and Chrome */
+        -o-transform:scale(1.05); /* Opera */
+        transform:scale(1.05);
+    }
+
+    /* Column Layout */
+
+    .col-2 > div {
+        float:left;
+        width:48%;
+        margin:1%;
+    }
+
+    .col-1 > div {
+        width:100%;
+    }
+
+    /*
+        TASK 5) -  Change the colors of the circles using more pseudo-classes
+        *****************************************************
+        The blue circles can be targeted in a variety of ways. We could add different classes to each circle element in the HTML and then style them that way, (which is a good way).
+
+        Sometimes adding classes is not suitable or efficient, especially if you have lots of elements on the page in a grid type layout, as individually adding classes can take a long time. Psuedo-classes are a way of targeting specific elements on the page and styling them.
+
+        The example below targets each of the four circles and gives it a background-color. The :first-child selector does just that - it selects the first child element. The nth-child(2) selects the 2nd child and so on...
+
+        These types of pseudo-selectors can be hard to get your head around, so don't worry if they don't make sense. Have a play around with the code below to see how each one can change individual elements on the page.
+    */
+
+    .tile-container:first-child .circle {
+        background-color:rgba(255, 255, 255, 0.9);
+    }
+    .tile-container:nth-child(2) .circle {
+        background-color:rgba(255, 255, 255, 0.9);
+    }
+    .tile-container:nth-child(3) .circle {
+        background-color:rgba(255, 255, 255, 0.9);
+    }
+    .tile-container:last-child .circle {
+        background-color:rgba(255, 255, 255, 0.9);
+    }
+
+    .clearfix:after { 
+        visibility: hidden; 
+        display: block; 
+        font-size: 0; 
+        content: " "; 
+        clear: both; 
+        height: 0; 
+    }
+    
+
+</style>
+    
+</body>
+</html>

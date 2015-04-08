@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<!--
+===========================================================
+WELCOME TO THE WEBMAKER ACTIVITY TEMPLATE!
+Use this template to create your own session or educational
+resource  for learners. Edit the HTML below to add your own
+content, links and images. We're using the 'Kraken the Code'
+activity as an example.
+
+Code comments like these will help with hints and guides.
+Need help? Start here: http://mzl.la/teachingkit-tips
+===========================================================
+-->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/makerstrap/makerstrap.complete.min.css">
+    <link rel="stylesheet" href="../stylesheets/styles.css" media="screen">
+    <link rel="stylesheet" href="../stylesheets/print.css" media="print"><!-- ADD YOUR TITLE HERE -->
+
+    <title>Web Literacy Basics | Section 2. Writing the Web: Hack the News</title>
+</head><!-- IGNORE THIS FIRST BIT - JUST MAKES SURE IT WORKS WELL ON MOBILE DEVICES! -->
+
+<body>
+    <nav class="navbar navbar-webmaker">
+        <div class="container">
+            <div>
+                <button type="button" class="navbar-toggle" ng-click="collapseToggle()"><span class="sr-only">Toggle navigation</span></button> <!-- logo -->
+                 <a href="#" class="logo webmaker-logo"><img src="https://webmaker.org/img/logo.png"></a>
+
+                <ul class="nav navbar-nav navbar-right navbar-collapse text-center-xs collapse">
+                    <li>
+                        <a href="https://twitter.com/hashtag/teachtheweb">#TeachTheWeb</a>
+                    </li>
+
+                    <li>
+                        <a href="http://discourse.webmaker.org/category/clubs">Discussion</a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/mozilla/webmaker-curriculum/blob/master/WebLiteracyBasics-I/session01-credibility.html">View on Github</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav><!-- THE SIDEBAR STARTS HERE - GET READY TO EDIT! -->
+
+    <div class="wrapper">
+        <aside class="aside">
+            <div class="image">
+                <!-- ADD YOUR MAIN IMAGE HERE -->
+                <img src="../images/hackthenews.png" alt="Hack the News"> <a href="http://mouse.org" class="attribution"><i class="fa fa-camera"></i> Mouse</a>
+            </div>
+
+            <div class="goals">
+                <div class="literacy">
+                    <!-- LIST THE WEB LITERCY MAP COMPETENCIES YOUR ACTIVITY ALIGNS WITH HERE - SEE http://webmaker.org/resources -->
+
+                    <h4>Web Literacy Competencies</h4><a href="https://webmaker.org/en-US/resources/literacy/weblit-Remix"><button class="btn literacy-color-remixing">Remixing</button></a>
+                </div>
+
+                <h4>Audience</h4>
+                <ul>
+	                <li>8+</li> 
+	                <li>beginning critical thinkers</li>
+                </ul>
+	                
+					<!-- LIST THE MATERIALS REQUIRED FOR THE SESSION HERE -->
+
+                <h4>Materials</h4>
+
+                <ul>
+                    <li>Papers and pens</li>
+
+                    <li>Web browser</li>
+
+                    <li>(optional) <a href="https://mozteach.makes.org/thimble/html-cheatsheet">printed HTML cheatsheet</a>
+                    </li>
+
+                    <li>(optional) <a href="https://mozteach.makes.org/thimble/xray-goggles-cheatsheet">printed X-Ray Goggles reference guide</a>
+                    </li>
+                </ul><!-- LIST 3-5 LEARNING OBJECTIVES HERE - SEE https://github.com/mozilla/webmaker-curriculum/wiki/How-to-write-Learning-Objectives -->
+
+                <h4>Learning Objectives</h4>
+
+                <ul>
+                    <li>Distinguish between original content and a remix</li>
+
+                    <li>Use X-Ray Goggles to alter a web page to give it a particular theme</li>
+
+                    <li>Critique another learner's remix</li>
+                </ul>
+
+                <h4>Activity in Action!</h4>
+
+                <p><a href="http://hivepgh.sproutfund.org/blog/2014/12/15/pittsburgh-project-youth-get-hacking/"><img src="../images/hackthenews-action.jpg" alt="Hack the News in action!"></a><br>
+                <a href="http://hivepgh.sproutfund.org/blog/2014/12/15/pittsburgh-project-youth-get-hacking/"><small>Hive Pittsburgh: Pittsburgh Project Youth Get Hacking</small></a></p>
+                 <h4>See community remixes</h4>
+                Check out the ways educators and activists have modified this activity for their specific audiences in our <a href="http://discourse.webmaker.org/t/testing-2-writing-the-web/1195/3">Discussion Forum</a>.
+                
+            </div>
+        </aside><!-- END OF SIDEBAR CONTENT -->
+        <!-- THE MAIN CONTENT STARTS HERE -->
+
+        <article class="main">
+            <div>
+                <hgroup class="text-light">
+                    <!-- CHANGE THE TITLES (AND LINKS) -->
+
+                    <h2><a href="http://mozilla.github.io/webmaker-curriculum/WebLiteracyBasics-I/">Section 2. Writing the Web</a></h2><br>
+
+                    <h3>Hack the News</h3><!-- ADD YOUR NAME AND A LINK TO YOUR PROFILE -->
+
+                    <p id="made-by">Made by <a href="http://hivenyc.org/">Hive New York City</a> and remixed for Clubs by <a href="https://webmaker.org/mentor">Mozilla</a>. <!-- EXPLAIN THE BROAD AIM OF YOUR SESSION AND WHAT PARTICIPANTS WILL LEARN --></p>
+
+                    <p class="lead">Learners will use X-Ray Goggles to remix a news website, learning about <strong>openly-licensed resources, different forms of media, and how to create something new on the Web through remix.</strong></p>
+                    
+                    <p class="leadTime"><i class="fa fa-clock-o"></i> 45 minutes to an hour</p>
+                </hgroup>
+            </div>
+
+            <div class="agenda">
+                <ul>
+                    <li>
+                        <div>
+                            <!-- EXPLAIN WHAT OTHERS WANTING TO RUN THIS ACTIVITY WILL NEED -->
+
+                            <h3>Preparation</h3><b>Complete the pre-activity questionnaire.</b> <iframe src="http://goo.gl/forms/3kxNnXjdEX" width="100%" height="665px" frameborder="0" marginheight="0" marginwidth="0">Complete the pre-activity questionnaire.</iframe>
+
+                            <p><b>Do the activity on your own</b> to become familiar with it. You may wish to set up a Webmaker account that you can share with your learners. This will save time later when they are ready to publish their remixes.</p>
+                            
+                            <p><a href="https://wiki.mozilla.org/Webmaker/Teach/Terminology#Hack">Review this definition of the word "Hack"</a>, so that you can help your learners (and colleagues!) understand a positive context for the word.</p>
+                            <p>Optional: Print the <a href="https://mozteach.makes.org/thimble/html-cheatsheet">HTML cheatsheet</a> and <a href="https://mozteach.makes.org/thimble/xray-goggles-cheatsheet">X-Ray Goggles reference guide</a></p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>10<br>
+                                min</p>
+                            </div><!-- ADD DETAILS OF THE INTRODUCTION TO YOUR SESSION -->
+
+                            <h3>Introduction</h3>
+
+                            <p>Welcome your students and explain that in this activity we're going to explore "remix." Give each student a piece of paper and a pencil.</p>
+
+                            <div class="well example">
+                                <p><em>In pairs, ask the students to <b>sketch their favorite fictional character.</b> No need for accuracy or too much detail — just draw it quickly.</em></p>
+                            </div>
+
+                            <p>After a few minutes, have the pairs swap their drawings. Prompt the students to add something to their partner's drawing. Explain that this is remix in action!</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>25<br>
+                                min</p>
+                            </div><!-- ADD DETAILS OF YOUR MAIN ACTIVITY -->
+
+                            <h3>Hack the News using X-Ray Goggles</h3>
+
+                            <p>In the same pairs, if enough equipment is available, have the students open a modern web browser. Else, demonstrate on one computer and form small groups afterward so the students can try it on their own.</p>
+
+                            <h4>Install the X-Ray Goggles</h4>
+
+                            <p>Go to <a href="https://goggles.webmaker.org" target="blank">goggles.webmaker.org</a>. Demonstrate how to drag the big yellow &#8220;Activate X-Ray Goggles&#8221; button to your browser&#8217;s bookmarks toolbar.</p>
+                            <figure>
+                            <img class="img-example" src="../images/newshack-example-animated.gif" alt="">
+                            	<figcaption>The X-Ray Goggles in action</figcaption>
+                            </figure>
+                            <h4>Navigate to a news web site</h4>
+
+                            <p>Ask for suggestions for news site. Think about local newspapers, your school paper, or a national news site like The New York Times or The Guardian. Try to find websites that use a good amount of HTML, and not a lot of Javascript as it will be easier for your learners to remix.</p>
+
+                            <div class="well example">
+                                <p><em><strong>Don’t worry</strong> — you’re not actually hacking the site for others. You’re changing a local version of the site that only you can see.</em></p>
+                            </div>
+
+                            <h4>Decide on a remix theme</h4>
+
+                            <p>Inspired by the characters from the introduction, decide on a remix theme. Ideas include <a href="https://en.wikipedia.org/wiki/Nyan_Cat">Nyan Cat,</a> <a href="https://en.wikipedia.org/wiki/Kraken">the Kraken,</a> <a href="https://en.wikipedia.org/wiki/King_Kong">King Kong</a>, or similar locally relevant characters.
+                           <figure><a href="http://jgmac1106.makes.org/goggles/jgmac1106s-remix-of-thedaycom-new-london-and-southeastern-connecticut-news-sports-business-entertainment-video-and-weather-the-day-newspaper"><img src="../images/newshack-example.png" alt="Greg McVerry's example of a news site remix" class="img-example"></a>
+                            <figcaption>Example of a news site remix by <a href="http://twitter.com/jgmac1106">Greg McVerry</a></figcaption>
+                           </figure>
+                            </p>
+
+                            <h4>Activate the Goggles</h4>
+
+                            <p>Click the Goggles in your bookmark toolbar to turn them on. Now when you mouse over elements of the news page, you&#8217;ll see the code underneath.</p>
+
+                            <h4>Hit the &#8220;remix&#8221; button</h4>
+
+                            <p>Hit &#8220;R&#8221; on the keyboard to remix any element.</p>
+
+                            <h4>Change the text and swap in new images</h4>
+
+                            <p>Try changing the headlines or rewriting some of the stories based on your fictional character. Edit some of the links and play with font size and color.</p>
+
+                            <p>Mouse over an image on the page and hit &#8220;R&#8221; / &#8220;Remix.&#8221; Then paste in the address/URL for your new image. To grab an image from Facebook or Instagram, you'll need to click into the post, then right-click and "Copy the Image Location".</p>
+
+                            <div class="well example">
+                                <p><em><strong>TIP: How to find and swap in openly licensed image.</strong> The <a href="http://search.creativecommons.org/">Creative Commons search page</a> or the <a href="https://support.google.com/websearch/answer/29508?p=ws_images_usagerights&hl=en&rd=1">advanced settings in Google</a> help you easily find an image you like with permission to use it. Right-click or control-click on the image you want and select: &#8220;<strong>Copy image location</strong>.&#8221; (Or &#8220;Copy image URL&#8221; or &#8220;Copy image address&#8221;, depending on your web browser.) Then paste your new image URL over top of the old one. Be careful not to lose the quotation marks!</em></p>
+                            </div>
+                            <figure>
+                            <img class="img-example" src="../images/newshack-example-2.png" alt="interface of the New York Times while remixing">
+                            	<figcaption>X-Ray Goggles interface while hacking the New York Times</figcaption>
+                            </figure>
+
+                            <h4>Share</h4>
+
+                            <p><strong>Publish your remix</strong>. Once you&#8217;re done, click the Publish button, or press P on your keyboard. This makes your changes visible on the web for others to see.</p>
+                            
+                            <p><strong>Take it a step further</strong>. Have learners share their hacks with the news station their remixes used. Most news stations are on twitter, so try tweeting a link to them and think about their reactions.</p>
+                        </div>
+                    </li>
+
+                    <li style="border-bottom:none;">
+                        <div>
+                            <div class="time">
+                                <p>10<br>
+                                min</p>
+                            </div><!-- ADD DETAILS OF HOW YOUR SESSION WILL END -->
+
+                            <h3>Reflect and review</h3>
+
+                            <p>Demo a few of the remixed pages and ask students to share what they changed. Consider prompts such as:</p>
+
+                            <div class="well example">
+                                <p><em>What version of the website do you like more? What else would you remix? What do you wish you could remix but couldn’t? Why not? How else can you find media that you can remix?</em></p>
+                            </div>
+
+                            <p>If time permits, <b>invite students to continue by remixing their partner's new page.</b> You can discuss how the web makes it easy to modify content in this way and that we're always remixing and building on what others have made.</p>
+
+                            <p>You can also discuss credibility and how understanding remix changes how you read or interpret information, as well as think about who authored it. This can build on <a href="session01-kraken.html">previous Kraken activity.</a></p>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </article>
+    <!-- ADD A LINK TO WHAT COMPETENCY/SESSION PEOPLE MIGHT LIKE TO EXPLORE NEXT! -->
+
+    <footer class="footer">
+        <a href="session02-puzzlebox.html"><button class="btn literacy-color-composing">Writing the Web: HTML Puzzle Boxes</button></a> <!--Licensing Information-->
+
+        <div class="license">
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
