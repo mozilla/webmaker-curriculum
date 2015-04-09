@@ -257,3 +257,9 @@ body {
 	text-align:center;
 	color:white;
 }
+
+.small{
+	font-style: italic;
+	color: #FFF;
+	padding-bottom: 10%;
+}
