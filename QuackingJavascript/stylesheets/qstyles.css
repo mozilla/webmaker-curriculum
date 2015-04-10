@@ -1,4 +1,6 @@
 .img-screenshot {
-  width: 60%;
   padding-bottom: 7px;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
 }
