@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="../stylesheets/print.css" media="print">
 		<link rel="stylesheet" href="../stylesheets/styles.css" media="screen">
 
-		<title>Javascript Basics | Session one Quacking the Code - Javascript and variables</title>
+		<title>Javascript Basics | Session two Magic Numbers - Javascript and maths</title>
 	</head>
 
 	<body>
@@ -94,19 +94,27 @@
 
 					</ul>
 
-					<h4>Learning Outcomes</h4>
+					<h4>Learning Objective</h4>
 
 					<ul>
 						<li>
-							You can identify that Javascript is a text coding language used for the web
+							Understand variables and how they work in text coding
 						</li>
+					</ul>
 
+					<h4>Learning Outcomes</h4>
+
+					<ul>
 						<li>
 							You understand how variables in text coding work and what they are used for
 						</li>
 
 						<li>
-							You can use JS to add your own text to web pages
+							You understand and use different data types to output text and numbers.
+						</li>
+
+						<li>
+							You can describe complex arithmetic calculations and understand different assignment types
 						</li>
 
 					</ul>
@@ -131,15 +139,14 @@
 						<h2><a href="http://mozilla.github.io/webmaker-curriculum/QuackingJavascript/">Section 1. Introduction to Javascript</a></h2>
 						<br>
 
-						<h3>Quacking JS Code</h3>
+						<h3>Quacking JS Maths</h3>
 
 						<p id="made-by">
 							Made by <a href="http://digitalducks.org/">Mick Fuzz</a> and as a contribution to be remixed for Clubs by <a href="https://webmaker.org/mentor">Mozilla</a>.
 						</p>
 
 						<p class="lead">
-							avascript is one of the key parts of the Web (together with HTML and CSS). Without it pages would be
-							pretty static as JS creates interactivity. We can say that Javascript helps make the web dance.
+							Javascript is one of the key parts of the Web (together with HTML and CSS). Here we learn how to do some basic maths with Javascript.
 						</p>
 
 						<p class="leadTime">
@@ -169,7 +176,7 @@
 							<div>
 								<div class="time">
 									<p>
-										10
+										5
 										<br>
 										min
 									</p>
@@ -178,38 +185,41 @@
 								<h3>Introduction</h3>
 
 								<p>
-									Give a <b>short presentation about the mechanics of the web to your learners.</b>
+									Give a <b>short presentation about maths and Javascript.</b>
 								</p>
 
 								<div class="well example">
 									<ul>
 										<li>
-											What are the three main elements of HTML5 (HTML, css and Javascript)?
+											Javascript has many uses on the web from games, to chat pages, shopping etc.
 										</li>
 
 										<li>
-											Do you know any online games that use Javascript?
+											Most of these uses involve using numbers and maths.
 										</li>
 
 										<li>
-											What else is it used for? (validation of forms, interactive page elements, chat elements of pages)
+											A game which uses numbers and maths is <a href="http://orteil.dashnet.org/cookieclicker/"> Cookie Clicker</a> . Have you tried it?
 										</li>
 									</ul>
 								</div>
 
 								<p>
-									<b>Then review these online games and tools <a href="http://popcorn.webmaker.org"> Popcorn Maker</a> <a href="http://cubeslam.com"> Cube Slam</a> </b> to have a bit of fun and see the potential for Javascript.
-								</p>
-
-								<p>
-									Javascript is one of the main sparks that make the web dance
+									Javascript uses variables to rememeber and work with data. In the last session we were using variables to store the names of things.
+									In this game Javascript variables are used to keep track of how many cookies we have created.
 								</p>
 								<figure>
-									<a href="https://search.creativecommons.org" title="Making the web dance - needs replacing with CC image"><img src="images/dance.gif" alt="making the web dance" class="img-example"></a>
+									<a href="http://orteil.dashnet.org/cookieclicker/" title="Clicking cookies"><img src="images/cookie_clicker_1.png" alt="image of the cookie clicker website" class="img-example"></a>
 									<figcaption>
-										Feel the Script animate your bones</a>
+										Click that Cookie</a>
 									</figcaption>
 								</figure>
+								<p>
+									&nbsp;
+								</p>
+								<p>
+									Each time we click the cookie the number value of the variable goes up by one, simples!
+								</p>
 
 							</div>
 						</li>
@@ -224,14 +234,11 @@
 									</p>
 								</div>
 
-								<h3>Activity One  - Get started with Variables</h3>
+								<h3>Activity One  - Use the console to play with number variables</h3>
 
 								<p>
-									Keywords - variable, value, assign, code, text coding
-								</p>
-								<p>
-									Split learners into <b>groups of 2 or individuals if there enough computers</b> explain that the challenge is to <b> find out what is happening
-									under the hood of the browser. We are entering a new world which is used by most people but also hidden knowledge.</b>
+									Split learners into <b>groups of 2 or individuals if there enough computers</b> explain that we will use the console to find out more about how
+									numbers and maths are done in Javascript.
 								</p>
 
 								<p>
@@ -251,144 +258,154 @@
 											Click on Console
 										</li>
 										<li>
-											Press F12, find the Console (see image), type myName into the Console and press the Enter key
+											Press F12, find the Console and enter the following commands
 										</li>
 
 									</ul>
 								</div>
 
 								<figure>
-									<img src="images/console_image_1.png" alt="screenshot of console image" class="img-screenshot"></a>
+									<img src="images/console_numbers_1.png" alt="screenshot of console image" class="img-example"></a>
 									<figcaption>
-										Press F12, find the Console (see image), type myName into the Console and press the Enter key.
+										Press F12, find the Console type the following commands into the Console and press the Enter key.
 									</figcaption>
 								</figure>
 								<p>
 									&nbsp;
-								</p>
-								<p>
-									Give the students the following info:
 								</p>
 
 								<div class="well example">
-									<ul>
-										<li>
-											The console is normally used to find out errors on our page.
-										</li>
+									<ol>
 
 										<li>
-											Here we will use it to find out more about Javascript.
-										</li>
-
-										<li>
-											Now type the following (you can change the name to your own) and press Enter.
-										</li>
-									</ul>
-								</div>
-								<figure>
-									<img src="images/console_image_2.png" alt="screenshot of console image" class="img-screenshot"></a>
-									<figcaption>
-										Assign a value of a name to the variable myName
-									</figcaption>
-								</figure>
-
-								<p>
-									&nbsp;
-								</p>
-								<p>
-									What we just did in the language of coding was to give a value of "Derek the Duck" to a new varible called my name. Next try this:
-								</p>
-
-								<div class="well example">
-									<ul>
-										<li>
-											Now type and enter myName again.
-										</li>
-
-										<li>
-											What are the results?
-										</li>
-
-									</ul>
-								</div>
-								<figure>
-									<img src="images/console_image_3.png" alt="screenshot of console image" class="img-screenshot">
-									<figcaption>
-										Have a look at the results.
-									</figcaption>
-								</figure>
-								<p>
-									&nbsp;
-								</p>
-								<h4> What did this teach us about Javascript and variables? </h4>
-								<p>
-
-									These lines of code create and then print out a variable. A variable is a way of storing a number, name or some other information. You can think of it as a space in the memory of computer or phone. When you save a number in your phone, it is being kept as a variable.
-									Let's look at our lines of code.
-								</p>
-								<figure>
-									<img src="images/console_image_4.png" alt="screenshot of console image" class="img-screenshot" >
-									<figcaption>
-										What just happened?
-									</figcaption>
-								</figure>
-
-								<p>
-									&nbsp;
-								</p>
-								<div class="well example">
-									<ul>
-										<li>
-											In <b>a</b> We asked to be shown the value of the “variable” called myName. There was an undefined error - because we haven’t created a variable called myName yet.
-										</li>
-
-										<li>
-											In <b>b</b> we do create a variable of myName and give it a value. In my example this is like the instruction “Set the variable myName to be a value of Derek the Duck ”.
+											2 + 3
 										</li>
 										<li>
-											In <b>c</b> we can see that this has worked. We Type the name of the variable and the value appears on the Console.
+											5 - 3
 										</li>
-									</ul>
+										<li>
+											7 * 3
+										</li>
+										<li>
+											8 / 2
+										</li>
+										<li>
+											var a = 12
+											<br/>
+											var b = 3
+											<br/>
+											a / b
+										</li>
+										<li>
+											"2" + "3"
+										</li>
+										<li>
+											"hello " + "derek"
+										</li>
+										<li>
+											2 + “3”
+										</li>
+
+									</ol>
 								</div>
 
-
 								<p>
-									This video sums it all up pretty well too!
+									The simple way to do adding, subtracting, multipliction and division is to user the following Javascript maths <strong>Operators</strong>?
 								</p>
-<iframe width="420" height="315" src="https://www.youtube.com/embed/jLN9e6oAC9U" frameborder="0" allowfullscreen></iframe>
+								<ul>
+									<li>
+										<strong>+</strong> : Add Operator
+									</li>
+									<li>
+										<strong>-</strong> : Subtract Operator
+									</li>
+									<li>
+										<strong>*</strong> : Multiply Operator
+									</li>
+									<li>
+										<strong>/</strong> : Divide Operator
+									</li>
+								</ul>
+
 							</div>
 						</li>
-
 						<li style="border-bottom:none;">
 							<div>
 								<div class="time">
 									<p>
-										25
+										5
 										<br>
 										min
 									</p>
 								</div>
 
-								<h3>Remixing a page: Custard Pies Tour</h3>
+								<h3>Discussion: Why does 2 + 3  give a different result to "2" + "3"</h3>
+								<p>
+									Wait what is happening? What are the answers to 6 and 8 different from what we got for 1?
+								</p>
+								<p>
+									The answers to 1,6,8 are different because we are adding variables of different types of data.
+								</p>
+								<p>
+									We say that the variable has a different Datatype.
+								</p>
+
+								<ul>
+									<li>
+										2 	is a datatype of  number
+									</li>
+									<li>
+										“2” 	is a datatype of string
+									</li>
+								</ul>
 
 								<p>
-									But there is a problem! Katy has not decided the name of the tour yet. She has three ideas and hasn’t decided yet. It is going to be either “Custard Pies”, “Fantastic Flans”, “Underwater Wonder World” or “The Cupcake Confusion”.
+									Using the + operator has a different effect with strings and number variables. It adds together numbers with addition but strings get put next to each other like being stuck together end to end with glue. In coding this is called "concatenation".
 								</p>
 
 								<p>
-									Our team has written a web page using Javascript to make it easy to change the name of the tour. Our job is to update the page with the correct name.
-								</p>
+									<strong>Be careful!:</strong> If we use + with a string and a number, then both the string and number are treated as strings so the the result is a string.
 
+								</p>
+								
+									</div>
+						</li>
+
+						<li>
+							<div>
+								<div class="time">
+									<p>
+										15
+										<br>
+										min
+									</p>
+								</div>
+
+								<h3>Activity Two  - Use the console to play with number variables</h3>
+
+								<p>
+								
 								<figure>
 
-									<a href = "https://mchesterman.makes.org/thimble/NTY5NDQyNTYw/js-starter-activity-change-katys-tour-name"><img src="images/katy-perry-super-bowl-sharks.jpg" alt="images of Katy Perry activity" class="img-example" ></a>
+									<a href = "https://mchesterman.makes.org/thimble/LTE0MDc0NTA2MjQ=/clicking-with-numbers"><img src="images/tshirt_shop_800.jpg"  class="img-example" alt="images of a T-Shirt Shop" ></a>
 									<figcaption>
-										Thimble remix of a Promotional Tour.
+										Create a T-Shirt Shop.
 									</figcaption>
 								</figure>
 
-								<!-- Image CC - BY from wikipedia - http://goo.gl/QzvZBp
+								<!-- Image CC - BY from https://www.flickr.com/photos/shankaronline/7904727288
 								-->
+							</div>
+						</li>
+						<li style="border-bottom:none;">
+							<div>
+								<div class="time">
+									<p>
+										5
+										<br>
+										min
+									</p>
+								</div>
 								<p>
 									&nbsp;
 								</p>
@@ -396,42 +413,24 @@
 								<div class="well example">
 									<ul>
 										<li>
-											Go to <a href = "https://mchesterman.makes.org/thimble/NTY5NDQyNTYw/js-starter-activity-change-katys-tour-name">the Tour Promotion page -  here </a> or http://goo.gl/F37HOk
+											Go to <a href = "https://mchesterman.makes.org/thimble/LTE0MDc0NTA2MjQ=/clicking-with-numbers"> T Shirts for sale activity  -  here </a>
+
 										</li>
 
 										<li>
 											click REMIX (green button on the top right)
 										</li>
 										<li>
-											You can see the code of the page on the left window and the end result on the right.
-											Don’t worry you don’t need to understand all the code we are just changing one thing
+											Read the instructions in the code we can change a page to add JavaScript to add a price of the T-Shirt in Euros to the page.
 										</li>
-										<li>
-											Find where the value of the variable tourName is set (clue it’s near the top) & Change the value of this variable from Custard Pies to something else
-										</li>
-										<li>
-											You will see all mentions of the tour on the page on the right get updated.
-											How many mentions of your tour name are there on the right?
-										</li>
-										<li>
-											Look at the code. Can you find the code used to <strong>write the value of the variable tourName into the document</strong>?
-										</li>
-										<li>
-											To check can you find two mentions of tourName in the code and see where they appear in the web page on the right?
-										</li>
+
 									</ul>
 
 								</div>
 								<p>
-									<strong>Answer: </strong>The code used to write our variable to the page is 									<pre>
-&lt;script&gt;
-document.write(tourName)
-&lt;/script&gt;
-									</pre>
-								</p>
+									<strong>Support Tip: </strong>
+									If one TShirt was £7.60 and Euros were 0.67 to the pound you work this out by multiplying the £7.60 x 0.67
 
-								<p>
-									<strong>Bonus Question: </strong>All javascript needs to go inside &lt;script&gt; tags in an HTML page. What happens if you remove the &lt;script&gt; tags
 								</p>
 
 							</div>
@@ -446,38 +445,83 @@ document.write(tourName)
 									</p>
 								</div>
 
-								<h3>Taking it further</h3>
+								<h3>Recap: Hacking Cookie Clicker</h3>
 								<p>
-									Here are some ideas for taking what you have learned further.
+									In your browser go to cookie clicker game website
+									Press F12 - go to the console and Enter
 								</p>
+								<ul>
+									<li>
+										Game.cookies = 23570
+									</li>
+								</ul>
 
 								<figure>
-									<img src="images/atthecontrols_octonauts_gup_800.jpg" alt="at the controls" class="img-example">
+									<img src="images/cookie_clicker_2.png" alt="hacking cookie clicker" class="img-example">
 									<figcaption>
-										Variables put you at the controls.
+										Cheated Cookies taste just as sweet!
 									</figcaption>
 								</figure>
 
-								<!-- Image attribution  - At the controls image  https://www.flickr.com/photos/tamaleaver/8122306948/  https://creativecommons.org/licenses/by/2.0/ -->
 								<p>
 									&nbsp;
 								</p>
 
+								<p>
+									What happens? The equal sign assigns the number value on the right to the variable on the left (Game.cookies). Because this variable is what is used by the cookie clicker game to keep a track of your score, the number used on the game goes up on your page. Amazeballs! You've hacked it!
+								</p>
+
+								<h4>Smooth Operators</h3>
+								<p>
+									There are other operators we can use too. What about if we wanted to add on 10 cookies to our total?
+								</p>
+								<p>
+									How about we want to take 100 cookies off of our total? Find out how to do this by entering the following instructions in the console window when you are playing cookie clicker.
+								</p>
 								<div class="well example">
 									<ul>
 										<li>
-											Can you remix the page much more to change it much more. Change the name of the artist. Can you change the photos and logos used? What about the text of the page.
+											Game.cookies += 10
 										</li>
 
 										<li>
-											What about variables in javascript? This example showed us the power of variables. If we change the value of a variable in one place then every time it is used the new value will be used.
+											Game.cookies -= 100
+
 										</li>
 										<li>
-											Can you think of a website you might want to make. Can you imagine a page on this website where you could use a variable to give you the ability to change something in one place, and for all mentions of it to be updated everywhere in all your pages of the site. Can you think of examples of how this is used in other real life websites?
+											Game.cookies *= 4
 										</li>
 									</ul>
-								</div>
 
+								</div>
+								<p>
+									We can see that if we put a plus sign infront of our equals sign that it add on the number on the right to the current value of the variable on the left. We call this an <strong>addition assignment</strong> operator. The same idea works for subtracting, mulitplying etc.
+								</p>
+								<p>
+									What have we learned?
+
+								</p>
+								<ul>
+									<li>
+										We've learned about the different Data Types of number and String in Javascript and that they do different things
+									</li>
+
+									<li>
+										We've learned about how use Arithmetic Operators and Assignement Operators like the Addition Assignment Operator (+=)
+									</li>
+									<li>
+										And hopefully we've learned how to make a pointless game like Cookie Clicker even more pointless!
+									</li>
+								</ul>
+								<figure>
+									<img src="images/cookie_clicker_3.png" alt="hacking cookie clicker" class="img-example">
+									<figcaption>
+										Let's Give up!
+									</figcaption>
+								</figure>
+								<p>
+									&nbsp;
+								</p>
 							</div>
 
 						</li>
@@ -489,14 +533,13 @@ document.write(tourName)
 			<footer class="footer">
 				<a href="http://mozilla.github.io/webmaker-curriculum/WebLiteracyBasics-I/session01-pingkong.html">
 				<button class="btn literacy-color-webmechanics">
-					Quacking Javascript: Javascript and Maths
+					Quacking Javascript: Javascript and Decisions
 				</button></a><!--Licensing Information-->
 
 				<div class="license">
 					<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
 				</div>
 
-				<!-- Image attribution  - At the controls image  https://www.flickr.com/photos/tamaleaver/8122306948/ -->
 
 			</footer>
 		</div>
