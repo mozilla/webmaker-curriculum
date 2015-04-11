@@ -374,11 +374,11 @@
 								</p>
 
 								<p>
-									To add images to your page you need to add the following code to your page.
+									To add images to your page you need to add code similar to the following  to your page.
 
 								</p>
 								<p>
-									<strong></strong>&lt;img src="http://digitalducks.org/chips.png"&gt;</strong>
+									<strong>&lt;img src="http://digitalducks.org/chips.png" width = "300"&gt;</strong>
 								</p>
 
 								<p>
@@ -388,11 +388,17 @@
 
 								<img src="images/saveimageas_2.png" alt="save image URL" class="img-screenshot">
 								<p>
-
-									Be careful if you are using Google Images, if what you copy and paste is very long and doesn't end with a jpg, gif or png then something is not right. When you are previewing images, click on View Image and try again.
+									Be careful: If you are using Google Images, if what you copy and paste is very long and doesn't end with a jpg, gif or png then something is not right. When you are previewing images, click on View Image and try again.
 								</p>
-
-								<!-- Image source http://commons.wikimedia.org/wiki/File:Dora_The_Explorer_%282056486897%29.jpg  -->
+								
+																<p>
+									Also be careful about quotation marks. 
+				We tell javascript that our variable is a String by putting it in quotion marks. The danger is that if there are also quotatin marks in our string that we'll make an error. To avoid this we do a thing called escaping quotation marks that we want to keep inside our string and we do this by putting a \ infront of them. See the following image for an example. 
+								</p>
+								
+								
+	<img src="images/thimble_simple_2.png" alt="save image URL" class="img-example">
+								
 
 								<p>
 									&nbsp;
@@ -428,6 +434,9 @@
 										</li>
 										<li>
 											We have to be very exact about the data and order we put them in for our sequences to work.
+										</li>
+										<li>
+											Sometimes we need to "escape" quotation marks if they are present inside String variables.
 										</li>
 									</ul>
 								</div>
