@@ -166,7 +166,7 @@
 								</p>
 
 								<p>
-									Then do a follow up bit of research on Javascript to help if students run in to trouble. <a href="http://www.codecademy.com/courses/getting-started-v2/2/3">This section on Codecademy </a> is a good way to prepare.
+									Find out more about loops in Javascript to help if students run in to trouble. <a href="http://people.mozilla.org/~cmills/coding-beginners/lesson3.html">This page from Chris Mills has a great example of a code loop an puts it into good context Chris Mills' course</a>. .  
 								</p>
 
 							</div>
@@ -185,21 +185,19 @@
 								<h3>Introduction</h3>
 
 								<p>
-									It's time to meet another Data Type which will help us to make web pages. 
-									</p>
+									It's time to meet another Data Type which will help us to make web pages.
+								</p>
 
 								<p>
-									This Data Type is called an Array and is very good at keeping lists of things. 
+									This Data Type is called an Array and is very good at keeping lists of things.
 
 								</p>
-								
-								
+
 								<div style='position: relative; width: 100%; height: 0px; padding-bottom: 60%;'>
 									<iframe style='position: absolute; left: 0px; top: 0px; width: 100%; height: 100%'  src="https://www.youtube.com/embed/eYBKNoi-8bo" frameborder="0" allowfullscreen></iframe>
 								</div>
 
-
-									Lets imagine we want to create a list of opening times for a swimming pool. 
+								Lets imagine we want to create a list of opening times for a swimming pool.
 								</p>
 
 								<div class="well example">
@@ -229,17 +227,16 @@
 
 									</ul>
 								</div>
-								
-								<p>
-									There is a lot of repetion there. Computer coders are paid to be lazy and they have to ask. Is there a way of writing some code to do this easier and quicker.  
-								</p>
-								<p>
-									What if we put the Days and times in an array?  
-								</p>
-
 
 								<p>
-									Let's look at an example of an Array in a Thimble page which shows two ways of listing the opening times of a swimming pool. 
+									There is a lot of repetion there. Computer coders are paid to be lazy and they have to ask. Is there a way of writing some code to do this easier and quicker.
+								</p>
+								<p>
+									What if we put the Days and times in an array?
+								</p>
+
+								<p>
+									Let's look at an example of an Array in a Thimble page which shows two ways of listing the opening times of a swimming pool.
 								</p>
 
 								<figure>
@@ -248,9 +245,9 @@
 										Using an Array to list swimming pool times
 									</figcaption>
 								</figure>
-								
+
 								<!-- Img CC BY https://www.flickr.com/photos/boston_public_library/7489706852/ -->
-								
+
 								<p>
 
 							</div>
@@ -269,27 +266,50 @@
 								<h3>Activity One - Creating a list from an Array and a For Loop </h3>
 
 								<p>
-									In the previous Thimble example we saw an Arrays in use but what we really needed was a way of looping through all the values of the array to save us the work of repeating the HTML code. What we need is called the For Loop.    						 
+									In the previous Thimble example we saw an Arrays in use but what we really needed was a way of looping through all the values of the array to save us the work of repeating the HTML code. What we need is called the For Loop.
 								</p>
 
-								<h4>
-									Meet the For Loop
-								</h4>
+								<h4> Meet the For Loop </h4>
 
 								<p>
-									Have a look at this video to see how the For Loop can help us.    						 
+									Have a look at this video to see how the For Loop can help us.
 								</p>
 
-								
 								<div style='position: relative; width: 100%; height: 0px; padding-bottom: 60%;'>
 									<iframe style='position: absolute; left: 0px; top: 0px; width: 100%; height: 100%'  src="https://www.youtube.com/embed/NEPZ-90JNCc" frameborder="0" allowfullscreen></iframe>
 								</div>
-								
-
-								<p>
-									Now take a look at <a href = "https://mchesterman.makes.org/thimble/MTg2NDE3MjAzMg==/swimming-pool-times-using-a-for-loop">this Thimble activity</a> which uses a For Loop to write our Swimming Pool times.     						 
+							<p>
+									&nbsp;
 								</p>
+								<p>
+									Now have a look at this example of a code loop from <a href="http://people.mozilla.org/~cmills/coding-beginners/lesson3.html">Chris Mills' course</a>.
+								</p>
+								
+								<pre class=" language-javascript"><code class=" language-javascript"><span class="token keyword">for</span><span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> <span class="token number">20</span> <span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+ <span class="token comment" spellcheck="true"> // code in here can handle guesses 1 - 10, which become
+</span> <span class="token comment" spellcheck="true"> // guess i in variable terms
+</span><span class="token punctuation">}</span></code></pre>
 
+<p>Loops nearly always involve a single variable being iterated a certain number of times during the course of the loop. This can be called anything you like, but standard convention dictates that it be called <code>i</code>, mainly due to laziness!</p>
+
+<p>Inside the <code>for()</code> brackets you have three values separated by semi-colons:</p>
+
+<ol>
+  <li><code>i = 0</code> — this is the starting value of the variable to be iterated.</li>
+  <li><code>i &lt;= 20</code> — this is the "exit condition" of the loop. So in this case, the loop will stop when <code>i</code> is less than or equal to 20. When the value of <code>i</code> hits 10 the loop ends, and the browser moves on to whatever comes next in the code. The loop needs an exit condition; if it didn't have one, the loop would never end, and the browser would just keep running the loop forever until it crashed. This is called an "infinite loop".</li>
+  <li><code>i++</code> — this is the "iterator". Each time the loop has finished running, the iterator modifies the value of <code>i</code> in some way and then the loop is run again (unless of course that iteration is the last one, and the loop doesn't run again). <code>i++</code> means "add 1 to i each time", and is shorthand for <code>i = i + 1</code>.</li>
+</ol>
+
+								
+										<h4> Using a For Loop </h4>
+								
+								
+								<p>
+									Now take a look at <a href = "https://mchesterman.makes.org/thimble/MTg2NDE3MjAzMg==/swimming-pool-times-using-a-for-loop">this Thimble activity</a> which uses a For Loop to write our Swimming Pool times.
+								</p>
+							<p>
+									&nbsp;
+								</p>
 								<figure>
 									<a href = "https://mchesterman.makes.org/thimble/MTg2NDE3MjAzMg==/swimming-pool-times-using-a-for-loop"><img src="images/swimming_pool_ice_800.jpg"  class="img-example" ></a>
 									<figcaption>
@@ -299,30 +319,87 @@
 								<p>
 									&nbsp;
 								</p>
+								<div class="well example">
+									<ul>
 
+										<li>
+											
+										</li>
+										<li>
+											 Point your browser to  <a href = "https://mchesterman.makes.org/thimble/MTg2NDE3MjAzMg==/swimming-pool-times-using-a-for-loop">this Thimble activity</a> which 
+										</li>
+										<li>
+											Click on the Remix button on the top right of the page. 
+										</li>
+										<li>
+											Look at the code. We can see that there are two Arrays one with Days of the week and another with opening times. 
+										</li>
+										<li>
+											There is a for loops there which repeats
+										</li>
+										<li>
+											On Saturday our opening times are 9.00 - 16-00
+										</li>
+										<li>
+											On Sunday our opening times are 10.00 - 16-00
+										</li>
 
+									</ul>
+								</div>
 
 							</div>
 						</li>
 
 
-
-													<li style="border-bottom:none;">
+						<li>
 							<div>
 								<div class="time">
 									<p>
-										5
+										10
 										<br>
 										min
 									</p>
 								</div>
 
-								<h3>Discussion: What did we learn</h3>
+								<h3>Discussion: What is iteration</h3>
+
 								<p>
-									Can you find the code in the Daddy or Chips page which pops up a question box?
+									If you are working as part of a group then have a discussion about the following ideas to check you understand. Use exampls.
+								</p>
+
+								<ul>
+									<li>
+										Iteration in coding is a way of repeating things easily.
+									</li>
+									<li>
+										We can use the Data Type of Array, and For Loops to make it easy to repeat things like printing out things to a web page.
+									</li>
+									
+									<li>
+										The start of a For Loop has three parts, a looping variable, an instruction about how many loops to do, a way of changing the looping variable. 
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+
+						<li>
+							<div>
+								<div class="time">
+									<p>
+										30
+										<br>
+										min
+									</p>
+								</div>
+
+								<h3>Activity Two: Create your own web page</h3>
+								<p>
+									You have learned a lot in this course. You know about variables which can hold different Data Types, we know about maths and different operators, we can make decisions and now use loops to save us work. 
 								</p>
 								<p>
-									What did you learn about if statements?
+									If we put all this knowledge together we can create an amazing. 
 								</p>
 								<p>
 									Have a discussion using questions to check that your group understand the following ideas.
@@ -333,7 +410,43 @@
 										Iteration in coding is a way of repeating things easily.
 									</li>
 									<li>
-										We can use the Data Type of Array, and the coding formation of a For Loop to make it easy to repeat things like priniting out things to a web page. 
+										We can use the Data Type of Array, and the coding formation of a For Loop to make it easy to repeat things like priniting out things to a web page.
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+						<li>
+							<div>
+								<div class="time">
+									<p>
+										10
+										<br>
+										min
+									</p>
+								</div>
+
+								<h3>Sharing what we have learned</h3>
+								<p>
+									Let's share what we have created and use it to find example of the things we have learned.
+								</p>
+								<p>
+									Because we have created our work in Thimble we can share the links to our work, look at the pages of others and then 
+								</p>
+								<p>
+									Can you find 3 examples of the use of variables (at least one which is inputted by a user) 
+								</p>
+								<p>
+									Have a discussion about  the following ideas.
+								</p>
+
+								<ul>
+									<li>
+										Iteration in coding is a way of repeating things easily.
+									</li>
+									<li>
+										We can use the Data Type of Array, and the coding formation of a For Loop to make it easy to repeat things like priniting out things to a web page.
 									</li>
 
 								</ul>
