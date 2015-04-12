@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1">
+		<link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/makerstrap/makerstrap.complete.min.css">
+		<link rel="stylesheet" href="../stylesheets/styles.css" media="screen">
+		<link rel="stylesheet" href="../stylesheets/print.css" media="print">
+		<link rel="stylesheet" href="stylesheets/qstyles.css" media="screen">
+
+		<title>Javascript Basics | Session Five - Javascript and Iteration</title>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-webmaker">
+			<div class="container">
+				<div>
+					<!-- toggle button for mobile -->
+					<button type="button" class="navbar-toggle" ng-click="collapseToggle()">
+						<span class="sr-only">Toggle navigation</span>
+					</button>
+					<!-- logo -->
+					<a href="#" class="logo webmaker-logo"><img src="https://webmaker.org/img/logo.png"></a>
+
+					<ul class="nav navbar-nav navbar-right navbar-collapse text-center-xs collapse">
+						<li>
+							<a href="https://twitter.com/hashtag/teachtheweb">#TeachTheWeb</a>
+						</li>
+
+						<li>
+							<a href="http://discourse.webmaker.org/category/clubs">Discussion</a>
+						</li>
+
+						<li>
+							<a href="https://github.com/mozilla/webmaker-curriculum/blob/gh-pages/WebLiteracyBasics-I/session01-kraken.html">View on Github</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="wrapper">
+			<aside class="aside">
+				<div class="image">
+					<img src="images/rubberduck_square.jpg"><a href="http://digitalducks.org" class="attribution" alt ="http://en.wikipedia.org/wiki/Rubber_duck#/media/File:Rubber_Duck_%288374802487%29.jpg"><i class="fa fa-camera"></i> Eva Rinaldi</a>
+				</div>
+
+				<div class="goals">
+					<div class="literacy">
+						<h4>Web Literacy Competencies</h4><a href="https://webmaker.org/en-US/resources/literacy/weblit-CodingScripting">
+						<button class="btn literacy-color-remixing">
+							Coding / Scripting
+						</button></a><a href="https://webmaker.org/en-US/resources/literacy/weblit-Composing">
+						<button class="btn literacy-color-composing">
+							Composing for the Web
+						</button></a>
+					</div>
+
+					<div class="literacy">
+						<h4>GSCE UK areas</h4><a href="https://github.com/mozilla/webmaker-curriculum/wiki/Map-UK-GCSE-Curriculum-to-Webmaker-Club-curriculum-%28and-Web-Literacy-Map-v1.1%29">
+						<button class="btn literacy-color-remixing">
+							Programming concepts
+						</button></a><a href="https://github.com/mozilla/webmaker-curriculum/wiki/Map-UK-GCSE-Curriculum-to-Webmaker-Club-curriculum-%28and-Web-Literacy-Map-v1.1%29">
+						<button class="btn literacy-color-sharing">
+							Selection
+						</button></a>
+					</div>
+
+					<h4>Audience</h4>
+					<ul>
+						<li>
+							8+
+						</li>
+						<li>
+							beginner coders
+						</li>
+					</ul>
+
+					<h4>Materials</h4>
+
+					<ul>
+						<li>
+							Net Connection
+						</li>
+
+						<li>
+							Computer
+						</li>
+
+						<li>
+							Web browser
+						</li>
+
+					</ul>
+
+					<h4>Learning Objective</h4>
+
+					<ul>
+						<li>
+							Understand and use if statements to do iteration in web pages
+						</li>
+					</ul>
+
+					<h4>Learning Outcomes</h4>
+
+					<ul>
+						<li>
+							You will create a webpage including with a lists of contents in arrays.
+						</li>
+
+						<li>
+							You can output the contents of an array to the page using a for loop.
+						</li>
+
+						<li>
+							You will create your own page using a for loop to create web page content.
+						</li>
+
+					</ul>
+
+					<h4>How learners become mentors</h4>
+
+					<ul>
+						<li>
+							If some students move faster or are more confident in the activity, ask them to peer mentor another group or individuals.
+						</li>
+
+						<li>
+							Conclude by prompting students to teach this activity to their friends and family.
+						</li>
+					</ul>
+				</div>
+			</aside>
+
+			<article class="main">
+				<div>
+					<hgroup class="text-light">
+						<h2><a href="http://mozilla.github.io/webmaker-curriculum/QuackingJavascript/">Session 4. Javascript and Selection</a></h2>
+						<br>
+
+						<h3>Iteration and for loops in JS</h3>
+
+						<p id="made-by">
+							Made by <a href="http://digitalducks.org/">Mick Fuzz</a> and as a contribution to be remixed for Clubs by <a href="https://webmaker.org/mentor">Mozilla</a>.
+						</p>
+
+						<p class="lead">
+							Javascript is one of the key parts of the Web (together with HTML and CSS). Here we learn how to make selection decisions from user input in Javascript.
+						</p>
+
+						<p class="leadTime">
+							<i class="fa fa-clock-o"></i> 45 minutes to an hour
+						</p>
+					</hgroup>
+				</div>
+
+				<div class="agenda">
+					<ul>
+						<li>
+							<div>
+								<h3>Preparation</h3>
+
+								<p>
+									First do the activity on your own</b> to become familiar with it.
+								</p>
+
+								<p>
+									Then do a follow up bit of research on Javascript to help if students run in to trouble. <a href="http://www.codecademy.com/courses/getting-started-v2/2/3">This section on Codecademy </a> is a good way to prepare.
+								</p>
+
+							</div>
+						</li>
+
+						<li>
+							<div>
+								<div class="time">
+									<p>
+										10
+										<br>
+										min
+									</p>
+								</div>
+
+								<h3>Introduction</h3>
+
+								<p>
+									It's time to meet another Data Type which will help us to make web pages. 
+									</p>
+
+								<p>
+									This Data Type is called an Array and is very good at keeping lists of things. 
+
+								</p>
+								
+								
+								<div style='position: relative; width: 100%; height: 0px; padding-bottom: 60%;'>
+									<iframe style='position: absolute; left: 0px; top: 0px; width: 100%; height: 100%'  src="https://www.youtube.com/embed/eYBKNoi-8bo" frameborder="0" allowfullscreen></iframe>
+								</div>
+
+
+									Lets imagine we want to create a list of opening times for a swimming pool. 
+								</p>
+
+								<div class="well example">
+									<ul>
+
+										<li>
+											On Monday our opening times are 9.00 - 17-00
+										</li>
+										<li>
+											On Tuesday our opening times are 9.00 - 17-00
+										</li>
+										<li>
+											On Wednesday our opening times are 9.00 - 17-00
+										</li>
+										<li>
+											On Thursday our opening times are 9.00 - 17-00
+										</li>
+										<li>
+											On Friday our opening times are 9.00 - 17-00
+										</li>
+										<li>
+											On Saturday our opening times are 9.00 - 16-00
+										</li>
+										<li>
+											On Sunday our opening times are 10.00 - 16-00
+										</li>
+
+									</ul>
+								</div>
+								
+								<p>
+									There is a lot of repetion there. Computer coders are paid to be lazy and they have to ask. Is there a way of writing some code to do this easier and quicker.  
+								</p>
+								<p>
+									What if we put the Days and times in an array?  
+								</p>
+
+
+								<p>
+									Let's look at an example of an Array in a Thimble page which shows two ways of listing the opening times of a swimming pool. 
+								</p>
+
+								<figure>
+									<a href = "https://mchesterman.makes.org/thimble/MTc5NzA2MzE2OA==/swimming-pool-times-array"><img src="images/swimming_pool_800.jpg"  class="img-example" ></a>
+									<figcaption>
+										Using an Array to list swimming pool times
+									</figcaption>
+								</figure>
+								
+								<!-- Img CC BY https://www.flickr.com/photos/boston_public_library/7489706852/ -->
+								
+								<p>
+
+							</div>
+						</li>
+
+						<li>
+							<div>
+								<div class="time">
+									<p>
+										10
+										<br>
+										min
+									</p>
+								</div>
+
+								<h3>Activity One - Creating a list from an Array and a For Loop </h3>
+
+								<p>
+									In the previous Thimble example we saw an Arrays in use but what we really needed was a way of looping through all the values of the array to save us the work of repeating the HTML code. What we need is called the For Loop.    						 
+								</p>
+
+								<h4>
+									Meet the For Loop
+								</h4>
+
+								<p>
+									Have a look at this video to see how the For Loop can help us.    						 
+								</p>
+
+								
+								<div style='position: relative; width: 100%; height: 0px; padding-bottom: 60%;'>
+									<iframe style='position: absolute; left: 0px; top: 0px; width: 100%; height: 100%'  src="https://www.youtube.com/embed/NEPZ-90JNCc" frameborder="0" allowfullscreen></iframe>
+								</div>
+								
+
+								<p>
+									Now take a look at <a href = "https://mchesterman.makes.org/thimble/MTg2NDE3MjAzMg==/swimming-pool-times-using-a-for-loop">this Thimble activity</a> which uses a For Loop to write our Swimming Pool times.     						 
+								</p>
+
+								<figure>
+									<a href = "https://mchesterman.makes.org/thimble/MTg2NDE3MjAzMg==/swimming-pool-times-using-a-for-loop"><img src="images/swimming_pool_ice_800.jpg"  class="img-example" ></a>
+									<figcaption>
+										Cold!!!
+									</figcaption>
+								</figure>
+								<p>
+									&nbsp;
+								</p>
+
+
+
+							</div>
+						</li>
+
+
+
+													<li style="border-bottom:none;">
+							<div>
+								<div class="time">
+									<p>
+										5
+										<br>
+										min
+									</p>
+								</div>
+
+								<h3>Discussion: What did we learn</h3>
+								<p>
+									Can you find the code in the Daddy or Chips page which pops up a question box?
+								</p>
+								<p>
+									What did you learn about if statements?
+								</p>
+								<p>
+									Have a discussion using questions to check that your group understand the following ideas.
+								</p>
+
+								<ul>
+									<li>
+										Iteration in coding is a way of repeating things easily.
+									</li>
+									<li>
+										We can use the Data Type of Array, and the coding formation of a For Loop to make it easy to repeat things like priniting out things to a web page. 
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+			</article>
+
+			<footer class="footer">
+				<a href="http://mozilla.github.io/webmaker-curriculum/WebLiteracyBasics-I/session01-pingkong.html">
+				<button class="btn literacy-color-webmechanics">
+					Quacking Javascript: Javascript and Decisions
+				</button></a><!--Licensing Information-->
+
+				<div class="license">
+					<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+				</div>
+
+			</footer>
+		</div>
+	</body>
+</html>
