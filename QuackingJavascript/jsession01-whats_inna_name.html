@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1">
+		<link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/makerstrap/makerstrap.complete.min.css">
+		<link rel="stylesheet" href="../stylesheets/styles.css" media="screen">
+		<link rel="stylesheet" href="../stylesheets/print.css" media="print">
+		<link rel="stylesheet" href="stylesheets/qstyles.css" media="screen">
+
+		<title>Javascript Basics | Session One Quacking the Code - Javascript and variables</title>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-webmaker">
+			<div class="container">
+				<div>
+					<!-- toggle button for mobile -->
+					<button type="button" class="navbar-toggle" ng-click="collapseToggle()">
+						<span class="sr-only">Toggle navigation</span>
+					</button>
+					<!-- logo -->
+					<a href="#" class="logo webmaker-logo"><img src="https://webmaker.org/img/logo.png"></a>
+
+					<ul class="nav navbar-nav navbar-right navbar-collapse text-center-xs collapse">
+						<li>
+							<a href="https://twitter.com/hashtag/teachtheweb">#TeachTheWeb</a>
+						</li>
+
+						<li>
+							<a href="http://discourse.webmaker.org/category/clubs">Discussion</a>
+						</li>
+
+						<li>
+							<a href="https://github.com/mozilla/webmaker-curriculum/blob/gh-pages/WebLiteracyBasics-I/session01-kraken.html">View on Github</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="wrapper">
+			<aside class="aside">
+				<div class="image">
+					<img src="images/rubberduck_square.jpg"><a href="http://digitalducks.org" class="attribution" alt ="http://en.wikipedia.org/wiki/Rubber_duck#/media/File:Rubber_Duck_%288374802487%29.jpg"><i class="fa fa-camera"></i> Eva Rinaldi</a>
+				</div>
+
+				<div class="goals">
+					<div class="literacy">
+						<h4>Web Literacy Competencies</h4><a href="https://webmaker.org/en-US/resources/literacy/weblit-CodingScripting">
+						<button class="btn literacy-color-remixing">
+							Coding / Scripting
+						</button></a><a href="https://webmaker.org/en-US/resources/literacy/weblit-Composing">
+						<button class="btn literacy-color-composing">
+							Composing for the Web
+						</button></a>
+					</div>
+
+					<div class="literacy">
+						<h4>GSCE UK areas</h4><a href="https://github.com/mozilla/webmaker-curriculum/wiki/Map-UK-GCSE-Curriculum-to-Webmaker-Club-curriculum-%28and-Web-Literacy-Map-v1.1%29">
+						<button class="btn literacy-color-remixing">
+							Programming concepts
+						</button></a><a href="https://github.com/mozilla/webmaker-curriculum/wiki/Map-UK-GCSE-Curriculum-to-Webmaker-Club-curriculum-%28and-Web-Literacy-Map-v1.1%29">
+						<button class="btn literacy-color-sharing">
+							Data Types
+						</button></a>
+					</div>
+
+					<h4>Audience</h4>
+					<ul>
+						<li>
+							8+
+						</li>
+						<li>
+							beginner coders
+						</li>
+					</ul>
+
+					<h4>Materials</h4>
+
+					<ul>
+						<li>
+							Net Connection
+						</li>
+
+						<li>
+							Computer
+						</li>
+
+						<li>
+							Web browser
+						</li>
+
+					</ul>
+
+					<h4>Learning Outcomes</h4>
+
+					<ul>
+						<li>
+							You can identify that Javascript is a text coding language used for the web
+						</li>
+
+						<li>
+							You understand how variables in text coding work and what they are used for
+						</li>
+
+						<li>
+							You can use JS to add your own text to web pages
+						</li>
+
+					</ul>
+
+					<h4>How learners become mentors</h4>
+
+					<ul>
+						<li>
+							If some students move faster or are more confident in the activity, ask them to peer mentor another group or individuals.
+						</li>
+
+						<li>
+							Conclude by prompting students to teach this activity to their friends and family.
+						</li>
+					</ul>
+				</div>
+			</aside>
+
+			<article class="main">
+				<div>
+					<hgroup class="text-light">
+						<h2><a href="http://mozilla.github.io/webmaker-curriculum/QuackingJavascript/">Section 1. What's in a Name?</a></h2>
+						<br>
+
+						<h3>Introduction to Javascript Code and Variables</h3>
+
+						<p id="made-by">
+							Made by <a href="http://digitalducks.org/">Mick Fuzz</a> and as a contribution to be remixed for Clubs by <a href="https://webmaker.org/mentor">Mozilla</a>.
+						</p>
+
+						<p class="lead">
+							Javascript is one of the key parts of the Web (together with HTML and CSS). Without it pages would be
+							pretty static as JS creates interactivity. We can say that Javascript helps make the web dance.
+						</p>
+
+						<p class="leadTime">
+							<i class="fa fa-clock-o"></i> 45 minutes to an hour
+						</p>
+					</hgroup>
+				</div>
+
+				<div class="agenda">
+					<ul>
+						<li>
+							<div>
+								<h3>Preparation</h3>
+
+								<p>
+									First do the activity on your own</b> to become familiar with it.
+								</p>
+
+								<p>
+									Then do a follow up bit of research on Javascript to help if students run in to trouble. The <a href="http://www.w3schools.com/js/"> W3 schools pages</a> or <a href="http://www.codecademy.com/tracks/javascript">the online course here </a> and <a href="http://people.mozilla.org/~cmills/coding-beginners/lesson2.html">Chris Mills' Javascript course</a> are all good resources.
+								</p>
+
+							</div>
+						</li>
+
+						<li>
+							<div>
+								<div class="time">
+									<p>
+										10
+										<br>
+										min
+									</p>
+								</div>
+
+								<h3>Introduction</h3>
+
+								<p>
+									Give a <b>short presentation about the mechanics of the web to your learners.</b>
+								</p>
+
+								<div class="well example">
+									<ul>
+										<li>
+											What are the three main elements of HTML5 (HTML, css and Javascript)?
+										</li>
+
+										<li>
+											Do you know any online games that use Javascript?
+										</li>
+
+										<li>
+											What else is it used for? (validation of forms, interactive page elements, chat elements of pages)
+										</li>
+									</ul>
+								</div>
+
+								<p>
+									<b>Then review these online games and tools <a href="http://popcorn.webmaker.org"> Popcorn Maker</a> & <a href="http://cubeslam.com"> Cube Slam</a> </b> to have a bit of fun and see the potential for Javascript.
+								</p>
+
+								<p>
+									Javascript is one of the main sparks that make the web dance
+								</p>
+								<figure>
+									<a href="https://search.creativecommons.org" title="Making the web dance - needs replacing with CC image"><img src="images/dance.gif" alt="making the web dance" class="img-example"></a>
+									<figcaption>
+										Feel the Script animate your bones</a>
+									</figcaption>
+								</figure>
+
+							</div>
+						</li>
+
+						<li>
+							<div>
+								<div class="time">
+									<p>
+										15
+										<br>
+										min
+									</p>
+								</div>
+
+								<h3>Activity One  - Get started with Variables</h3>
+
+								<p>
+									Keywords - variable, value, assign, code, text coding
+								</p>
+								<p>
+									Split learners into <b>groups of 2 or individuals if there enough computers</b> explain that the challenge is to <b> find out what is happening
+									under the hood of the browser. We are entering a new world which is used by most people but also hidden knowledge.</b>
+								</p>
+
+								<p>
+									Ask individuals / groups to follow these instructions:
+								</p>
+
+								<div class="well example">
+									<ul>
+
+										<li>
+											Open Firefox (or other browser)
+										</li>
+										<li>
+											Press F12 to bring up some tools
+										</li>
+										<li>
+											Click on Console
+										</li>
+										<li>
+											Press F12, find the Console (see image), type myName into the Console and press the Enter key
+										</li>
+
+									</ul>
+								</div>
+
+								<figure>
+									<img src="images/console_image_1.png" alt="screenshot of console image" class="img-screenshot"></a>
+									<figcaption>
+										Press F12, find the Console (see image), type myName into the Console and press the Enter key.
+									</figcaption>
+								</figure>
+								<p>
+									&nbsp;
+								</p>
+								<p>
+									Give the students the following info:
+								</p>
+
+								<div class="well example">
+									<ul>
+										<li>
+											The console is normally used to find out errors on our page.
+										</li>
+
+										<li>
+											Here we will use it to find out more about Javascript.
+										</li>
+
+										<li>
+											Now type the following (you can change the name to your own) and press Enter.
+										</li>
+									</ul>
+								</div>
+								<figure>
+									<img src="images/console_image_2.png" alt="screenshot of console image" class="img-screenshot"></a>
+									<figcaption>
+										Assign a value of a name to the variable myName
+									</figcaption>
+								</figure>
+
+								<p>
+									&nbsp;
+								</p>
+								<p>
+									What we just did in the language of coding was to give a value of "Derek the Duck" to a new varible called my name. Next try this:
+								</p>
+
+								<div class="well example">
+									<ul>
+										<li>
+											Now type and enter myName again.
+										</li>
+
+										<li>
+											What are the results?
+										</li>
+
+									</ul>
+								</div>
+								<figure>
+									<img src="images/console_image_3.png" alt="screenshot of console image" class="img-screenshot">
+									<figcaption>
+										Have a look at the results.
+									</figcaption>
+								</figure>
+								<p>
+									&nbsp;
+								</p>
+								<h4> What did this teach us about Javascript and variables? </h4>
+								<p>
+
+									These lines of code create and then print out a variable. A variable is a way of storing a number, name or some other information. You can think of it as a space in the memory of computer or phone. When you save a number in your phone, it is being kept as a variable.
+									Let's look at our lines of code.
+								</p>
+								<figure>
+									<img src="images/console_image_4.png" alt="screenshot of console image" class="img-screenshot" >
+									<figcaption>
+										What just happened?
+									</figcaption>
+								</figure>
+
+								<p>
+									&nbsp;
+								</p>
+								<div class="well example">
+									<ul>
+										<li>
+											In <b>a</b> We asked to be shown the value of the “variable” called myName. There was an undefined error - because we haven’t created a variable called myName yet.
+										</li>
+
+										<li>
+											In <b>b</b> we do create a variable of myName and give it a value. In my example this is like the instruction “Set the variable myName to be a value of Derek the Duck ”.
+										</li>
+										<li>
+											In <b>c</b> we can see that this has worked. We Type the name of the variable and the value appears on the Console.
+										</li>
+									</ul>
+								</div>
+
+								<p>
+									This video sums it all up pretty well too!
+								</p>
+								<iframe width="320" height="315" src="https://www.youtube.com/embed/jLN9e6oAC9U" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</li>
+
+						<li style="border-bottom:none;">
+							<div>
+								<div class="time">
+									<p>
+										25
+										<br>
+										min
+									</p>
+								</div>
+
+								<h3>Remixing a page: Custard Pies Tour</h3>
+
+								<p>
+									But there is a problem! Katy has not decided the name of the tour yet. She has three ideas and hasn’t decided yet. It is going to be either “Custard Pies”, “Fantastic Flans”, “Underwater Wonder World” or “The Cupcake Confusion”.
+								</p>
+
+								<p>
+									Our team has written a web page using Javascript to make it easy to change the name of the tour. Our job is to update the page with the correct name.
+								</p>
+
+								<a href = "https://mchesterman.makes.org/thimble/NTY5NDQyNTYw/js-starter-activity-change-katys-tour-name"> <img src="images/katy-perry-super-bowl-sharks.jpg"  class = "img-example"  alt="images of Katy Perry activity"> </a>
+
+								<!-- Image CC - BY from wikipedia - http://goo.gl/QzvZBp
+								-->
+								<p>
+									&nbsp;
+								</p>
+
+								<div class="well example">
+									<ul>
+										<li>
+											Go to <a href = "https://mchesterman.makes.org/thimble/NTY5NDQyNTYw/js-starter-activity-change-katys-tour-name">the Tour Promotion page -  here </a> or http://goo.gl/F37HOk
+										</li>
+
+										<li>
+											click REMIX (green button on the top right)
+										</li>
+										<li>
+											You can see the code of the page on the left window and the end result on the right.
+											Don’t worry you don’t need to understand all the code we are just changing one thing
+										</li>
+										<li>
+											Find where the value of the variable tourName is set (clue it’s near the top) & Change the value of this variable from Custard Pies to something else
+										</li>
+										<li>
+											You will see all mentions of the tour on the page on the right get updated.
+											How many mentions of your tour name are there on the right?
+										</li>
+										<li>
+											Look at the code. Can you find the code used to <strong>write the value of the variable tourName into the document</strong>?
+										</li>
+										<li>
+											To check can you find two mentions of tourName in the code and see where they appear in the web page on the right?
+										</li>
+									</ul>
+
+								</div>
+								<p>
+									<strong>Answer: </strong>The code used to write our variable to the page is
+
+								</p>
+
+								&lt;script&gt;
+								<br/>
+								document.write(tourName)
+								<br/>
+								&lt;/script&gt;
+								<br/>
+								<br/>
+								<p>
+									<strong>Bonus Question: </strong>All javascript needs to go inside &lt;script&gt; tags in an HTML page. What happens if you remove the &lt;script&gt; tags
+								</p>
+
+							</div>
+						</li>
+
+						<li style="border-bottom:none;">
+							<div>
+								<div class="time">
+									<p>
+										10
+										<br>
+										min
+									</p>
+								</div>
+
+								<h3>Taking it further</h3>
+								<p>
+									Here are some ideas for taking what you have learned further.
+								</p>
+
+								<figure>
+									<img src="images/atthecontrols_octonauts_gup_800.jpg" alt="at the controls" class="img-example">
+									<figcaption>
+										Variables put you at the controls.
+									</figcaption>
+								</figure>
+
+								<!-- Image attribution  - At the controls image  https://www.flickr.com/photos/tamaleaver/8122306948/  https://creativecommons.org/licenses/by/2.0/ -->
+								<p>
+									&nbsp;
+								</p>
+
+								<div class="well example">
+									<ul>
+										<li>
+											Can you remix the page much more to change it much more. Change the name of the artist. Can you change the photos and logos used? What about the text of the page.
+										</li>
+
+										<li>
+											What about variables in javascript? This example showed us the power of variables. If we change the value of a variable in one place then every time it is used the new value will be used.
+										</li>
+										<li>
+											Can you think of a website you might want to make. Can you imagine a page on this website where you could use a variable to give you the ability to change something in one place, and for all mentions of it to be updated everywhere in all your pages of the site. Can you think of examples of how this is used in other real life websites?
+										</li>
+									</ul>
+								</div>
+
+							</div>
+
+						</li>
+
+					</ul>
+				</div>
+			</article>
+
+			<footer class="footer">
+				<a href="http://mozilla.github.io/webmaker-curriculum/WebLiteracyBasics-I/session01-pingkong.html">
+				<button class="btn literacy-color-webmechanics">
+					Quacking Javascript: Javascript and Maths
+				</button></a><!--Licensing Information-->
+
+				<div class="license">
+					<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+				</div>
+
+				<!-- Image attribution  - At the controls image  https://www.flickr.com/photos/tamaleaver/8122306948/ -->
+
+			</footer>
+		</div>
+	</body>
+</html>

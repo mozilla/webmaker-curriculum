@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1">
+		<link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/makerstrap/makerstrap.complete.min.css">
+		<link rel="stylesheet" href="../stylesheets/styles.css" media="screen">
+		<link rel="stylesheet" href="../stylesheets/print.css" media="print">
+		<link rel="stylesheet" href="stylesheets/qstyles.css" media="screen">
+
+		<title>Javascript Basics | Session Five - Javascript and Iteration</title>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-webmaker">
+			<div class="container">
+				<div>
+					<!-- toggle button for mobile -->
+					<button type="button" class="navbar-toggle" ng-click="collapseToggle()">
+						<span class="sr-only">Toggle navigation</span>
+					</button>
+					<!-- logo -->
+					<a href="#" class="logo webmaker-logo"><img src="https://webmaker.org/img/logo.png"></a>
+
+					<ul class="nav navbar-nav navbar-right navbar-collapse text-center-xs collapse">
+						<li>
+							<a href="https://twitter.com/hashtag/teachtheweb">#TeachTheWeb</a>
+						</li>
+
+						<li>
+							<a href="http://discourse.webmaker.org/category/clubs">Discussion</a>
+						</li>
+
+						<li>
+							<a href="https://github.com/mozilla/webmaker-curriculum/blob/gh-pages/WebLiteracyBasics-I/session01-kraken.html">View on Github</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="wrapper">
+			<aside class="aside">
+				<div class="image">
+					<img src="images/rubberduck_square.jpg"><a href="http://digitalducks.org" class="attribution" alt ="http://en.wikipedia.org/wiki/Rubber_duck#/media/File:Rubber_Duck_%288374802487%29.jpg"><i class="fa fa-camera"></i> Eva Rinaldi</a>
+				</div>
+
+				<div class="goals">
+					<div class="literacy">
+						<h4>Web Literacy Competencies</h4><a href="https://webmaker.org/en-US/resources/literacy/weblit-CodingScripting">
+						<button class="btn literacy-color-remixing">
+							Coding / Scripting
+						</button></a><a href="https://webmaker.org/en-US/resources/literacy/weblit-Composing">
+						<button class="btn literacy-color-composing">
+							Composing for the Web
+						</button></a>
+					</div>
+
+					<div class="literacy">
+						<h4>GSCE UK areas</h4><a href="https://github.com/mozilla/webmaker-curriculum/wiki/Map-UK-GCSE-Curriculum-to-Webmaker-Club-curriculum-%28and-Web-Literacy-Map-v1.1%29">
+						<button class="btn literacy-color-remixing">
+							Programming concepts
+						</button></a><a href="https://github.com/mozilla/webmaker-curriculum/wiki/Map-UK-GCSE-Curriculum-to-Webmaker-Club-curriculum-%28and-Web-Literacy-Map-v1.1%29">
+						<button class="btn literacy-color-sharing">
+							Selection
+						</button></a>
+					</div>
+
+					<h4>Audience</h4>
+					<ul>
+						<li>
+							8+
+						</li>
+						<li>
+							beginner coders
+						</li>
+					</ul>
+
+					<h4>Materials</h4>
+
+					<ul>
+						<li>
+							Net Connection
+						</li>
+
+						<li>
+							Computer
+						</li>
+
+						<li>
+							Web browser
+						</li>
+
+					</ul>
+
+					<h4>Learning Objective</h4>
+
+					<ul>
+						<li>
+							Understand and use if statements to do iteration in web pages
+						</li>
+					</ul>
+
+					<h4>Learning Outcomes</h4>
+
+					<ul>
+						<li>
+							You will create a webpage including with a lists of contents in arrays.
+						</li>
+
+						<li>
+							You can output the contents of an array to the page using a for loop.
+						</li>
+
+						<li>
+							You will create your own page using a for loop to create web page content.
+						</li>
+
+					</ul>
+
+					<h4>How learners become mentors</h4>
+
+					<ul>
+						<li>
+							If some students move faster or are more confident in the activity, ask them to peer mentor another group or individuals.
+						</li>
+
+						<li>
+							Conclude by prompting students to teach this activity to their friends and family.
+						</li>
+					</ul>
+				</div>
+
+			</aside>
+
+			<article class="main">
+				<div>
+					<hgroup class="text-light">
+						<h2><a href="http://mozilla.github.io/webmaker-curriculum/QuackingJavascript/">Session 5. Going Loopy</a></h2>
+						<br>
+
+						<h3>Iteration and For Loops in JS</h3>
+
+						<p id="made-by">
+							Made by <a href="http://digitalducks.org/">Mick Fuzz</a> and as a contribution to be remixed for Clubs by <a href="https://webmaker.org/mentor">Mozilla</a>.
+						</p>
+
+						<p class="lead">
+							Writing web pages sometimes involves code or content that repeats. Here we learn how to save time by using loops in Javascript. This is called Iteration in coding speak.
+						</p>
+
+						<p class="leadTime">
+							<i class="fa fa-clock-o"></i> 60 minutes to 90 minutes
+						</p>
+					</hgroup>
+				</div>
+
+				<div class="agenda">
+					<ul>
+						<li>
+							<div>
+								<h3>Preparation</h3>
+								<p>
+									First do the activity on your own</b> to become familiar with it.
+								</p>
+								<p>
+									Find out more about loops in Javascript to help if students run in to trouble. <a href="http://people.mozilla.org/~cmills/coding-beginners/lesson3.html">This page from Chris Mills has a great example of a code loop an puts it into good context Chris Mills' course</a>. .
+								</p>
+							</div>
+						</li>
+
+						<li>
+							<div>
+								<div class="time">
+									<p>
+										10
+										<br>
+										min
+									</p>
+								</div>
+
+								<h3>Introduction</h3>
+
+								<p>
+									It's time to meet another Data Type which will help us to make web pages.
+								</p>
+								<p>
+									This Data Type is called an Array and is very good at keeping lists of things.
+								</p>
+
+								<div style='position: relative; width: 100%; height: 0px; padding-bottom: 60%;'>
+									<iframe style='position: absolute; left: 0px; top: 0px; width: 100%; height: 100%'  src="https://www.youtube.com/embed/eYBKNoi-8bo" frameborder="0" allowfullscreen></iframe>
+								</div>
+								<p>
+									&nbsp;
+								</p>
+								<p>
+									Lets imagine we want to create a list of opening times for a swimming pool.
+								</p>
+
+								<div class="well example">
+									<ul>
+
+										<li>
+											On Monday our opening times are 9.00 - 17-00
+										</li>
+										<li>
+											On Tuesday our opening times are 9.00 - 17-00
+										</li>
+										<li>
+											On Wednesday our opening times are 9.00 - 17-00
+										</li>
+										<li>
+											On Thursday our opening times are 9.00 - 17-00
+										</li>
+										<li>
+											On Friday our opening times are 9.00 - 17-00
+										</li>
+										<li>
+											On Saturday our opening times are 9.00 - 16-00
+										</li>
+										<li>
+											On Sunday our opening times are 10.00 - 16-00
+										</li>
+
+									</ul>
+								</div>
+
+								<p>
+									There is a lot of repetion there. Computer coders are paid to be lazy and they have to ask. Is there a way of writing some code to do this easier and quicker.
+								</p>
+								<p>
+									What if we put the Days and times in an array?
+								</p>
+								<li>
+									<div>
+										<div class="time">
+											<p>
+												10
+												<br>
+												min
+											</p>
+										</div>
+
+										<h3>Activity One - Using simple Arrays </h3>
+
+										<p>
+											Let's look at <a href = "https://mchesterman.makes.org/thimble/MTc5NzA2MzE2OA==/swimming-pool-times-array">an example of an Array in a Thimble page</a> which shows two ways of listing the opening times of a swimming pool.
+										</p>
+
+										<figure>
+											<a href = "https://mchesterman.makes.org/thimble/MTc5NzA2MzE2OA==/swimming-pool-times-array"><img src="images/swimming_pool_800.jpg"  class="img-example" ></a>
+											<figcaption>
+												Using an Array to list swimming pool times
+											</figcaption>
+										</figure>
+										<!-- Img CC BY https://www.flickr.com/photos/boston_public_library/7489706852/ -->
+										<p>
+											&nbsp;
+										</p>
+										<p>
+											Complete the activity by doing the following:
+										</p>
+										<div class="well example">
+											<ul>
+
+												<li>
+													Go to <a href = "https://mchesterman.makes.org/thimble/MTc5NzA2MzE2OA==/swimming-pool-times-array">this Thimble page</a>
+												</li>
+												<li>
+													Click on the Remix button.
+												</li>
+												<li>
+													Look at the code. We see two versions which produce similar outputs on the page. The first has no Javascript, only HTML
+												</li>
+												<li>
+													Check the second one. We can see that there are two Arrays one with Days of the week and another with opening times.
+												</li>
+												<li>
+													We can see that the code we use to output a first value of the days array is 													<pre> days[0]</pre>
+												</li>
+												<li>
+													The code we use to output the second value of the days array is 													<pre> days[1]</pre>
+											and so on.
+
+
+
+
+
+												</li>
+												<li>
+													<strong>Challenge:</strong> The second time table only has from Monday - Friday - can you add two lines of code for Saturday and Sunday? Use copy and paste. Remember it pays to be lazy!
+												</li>
+
+											</ul>
+										</div>
+
+									</div>
+								</li>
+
+								<li>
+									<div>
+										<div class="time">
+											<p>
+												10
+												<br>
+												min
+											</p>
+										</div>
+
+										<h3>Activity Two - Creating a list from an Array and a For Loop </h3>
+
+										<p>
+											In the previous Thimble example we saw an Arrays in use but what we really needed was a way of looping through all the values of the array to save us the work of repeating the HTML code. What we need is called the For Loop.
+										</p>
+
+										<h4> Meet the For Loop </h4>
+
+										<p>
+											Have a look at this video to see how the For Loop can help us.
+										</p>
+
+										<div style='position: relative; width: 100%; height: 0px; padding-bottom: 60%;'>
+											<iframe style='position: absolute; left: 0px; top: 0px; width: 100%; height: 100%'  src="https://www.youtube.com/embed/NEPZ-90JNCc" frameborder="0" allowfullscreen></iframe>
+										</div>
+										<p>
+											&nbsp;
+										</p>
+										<p>
+											Now have a look at this example of a code loop from <a href="http://people.mozilla.org/~cmills/coding-beginners/lesson3.html">Chris Mills' course</a>.
+										</p>
+										<pre><code>for(i = 0; i &lt; 10 ; i++) {
+ // code in here gets repeated
+}</code></pre>																																																																																		
+
+
+
+
+
+
+
+										<p>
+											Loops nearly always involve a single variable being iterated a certain number of times during the course of the loop. This can be called anything you like, but standard convention dictates that it be called
+											<code>
+												i
+											</code>
+											, mainly due to laziness!
+										</p>
+
+										<p>
+											Inside the
+											<code>
+												for()
+											</code>
+											brackets you have three values separated by semi-colons:
+										</p>
+
+										<ol>
+											<li>
+												<code>
+													i = 0
+												</code>
+												— this is the starting value of the variable to be iterated.
+											</li>
+											<li>
+												<code>
+													i &lt; 10
+												</code>
+												— this is the "exit condition" of the loop. This condition must be true each time the loop runs. If it is false the loop with stop. So in this case, the loop will keep running while
+												<code>
+													i
+												</code>
+												is less than 10. When the value of
+												<code>
+													i
+												</code>
+												hits 10 the loop ends, and the browser moves on to whatever comes next in the code. The loop needs an exit condition; if it didn't have one, the loop would never end, and the browser would just keep running the loop forever until it crashed. This is called an "infinite loop".
+											</li>
+											<li>
+												<code>
+													i++
+												</code>
+												— this is the "iterator". Each time the loop has finished running, the iterator modifies the value of
+												<code>
+													i
+												</code>
+												in some way and then the loop is run again (unless of course that iteration is the last one, and the loop doesn't run again).
+												<code>
+													i++
+												</code>
+												means "add 1 to i each time", and is shorthand for
+												<code>
+													i = i + 1
+												</code>
+												.
+											</li>
+										</ol>
+
+										<h4> Using a For Loop </h4>
+
+										<p>
+											Now take a look at <a href = "https://mchesterman.makes.org/thimble/MTg2NDE3MjAzMg==/swimming-pool-times-using-a-for-loop">this Thimble activity</a> which uses a For Loop to write our Swimming Pool times.
+										</p>
+										<p>
+											&nbsp;
+										</p>
+										<figure>
+											<a href = "https://mchesterman.makes.org/thimble/MTg2NDE3MjAzMg==/swimming-pool-times-using-a-for-loop"><img src="images/swimming_pool_ice_800.jpg"  class="img-example" ></a>
+											<figcaption>
+												Let's take a dip in the waters of the web!
+											</figcaption>
+										</figure>
+										<p>
+											&nbsp;
+										</p>
+										<div class="well example">
+											<ul>
+
+												<li>
+													Point your browser to <a href = "https://mchesterman.makes.org/thimble/MTg2NDE3MjAzMg==/swimming-pool-times-using-a-for-loop">this Thimble activity</a>
+												</li>
+												<li>
+													Click on the Remix button on the top right of the page.
+												</li>
+												<li>
+													Look at the code. We can see that there are two Arrays one with Days of the week and another with opening times.
+												</li>
+												<li>
+													Notice there is a for loops there which repeats to print out the values on the Arrays.
+												</li>
+												<li>
+													What do you notice about the exit condition of the loop -the second of the three statements after for?
+												</li>
+												<li>
+													It is very handy that we can find out how many values are in an array called
+													<code>
+														days
+													</code>
+													by writing
+													<code>
+														days.length
+													</code>
+													.
+												</li>
+
+												<li>
+													This means that the exit condition
+													<code>
+														i  &lt; days.length
+													</code>
+													will stop the loop when after it gets to the last value of the Array.
+												</li>
+												<li>
+													<strong>Challenge:</strong> The pool is closed on Sunday. Can you change the code so that it only prints out the times for Monday to Saturday?
+												</li>
+												<li>
+													<strong>Challenge:</strong> To save space print out Mon instead of Monday. With a String value you can do this using the substring code which allows you to trim a strings.
+												</li>
+												<li>
+													Use the code <code>
+														days[i].substring(0, 3)</code>
+													and <a href= "http://www.w3schools.com/jsref/jsref_substring.asp">find out more how it works here.</a>
+												</li>
+
+											</ul>
+										</div>
+
+									</div>
+								</li>
+
+								<li>
+									<div>
+										<div class="time">
+											<p>
+												10
+												<br>
+												min
+											</p>
+										</div>
+
+										<h3>Recap: Understanding Iteration</h3>
+
+										<p>
+											If you are working as part of a group then have a discussion about the following ideas to check you understand. Use examples if you can.
+										</p>
+
+										<ul>
+											<li>
+												Iteration in coding is a way of repeating things easily.
+											</li>
+											<li>
+												We can use the Data Type of Array, and For Loops to make it easy to repeat things like printing out things to a web page.
+											</li>
+
+											<li>
+												The start of a For Loop has three parts, a loop variable, an exit condition to say when to stop looping, an iterator (a way of changing the loop variable).
+											</li>
+
+											<li>
+												We can find out the length of an array
+											</li>
+
+										</ul>
+									</div>
+								</li>
+
+								<li>
+									<div>
+										<div class="time">
+											<p>
+												30
+												<br>
+												min
+											</p>
+										</div>
+
+										<h3>Activity Three: Create your own web page</h3>
+										<p>
+											You have learned a lot in this course. You know about variables which can hold different Data Types, we know about maths and different operators, we can make decisions and now use loops to save us work.
+										</p>
+										<p>
+											If we put all this knowledge together we can create an amazing web page. We can use our creativity AND check we can use all the great things we have learned in these sessions.
+										</p>
+										<p>
+											In small groups, have a discussion to work out some ideas of what you can create. You can choose any subject. Ask your self some of the following questions.
+										</p>
+
+										<ul>
+											<li>
+												What images can I use to make the page colourful and exciting?
+											</li>
+											<li>
+												What text will I write or reuse to explain my subject to readers?
+											</li>
+											<li>
+												Can I think of a question to ask readers that will change what is on the page? (a good way to use an if statement)
+											</li>
+											<li>
+												What list of things will I want on my page? (a good way to use Loops)
+											</li>
+
+										</ul>
+
+										<p>
+											If you want more help about writing for the web there are other activities as part of the Webmaker resource available.
+										</p>
+
+										<figure>
+											<a href = "http://thimble.webmaker.org"><img src="images/go_for_it_800.jpg" alt="go for it"  class="img-example" ></a>
+											<figcaption>
+												Go for it!
+											</figcaption>
+											<p>
+												&nbsp;
+											</p>
+
+											<!-- Img BY SA https://www.flickr.com/photos/pzado/16950126282/ -->
+
+											<p>
+												Go for it <a href = "http://thimble.webmaker.org">click on this link to start your new page from scratch.</a> Remember to keep sharing ideas with others doing the activity.
+											</p>
+
+									</div>
+
+								</li>
+
+								<li>
+									<div>
+										<div class="time">
+											<p>
+												10
+												<br>
+												min
+											</p>
+										</div>
+
+										<h3>Sharing what we have learned</h3>
+										<p>
+											Let's share what we have created and use it to find example of the things we have learned.
+										</p>
+										<p>
+											Because we have created our work in Thimble we can share the links to our work, look at the pages of others and then
+										</p>
+										<p>
+											Can you find:
+										</p>
+										<div class="well example">
+											<ul>
+
+												<li>
+													3 examples of the use of variables (at least one which is inputted by a user)
+												</li>
+												<li>
+													A decision made using an if statement (selection)
+												</li>
+												<li>
+													3 examples of different HTML tags
+												</li>
+												<li>
+													A For Loop used to repeat an instruction in code
+												</li>
+											</ul>
+										</div>
+
+									</div>
+								</li>
+
+					</ul>
+				</div>
+			</article>
+
+			<footer class="footer">
+				<div class="line" >
+					<p class="lead">
+						<a href="jsession05-iteration.html">
+						<button class="btn literacy-color-open-practices">
+							5. Going Loopy
+						</button></a>
+
+						<a href="jsession04-selection.html">
+						<button class="btn literacy-color-composing">
+							4. Daddy or Chips
+						</button></a>
+						<a href="jsession03-sequences.html">
+						<button class="btn literacy-color-remixing">
+							3. Cooking the Web
+						</button></a>
+						<a href="jsession02-magic_numbers.html">
+						<button class="btn literacy-color-webmechanics">
+							2.Magic Numbers
+						</button></a>
+						<a href="jsession01-whats_ina_name.html">
+						<button class="btn literacy-color-credibility">
+							1. What's in a Name
+						</button></a>
+					</p>
+				</div>
+
+				<!--Licensing Information-->
+
+				<div class="license">
+					<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+				</div>
+
+			</footer>
+		</div>
+	</body>
+</html>

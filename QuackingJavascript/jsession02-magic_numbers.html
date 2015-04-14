@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1">
+		<link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/makerstrap/makerstrap.complete.min.css">
+		<link rel="stylesheet" href="../stylesheets/styles.css" media="screen">
+		<link rel="stylesheet" href="../stylesheets/print.css" media="print">
+		<link rel="stylesheet" href="stylesheets/qstyles.css" media="screen">
+
+		<title>Javascript Basics | Session Two Magic Numbers - Javascript and maths</title>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-webmaker">
+			<div class="container">
+				<div>
+					<!-- toggle button for mobile -->
+					<button type="button" class="navbar-toggle" ng-click="collapseToggle()">
+						<span class="sr-only">Toggle navigation</span>
+					</button>
+					<!-- logo -->
+					<a href="#" class="logo webmaker-logo"><img src="https://webmaker.org/img/logo.png"></a>
+
+					<ul class="nav navbar-nav navbar-right navbar-collapse text-center-xs collapse">
+						<li>
+							<a href="https://twitter.com/hashtag/teachtheweb">#TeachTheWeb</a>
+						</li>
+
+						<li>
+							<a href="http://discourse.webmaker.org/category/clubs">Discussion</a>
+						</li>
+
+						<li>
+							<a href="https://github.com/mozilla/webmaker-curriculum/blob/gh-pages/WebLiteracyBasics-I/session01-kraken.html">View on Github</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="wrapper">
+			<aside class="aside">
+				<div class="image">
+					<img src="images/rubberduck_square.jpg"><a href="http://digitalducks.org" class="attribution" alt ="http://en.wikipedia.org/wiki/Rubber_duck#/media/File:Rubber_Duck_%288374802487%29.jpg"><i class="fa fa-camera"></i> Eva Rinaldi</a>
+				</div>
+
+				<div class="goals">
+					<div class="literacy">
+						<h4>Web Literacy Competencies</h4><a href="https://webmaker.org/en-US/resources/literacy/weblit-CodingScripting">
+						<button class="btn literacy-color-remixing">
+							Coding / Scripting
+						</button></a><a href="https://webmaker.org/en-US/resources/literacy/weblit-Composing">
+						<button class="btn literacy-color-composing">
+							Composing for the Web
+						</button></a>
+					</div>
+
+					<div class="literacy">
+						<h4>GSCE UK areas</h4><a href="https://github.com/mozilla/webmaker-curriculum/wiki/Map-UK-GCSE-Curriculum-to-Webmaker-Club-curriculum-%28and-Web-Literacy-Map-v1.1%29">
+						<button class="btn literacy-color-remixing">
+							Programming concepts
+						</button></a><a href="https://github.com/mozilla/webmaker-curriculum/wiki/Map-UK-GCSE-Curriculum-to-Webmaker-Club-curriculum-%28and-Web-Literacy-Map-v1.1%29">
+						<button class="btn literacy-color-sharing">
+							Data Types
+						</button></a>
+					</div>
+
+					<h4>Audience</h4>
+					<ul>
+						<li>
+							8+
+						</li>
+						<li>
+							beginner coders
+						</li>
+					</ul>
+
+					<h4>Materials</h4>
+
+					<ul>
+						<li>
+							Net Connection
+						</li>
+
+						<li>
+							Computer
+						</li>
+
+						<li>
+							Web browser
+						</li>
+
+					</ul>
+
+					<h4>Learning Objective</h4>
+
+					<ul>
+						<li>
+							Understand variables and how they work in text coding
+						</li>
+					</ul>
+
+					<h4>Learning Outcomes</h4>
+
+					<ul>
+						<li>
+							You understand how variables in text coding work and what they are used for
+						</li>
+
+						<li>
+							You understand and use different data types to output text and numbers.
+						</li>
+
+						<li>
+							You can describe complex arithmetic calculations and understand different assignment types
+						</li>
+
+					</ul>
+
+					<h4>How learners become mentors</h4>
+
+					<ul>
+						<li>
+							If some students move faster or are more confident in the activity, ask them to peer mentor another group or individuals.
+						</li>
+
+						<li>
+							Conclude by prompting students to teach this activity to their friends and family.
+						</li>
+					</ul>
+				</div>
+			</aside>
+
+			<article class="main">
+				<div>
+					<hgroup class="text-light">
+						<h2><a href="http://mozilla.github.io/webmaker-curriculum/QuackingJavascript/">Session 2. Magic Numbers</a></h2>
+						<br>
+
+						<h3>Maths and Operators in JS</h3>
+
+						<p id="made-by">
+							Made by <a href="http://digitalducks.org/">Mick Fuzz</a> and as a contribution to be remixed for Clubs by <a href="https://webmaker.org/mentor">Mozilla</a>.
+						</p>
+
+						<p class="lead">
+							Javascript is one of the key parts of the Web (together with HTML and CSS). Here we learn how to do some maths with Javascript and how to use operators that are key to using the language.
+						</p>
+
+						<p class="leadTime">
+							<i class="fa fa-clock-o"></i> 45 minutes to an hour
+						</p>
+					</hgroup>
+				</div>
+
+				<div class="agenda">
+					<ul>
+						<li>
+							<div>
+								<h3>Preparation</h3>
+
+								<p>
+									First do the activity on your own</b> to become familiar with it.
+								</p>
+
+								<p>
+									Then do a follow up bit of research on Javascript to help if students run in to trouble. Specifically good is <a href="http://people.mozilla.org/~cmills/coding-beginners/lesson2.html"> this page on Chris Mills' course</a> .  
+								</p>
+
+							</div>
+						</li>
+
+						<li>
+							<div>
+								<div class="time">
+									<p>
+										5
+										<br>
+										min
+									</p>
+								</div>
+
+								<h3>Introduction</h3>
+
+								<p>
+									Give a <b>short presentation about maths and Javascript.</b>
+								</p>
+
+								<div class="well example">
+									<ul>
+										<li>
+											Javascript has many uses on the web from games, to chat pages, shopping etc.
+										</li>
+
+										<li>
+											Most of these uses involve using numbers and maths.
+										</li>
+
+										<li>
+											A game which uses numbers and maths is <a href="http://orteil.dashnet.org/cookieclicker/"> Cookie Clicker</a> . Have you tried it?
+										</li>
+									</ul>
+								</div>
+
+								<p>
+									Javascript uses variables to rememeber and work with data. In the last session we were using variables to store the names of things.
+									In this game Javascript variables are used to keep track of how many cookies we have created.
+								</p>
+								<figure>
+									<a href="http://orteil.dashnet.org/cookieclicker/" title="Clicking cookies"><img src="images/cookie_clicker_1.png" alt="image of the cookie clicker website" class="img-example"></a>
+									<figcaption>
+										Click that Cookie</a>
+									</figcaption>
+								</figure>
+								<p>
+									&nbsp;
+								</p>
+								<p>
+									Each time we click the cookie the number value of the variable goes up by one, simples!
+								</p>
+
+							</div>
+						</li>
+
+						<li>
+							<div>
+								<div class="time">
+									<p>
+										15
+										<br>
+										min
+									</p>
+								</div>
+
+								<h3>Activity One  - Use the console to play with number variables</h3>
+
+								<p>
+									Split learners into <b>groups of 2 or individuals if there enough computers</b> explain that we will use the console to find out more about how
+									numbers and maths are done in Javascript.
+								</p>
+
+								<p>
+									Ask individuals / groups to follow these instructions:
+								</p>
+
+								<div class="well example">
+									<ul>
+
+										<li>
+											Open Firefox (or other browser)
+										</li>
+										<li>
+											Press F12 to bring up some tools
+										</li>
+										<li>
+											Click on Console
+										</li>
+										<li>
+											Press F12, find the Console and enter the following commands
+										</li>
+
+									</ul>
+								</div>
+
+								<figure>
+									<img src="images/console_numbers_1.png" alt="screenshot of console image" class="img-example"></a>
+									<figcaption>
+										Press F12, find the Console type the following commands into the Console and press the Enter key.
+									</figcaption>
+								</figure>
+								<p>
+									&nbsp;
+								</p>
+
+								<div class="well example">
+									<ol>
+
+										<li>
+											2 + 3
+										</li>
+										<li>
+											5 - 3
+										</li>
+										<li>
+											7 * 3
+										</li>
+										<li>
+											8 / 2
+										</li>
+										<li>
+											var a = 12
+											<br/>
+											var b = 3
+											<br/>
+											a / b
+										</li>
+										<li>
+											"2" + "3"
+										</li>
+										<li>
+											"hello " + "derek"
+										</li>
+										<li>
+											2 + “3”
+										</li>
+
+									</ol>
+								</div>
+
+								<p>
+									The simple way to do adding, subtracting, multipliction and division is to user the following Javascript maths <strong>Operators</strong>?
+								</p>
+								<ul>
+									<li>
+										<strong>+</strong> Add Operator
+									</li>
+									<li>
+										<strong>-</strong> Subtract Operator
+									</li>
+									<li>
+										<strong>*</strong> Multiply Operator
+									</li>
+									<li>
+										<strong>/</strong> Divide Operator
+									</li>
+								</ul>
+
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class="time">
+									<p>
+										5
+										<br>
+										min
+									</p>
+								</div>
+
+								<h3>Discussion: Why does 2 + 3  give a different result to "2" + "3"</h3>
+								<p>
+									Wait what is happening? What are the answers to 6 and 8 different from what we got for 1?
+								</p>
+								<p>
+									The answers to 1,6,8 are different because we are adding variables of different types of data.
+								</p>
+								<p>
+									We say that the variable has a different Datatype.
+								</p>
+
+								<ul>
+									<li>
+										2 s a datatype of number: Numbers are used for maths and calculations
+									</li>
+									<li>
+										“2” is a datatype of String: Strings are used to hold mostly text based data, names and addresses are common examples.
+									</li>
+								</ul>
+
+								<p>
+									The easy way to tell the difference between a value of type number and String is by noticing if the quotation marks ("") are used. 
+								</p>
+
+								<p>
+									Using the + operator has a different effect with strings and number variables. It adds together numbers with addition but strings get put next to each other like being stuck together end to end with glue. In coding this is called "concatenation".
+								</p>
+
+								<p>
+									<strong>Be careful!:</strong> If we use + with a string and a number, then both the string and number are treated as strings so the the result is a string.
+
+								</p>
+
+							</div>
+						</li>
+
+						<li >
+							<div>
+								<div class="time">
+									<p>
+										15
+										<br>
+										min
+									</p>
+								</div>
+
+								<h3>Activity Two - Create an online, international T-Shirt Shop</h3>
+
+								<p>
+
+									<figure>
+
+										<a href = "https://mchesterman.makes.org/thimble/LTE0MDc0NTA2MjQ=/clicking-with-numbers"><img src="images/tshirt_shop_800.jpg"  class="img-example" alt="images of a T-Shirt Shop" ></a>
+										<figcaption>
+											Create a T-Shirt Shop.
+										</figcaption>
+									</figure>
+
+									<!-- Image CC - BY from https://www.flickr.com/photos/shankaronline/7904727288
+									-->
+
+									<div class="well example">
+										<ul>
+											<li>
+												Go to <a href = "https://mchesterman.makes.org/thimble/LTE0MDc0NTA2MjQ=/clicking-with-numbers"> T Shirts for sale activity  -  here </a>
+
+											</li>
+
+											<li>
+												click REMIX (green button on the top right)
+											</li>
+											<li>
+												Read the instructions in the code we can change a page to add JavaScript to add a price of the T-Shirt in Euros to the page.
+											</li>
+
+										</ul>
+
+									</div>
+								<p>
+									<strong>Support Tip: </strong>
+									If one TShirt was £7.60 and Euros were 0.67 to the pound you work this out by multiplying the £7.60 x 0.67
+
+								</p>
+
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class="time">
+									<p>
+										10
+										<br>
+										min
+									</p>
+								</div>
+
+								<h3>Activity Three - Hacking Cookie Clicker</h3>
+								<p>
+									In your browser go to cookie clicker game website
+									Press F12 - go to the console and Enter
+								</p>
+								<ul>
+									<li>
+										Game.cookies = 23570
+									</li>
+								</ul>
+
+								<figure>
+									<img src="images/cookie_clicker_2.png" alt="hacking cookie clicker" class="img-example">
+									<figcaption>
+										Cheated Cookies taste just as sweet!
+									</figcaption>
+								</figure>
+
+								<p>
+									&nbsp;
+								</p>
+
+								<p>
+									What happens? The equal sign assigns the number value on the right to the variable on the left (Game.cookies). Because this variable is what is used by the cookie clicker game to keep a track of your score, the number used on the game goes up on your page. Amazeballs! You've hacked it!
+								</p>
+
+								<h4>Smooth Operators</h3>
+								<p>
+									There are other operators we can use too. What about if we wanted to add on 10 cookies to our total?
+								</p>
+								<p>
+									How about we want to take 100 cookies off of our total? Find out how to do this by entering the following instructions in the console window when you are playing cookie clicker.
+								</p>
+								<div class="well example">
+									<ul>
+										<li>
+											Game.cookies += 10
+										</li>
+
+										<li>
+											Game.cookies -= 100
+
+										</li>
+										<li>
+											Game.cookies *= 4
+										</li>
+									</ul>
+
+								</div>
+								<p>
+									We can see that if we put a plus sign infront of our equals sign that it add on the number on the right to the current value of the variable on the left. We call this an <strong>addition assignment</strong> operator. The same idea works for subtracting, mulitplying etc.
+								</p>
+								<p>
+									&nbsp;
+								</p>
+								<div class="well example">
+
+									<table class ="pure-table">
+										<thead>
+											<tr>
+												<th>Operator...</th>
+												<th>Example...</th>
+												<th>Meaning...</th>
+
+											</tr>
+										</thead>
+
+										<tbody>
+											<tr>
+												<td>+=</td>
+												<td>a += 10</td>
+												<td>Increase the value of variable a by 10</td>
+
+											</tr>
+
+											<tr>
+												<td>-=</td>
+												<td>x -= 5</td>
+												<td>Reduce the value of variable x by 10</td>
+
+											</tr>
+											<tr>
+												<td>*=</td>
+												<td>y *= 10</td>
+												<td>Multiply the value of variable y by 10</td>
+											</tr>
+											<tr>
+												<td>/=</td>
+												<td>z /= 2</td>
+												<td>Divide the value of variable z by 2</td>
+											</tr>
+											<tr>
+												<td>++</td>
+												<td>z++ </td>
+												<td>Add 1 to the value of variable z </td>
+											</tr>
+											<tr>
+												<td>--</td>
+												<td>z-- </td>
+												<td>Subtract 1 from the value of variable z </td>
+											</tr>
+
+									</table>
+
+								</div>
+								<p>
+									&nbsp;
+								</p>
+								<p>
+									To test out that you understand these new operators, use the console and try some examples like the one below.
+								</p><img src="images/console_image_6.png" alt="3 is less than 5 " class="img-screenshot">
+							</div>
+
+						</li>
+						<li>
+							<div>
+								<div class="time">
+									<p>
+										5
+										<br>
+										min
+									</p>
+								</div>
+
+								<h3>Bonus Activity - Comparing Numbers</h3>
+								<p>
+									In your browser
+									Press F12 - and Enter
+								</p>
+								<ul>
+									<li>
+										Press F12
+									</li>
+
+									<li>
+										Go to the console and type
+									</li>
+									<li>
+										3 &lt; 5
+									</li>
+									<li>
+										Press Enter
+									</li>
+								</ul>
+								<p>
+									&nbsp;
+								</p>
+								<img src="images/console_image_5.png" alt="3 is less than 5 " class="img-screenshot">
+								<p>
+									&nbsp;
+								</p>
+
+								<p>
+									What happens? It gives us back a value of True. Why? Well the short answer is that the statement means in English  - Three is less than 5 - and that *is* true.
+								</p>
+
+								<p>
+									The longer answer is that if we enter a statement in the console that could be either true or false, then the system will evaluate it and return the answer. Why? Because as programmers, this true / false thing can be very useful to us. As we will find out later in these sessions.
+								</p>
+								<p>
+									In fact, having a variable of a type that is only true or false is so useful there is a dedicated Data Type called Boolean that does exactly that.
+									Right now we don't need to know a lot about how these true  /false values are useful but if you do want to find out more about Boolean values
+									<a href = "http://www.w3schools.com/js/js_booleans.asp"> you can read about them here </a>
+								</p>
+
+								<p>
+									If you have not seen the  &lt; operator in maths, it means "is less than". It is one of a list of operators we use to compare different values or variables.
+								</p>
+
+								<h4>Comparison Operators</h3>
+								<div class="well example">
+
+									<table class ="pure-table">
+										<thead>
+											<tr>
+												<th>Operator...</th>
+												<th>Meaning...</th>
+												<th>Example...</th>
+
+											</tr>
+										</thead>
+
+										<tbody>
+											<tr>
+												<td>===</td>
+												<td>equal to</td>
+												<td> (2 + 5)  === 7</td>
+
+											</tr>
+
+											<tr>
+												<td>></td>
+												<td>greater than</td>
+												<td> 8 > 5</td>
+
+											</tr>
+											<tr>
+												<td>&lt;</td>
+												<td>less than</td>
+												<td> 3 &lt; 5</td>
+											</tr>
+									</table>
+
+								</div>
+						</li>
+
+						<li>
+							<div>
+								<div class="time">
+									<p>
+										5
+										<br>
+										min
+									</p>
+								</div>
+
+								<h3>What have we learned?</h3>
+
+								<p>
+									There was a lot of things to learn in this session. A lot if it is quite quick to pick up but a discussion at the end to recap what we have learned is a great idea to check we are all on the path.
+								</p>
+								<ul>
+									<li>
+										We've learned about the different Data Types of Number, String and Boolean in Javascript and what we use them for.
+									</li>
+
+									<li>
+										We've learned about how use Arithmetic Operators, Assignment Operators and Comparison Operators eg. *, += and >
+									</li>
+									<li>
+										And hopefully we've learned how to make a pointless game like Cookie Clicker even more pointless by cheating!
+									</li>
+								</ul>
+
+								<p>
+									&nbsp;
+								</p>
+
+								<figure>
+									<img src="images/cookie_clicker_3.png" alt="hacking cookie clicker" class="img-example">
+									<figcaption>
+										Let's Give up!
+									</figcaption>
+								</figure>
+								<p>
+									&nbsp;
+								</p>
+							</div>
+
+						</li>
+
+					</ul>
+				</div>
+			</article>
+
+			<footer class="footer">
+				<a href="http://mozilla.github.io/webmaker-curriculum/WebLiteracyBasics-I/session01-pingkong.html">
+				<button class="btn literacy-color-webmechanics">
+					Quacking Javascript: Javascript, Webpages and Sequences
+				</button></a><!--Licensing Information-->
+
+				<div class="license">
+					<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+				</div>
+
+			</footer>
+		</div>
+	</body>
+</html>
