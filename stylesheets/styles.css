@@ -229,6 +229,14 @@ figcaption{
   background-color: #506b7b;
   color: white;
 }
+.literacy-color-privacy{
+  background-color: #00bad6;
+  color: white;
+}
+.literacy-color-security{
+  background-color: #ff004e;
+  color: white;
+}
 
 
 .socialBtns {
