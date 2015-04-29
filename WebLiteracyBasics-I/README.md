@@ -1,0 +1,3 @@
+Learners get familiar with reading, writing and participating on the web in this six-part module. Discover the foundations of the web through production and collaboration. The learning objectives underpinning each activity are informed by Mozilla's Web Literacy Map. Complete the activities in sequence, or mix and match for your learners. Need help? Visit our discussion forum to get help and share your experience.
+
+See [http://teach.mozilla.org](http://teach.mozilla.org) for more information

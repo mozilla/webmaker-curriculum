@@ -271,3 +271,9 @@ body {
 	color: #FFF;
 	padding-bottom: 10%;
 }
+.exampleIcon{
+	float:left;
+	margin-right:2%;
+	width: 125px;
+	clear: both;
+}
