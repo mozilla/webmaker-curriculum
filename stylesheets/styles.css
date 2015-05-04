@@ -229,6 +229,14 @@ figcaption{
   background-color: #506b7b;
   color: white;
 }
+.literacy-color-privacy{
+  background-color: #00bad6;
+  color: white;
+}
+.literacy-color-security{
+  background-color: #ff004e;
+  color: white;
+}
 
 
 .socialBtns {
@@ -256,4 +264,16 @@ body {
 	padding:5px;
 	text-align:center;
 	color:white;
+}
+
+.small{
+	font-style: italic;
+	color: #FFF;
+	padding-bottom: 10%;
+}
+.exampleIcon{
+	float:left;
+	margin-right:2%;
+	width: 125px;
+	clear: both;
 }

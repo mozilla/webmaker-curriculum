@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/makerstrap/makerstrap.complete.min.css">
+    <link rel="stylesheet" href="../stylesheets/styles.css" media="screen">
+    <link rel="stylesheet" href="../stylesheets/print.css" media="print">
+
+    <title>Protecting Your Data | Section 2: Writing the Web: Cookies and Third-Party Tracking</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-webmaker">
+        <div class="container">
+            <div>
+                <!-- toggle button for mobile -->
+                <button type="button" class="navbar-toggle" ng-click="collapseToggle()"><span class="sr-only">Toggle navigation</span></button> <!-- logo -->
+                 <a href="#" class="logo webmaker-logo"><img src="https://webmaker.org/img/logo.png"></a>
+
+                <ul class="nav navbar-nav navbar-right navbar-collapse text-center-xs collapse">
+                    <li>
+                        <a href="https://twitter.com/hashtag/teachtheweb">#TeachTheWeb</a>
+                    </li>
+
+                    <li>
+                        <a href="http://discourse.webmaker.org/category/clubs">Discussion</a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/mozilla/webmaker-curriculum/blob/gh-pages/ProtectingYourData/session03-lightbeam.html">View on Github</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <aside class="aside">
+            <div class="image">
+                <img src="https://www.mozilla.org/media/img/lightbeam/Lightbeam_Illustration7.png"> <a href="http://mozilla.org" class="attribution"><i class="fa fa-camera"></i> Mozilla</a>
+            </div>
+
+            <div class="goals">
+                <div class="literacy">
+                    <h4>Web Literacy Competencies</h4><a href="https://webmaker.org/en-US/resources/literacy/weblit-Privacy"><button class="btn literacy-color-privacy">Privacy</button></a> <a href="https://webmaker.org/en-US/resources/literacy/weblit-WebMechanics"><button class="btn literacy-color-open-practices">Open Practices</button></a>
+                </div>
+
+                <h4>Audience</h4>
+
+                <ul>
+                    <li>16+</li>
+
+                    <li>Beginning activists</li>
+                </ul>
+
+                <h4>Materials</h4>
+
+                <ul>
+                    <li>Computer</li>
+
+                    <li>Web Access</li>
+                </ul>
+
+                <h4>Learning Objectives</h4>
+
+                <ul>
+                    <li>Show that there are third parties who may be tracking what they do online</li>
+
+                    <li>Install appropriate add-ons to enhance privacy</li>
+                    
+                    <li>Explain what cookies are and why they are used</li>
+                </ul>
+            </div>
+        </aside>
+
+        <article class="main">
+            <div>
+                <hgroup class="text-light">
+                    <h2><a href="http://mozilla.github.io/webmaker-curriculum/ProtectingYourData/">Section 2. Writing the Web</a></h2><br>
+
+                    <h3>Cookies and Third-Party Tracking</h3>
+
+                    <p id="made-by">Made by <a href="https://mozillians.org/u/LauraHilliger/">Laura Hilliger</a>, <a href="https://mozillians.org/en-US/u/BenMoskowitz/">Ben Moskowitz</a>, <a href="https://mozillians.org/en-US/u/atul/">Atul Varma</a>, <a href="https://mozillians.org/en-US/u/alina_mierlus/">Alina Hua</a>,<br/> <a href="https://mozillians.org/en-US/u/stacy/">Stacy Martin</a>, <a href="https://mozillians.org/en-US/u/mattheww/">Matthew Willse</a>, and <a href="https://mozillians.org/en-US/u/scaraveo/">Shane Caraveo</a>. Remixed for Clubs by <a href="https://webmaker.org/mentor">Mozilla</a>.</p>
+
+                    <p class="lead">Using a free and open source tool called Mozilla Lightbeam, you can help visually <strong>show learners how cookies and third-party trackers are monitoring them</strong> as they perform their own everyday tasks on the web. <strong>Help learners manage and protect their data trail by having them race</strong> to see who can gather the most trackers on their team's Lightbeam graph.</p>
+
+                    <p class="leadTime">45 mins to 1 hour</p>
+                </hgroup>
+            </div>
+
+            <div class="agenda">
+                <ul>
+	                 <li>
+                        <div>
+                            <div class="time">
+                                <p>10<br>
+                                min</p>
+                            </div>
+
+                            <h3>Learn about Cookies with Do Not Track</h3>
+
+                            <p>
+	                            <blockquote><a href="https://donottrack-doc.com/">Do Not Track</a> is a personalized documentary series about privacy and the web economy.</blockquote>
+	                            Watch and interact with Do Not Track <a href="https://episode2.donottrack-doc.com/en/">Episode 2: Breaking Ad</a> and discuss how cookies serve trackers with your learners.
+                            </p>
+                            <iframe width="100%" height="500px" src="https://donottrack-doc.com/en/episode/2" style="-webkit-transform:scale(0.5);-moz-transform-scale(0.5);"></iframe>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>5<br>
+                                min</p>
+                            </div>
+
+                            <h3>Use Lightbeam to Track the Trackers</h3>
+
+                            <p><a href="http://www.mozilla.org/en-US/lightbeam/">Lightbeam</a> is a free+open source Firefox add-on that uses interactive visualizations to show you the first and third party sites you interact with on the Web. As you browse, Lightbeam reveals the full depth of the Web today, including parts that are not transparent to the average user.</p><iframe src='https://laura.makes.org/popcorn/1oj6_' width="100%" height="500px" frameborder='0' mozallowfullscreen="" webkitallowfullscreen="" allowfullscreen=""></iframe></p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>5<br>
+                                mins</p>
+                            </div>
+
+                            <h3>Install Lightbeam</h3>
+
+                            <p>Have learners <a href="https://addons.mozilla.org/firefox/addon/lightbeam/">install Lightbeam</a></p>
+	                            <img src="http://mozorg.cdn.mozilla.net/media/img/lightbeam/Lightbeam_Illustration4.png" class="exampleIcon">
+
+                            <div class="well example">
+                                Ask Learners:
+
+                                <ul>
+                                    <li>Is all tracking bad?</li>
+
+                                    <li>Can you think of an instance when you're ok with sharing your data?</li>
+
+                                    <li>What kind of organizations might track you across the Web?</li>
+                                </ul>
+                            </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>15<br>
+                                mins</p>
+                            </div>
+
+                            <h3>See Who's Tracking You</h3>
+
+                             <img src="http://mozorg.cdn.mozilla.net/media/img/lightbeam/Lightbeam_Illustration5.png" class="exampleIcon">
+                             <img src="http://mozorg.cdn.mozilla.net/media/img/lightbeam/Lightbeam_Illustration6.png" class="exampleIcon">
+
+                            <p>Ask learners to <strong>visit 5 of their favorite websites</strong>.</p>
+
+                            <p>Lightbeam will create a record of events for every site you visit and every third party site that is stored locally on your browser.</p>
+                            
+                              
+
+                            <p>Have learners show Lightbeam by clicking the icon in the Add-On bar. <strong>Explain that Lightbeam visually graphs their movement across the web</strong> to highlight the interactions between sites you intentionally visit and the third parties.</p>
+                            
+                              <p>Lightbeam will continue to add to your graph as you browse the Web. Have learners observe how many connections they've created.</p>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>10<br>
+                                mins</p>
+                            </div>
+                            <h3>TRACKING RACE!</h3>
+                            <img src="../images/lightbeam-clear.png" class="exampleIcon" style="width:115px">
+                            	<p><strong>Form groups and have each groups use one computer.</strong> Instruct the groups to <strong>reset the data on their Lightbeam results</strong>. </p>
+	                            	<p>Set a timer for 5 minutes, and have groups <strong>race to see who can get the most trackers</strong> on their Lightbeam graph. They'll need to browse to as many sites as possible to win!</p>
+	                            	<p>Let the winning group give an "<strong><a href="https://www.youtube.com/watch?v=m8-_aJ1BiFE">Award Acceptance Speech</a></strong>".</p>
+                        </div>
+                    </li>
+                    <li  style="border-bottom:none;">
+                        <div>
+                            <div class="time">
+                                <p>5<br>
+                                mins</p>
+                            </div>
+                            <h3>Reflect</h3>
+	                            	Have learners answer questions about their experience:</p>
+	                            <div class="well example">
+		                            	<ul>
+			                            	<li>Which trackers are the same?</li>
+			                            	<li>What was surprising?</li>
+			                            	<li>Which site that you visit has the most trackers?</li>
+			                            	<li>Why should or why shouldn't everyone should have the tools to investigate who collects data on them? </li>
+		                            	</ul>
+	                            </div>
+	                            <p>Talk about how the Lightbeam add-on and database server aims to <strong>raise awareness, promote analysis and, ultimately, affect policy change</strong> in the areas of tracking and privacy.</p>
+                            </p>
+                        </div>
+                   </li>
+                </ul>
+            </div>
+        </article>
+
+        <footer class="footer">
+            <a href="http://mozilla.github.io/webmaker-curriculum/ProtectingYourData/session03-datatrail.html"><button class="btn literacy-color-remixing">Participating on the Web: Data Trail Timeline</button></a> <!--Licensing Information-->
+
+            <div class="license">
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/makerstrap/makerstrap.complete.min.css">
+    <link rel="stylesheet" href="../stylesheets/styles.css" media="screen">
+    <link rel="stylesheet" href="../stylesheets/print.css" media="print">
+
+    <title>Protecting Your Data | Section 1: Reading the Web: IP Address Tracer</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-webmaker">
+        <div class="container">
+            <div>
+                <!-- toggle button for mobile -->
+                <button type="button" class="navbar-toggle" ng-click="collapseToggle()"><span class="sr-only">Toggle navigation</span></button> <!-- logo -->
+                 <a href="#" class="logo webmaker-logo"><img src="https://webmaker.org/img/logo.png"></a>
+
+                <ul class="nav navbar-nav navbar-right navbar-collapse text-center-xs collapse">
+                    <li>
+                        <a href="https://twitter.com/hashtag/teachtheweb">#TeachTheWeb</a>
+                    </li>
+
+                    <li>
+                        <a href="http://discourse.webmaker.org/category/clubs">Discussion</a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/mozilla/webmaker-curriculum/blob/gh-pages/ProtectingYourData/session01-ip.html">View on Github</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <aside class="aside">
+            <div class="image">
+                <img src="../images/ip-tracer-badge.jpg"> <a href="http://hivetoronto.org" class="attribution"><i class="fa fa-camera"></i> Hive Toronto</a>
+            </div>
+
+            <div class="goals">
+                <div class="literacy">
+                    <h4>Web Literacy Competencies</h4><a href="https://webmaker.org/en-US/resources/literacy/weblit-Privacy"><button class="btn literacy-color-privacy">Privacy</button></a> <a href="https://webmaker.org/en-US/resources/literacy/weblit-WebMechanics"><button class="btn literacy-color-webmechanics">Web Mechanics</button></a> <a href="https://webmaker.org/en-US/resources/literacy/weblit-Search"><button class="btn literacy-color-search">Search</button></a>
+                </div>
+
+                <h4>Audience</h4>
+                <ul>
+	                <li>13+</li>
+	                <li>Beginning activists</li>
+                </ul>
+
+                <h4>Materials</h4>
+
+                <ul>
+                   <li>Computer</li>
+				   <li>Web Access</li>
+				   <li>Paper</li>
+				   <li>Pens</li>
+				   <li>Paper map or Google account(s) if creating a Google map</li>
+				   <li><a href="https://mozteach.makes.org/thimble/html-cheatsheet">HTML cheat sheet (optional)</a></li>
+				   <li><a href="http://hivetoronto.org/wp-content/uploads/2015/03/PrivacyBadgesFacilitatorsGuide_ENG.pdf">Facilitator's Guide</a></li>
+                </ul>
+
+                <h4>Learning Objectives</h4>
+
+                <ul>
+	                <li>Explore an internet protocol (IP) address as a form of personal information</li>
+	                
+                    <li>Locate information about a site using its IP address</li>
+
+                    <li>Decide on the definition of "personal information" by identifying key indicators</li>
+                    
+                    <li>Identify what types of information can identify a person online</li>
+                    
+                    
+                </ul>
+
+                <h4>How learners become mentors</h4>
+
+                <ul>
+                    <li>Shadow a student or less experienced facilitator so they can practice leading this activity.</li>
+
+                    <li>If some students move faster or are more confident in the activity, ask them to peer mentor another group.</li>
+
+                    <li>Conclude by prompting students to teach this activity to their friends and family.</li>
+                </ul>
+                <h4>See community remixes</h4>
+                <p>Check out the ways educators and activists have modified this activity for their specific audiences in our <a href="http://discourse.webmaker.org/t/testing-1-reading-for-the-web/1149/22">Discussion Forum</a>.</p>
+            </div>
+        </aside>
+
+        <article class="main">
+            <div>
+                <hgroup class="text-light">
+                    <h2><a href="http://mozilla.github.io/webmaker-curriculum/ProtectingYourData/">Section 1. Reading the Web</a></h2><br>
+
+                    <h3>IP Address Tracer</h3>
+
+                    <p id="made-by">Made by <a href="http://hivetoronto.org/">Hive Toronto</a> and the <a href="https://www.priv.gc.ca/index_e.asp">OPC</a>. Remixed for Clubs by <a href="https://webmaker.org/mentor">Mozilla</a>.</p>
+
+                    <p class="lead">Learners will <strong>explore internet protocol (IP) addresses and learn how it may be associated</strong> with themselves, a device, or a website. <strong>They will trace IP addresses and make a map.</strong> </b></p>
+                    
+                    <p class="leadTime"><i class="fa fa-clock-o"></i> 30 - 45 minutes</p>
+                </hgroup>
+               </div>
+
+            <div class="agenda">
+                <ul>
+                    <li>
+                        <div>
+                            <h3>Preparation</h3>
+                           
+                            <p><b>Do the activity on your own</b> to become familiar with it.</p>
+
+                            <p>Internet protocol (IP) addresses are a kind of personal information that may be collected online that many people do not even think about. <a href="http://en.wikipedia.org/wiki/IP_address">Wikipedia defines that an IP Address</a> is “a numerical label assigned to each device (e.g., computer, printer) participating in a computer network that uses the Internet Protocol for communication” (Wikipedia, “IP address”). An IP address is a string 
+of digits that looks something like 192.206.151.131. </p>
+ <a href="https://hivetoronto.makes.org/thimble/LTE2NzcwMDAxOTI=/privacy-badges-credits-page"><img src="../images/ip-tracer-01.jpg" alt="CroppedIPaddress" class="img-example"></a>
+							<h3>Low Connectivity Tips</h3>
+							<p>If you want to facilitate this activity without computers you can <strong>print out a list of popular IP addresses and have your learners create a paper map.</strong> <a href="ip-tracer-worksheet.pdf">A printable worksheet</a> is available for this activity for your learners to record their research responses on IP addresses. This activity will also work with one internet connected computer and a projector. </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>5<br>
+                                min</p>
+                            </div>
+
+                            <h3>Look up your IP address</h3>
+
+							<p>Using an online resource to trace IP addresses (i.e., <a href="http://who.is">http://who.is</a> or <a href="http://www.iptrackeronline.com/">http://www.iptrackeronline.com/</a> or another of your choosing), <strong>look up your IP address.</strong></p>
+								<p><strong>Discuss</strong> whether the IP address reveals any information about you and what an IP address is.</p>   
+                            </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>10<br>
+                                min</p>
+                            </div>
+
+                            <h3>Research IP Addresses</h3>
+							<p>Using online search tools, see if you can <strong>find the answers to the following questions</strong> about IP addresses. Write down your responses by taking notes. </p>
+								<div class="well example">
+									<ul>
+										<li>Why were IP addresses developed and what role do they play in helping the internet work?</li>
+										<li>What is the future of the IP address? State three facts about what is IPv6 and why it is important.</li>
+										<li><strong>What personal information does the IP address reveal about you?</strong></li>
+									</ul>
+								</div>
+
+								<p>Discuss these questions and learner's answers. </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>10<br>
+                                min</p>
+                            </div>
+                           
+							<h3>IP Addresses of Your Favourite Sites</h3>
+								<p>Alone or in a group, generate a list of your 5 favourite websites.</p>
+									<p><strong>Look up the IP address of your 5 favourite websites</strong> using an an online resource to trace IP addresses (i.e., <a href="http://www.iptrackeronline.com/">http://www.iptrackeronline.com/</a>). Identify and collect information about 5 of your favourite websites:</p>
+									<div class="well example">
+										<p>Take notes on the following:</p>
+											<ul> 
+												<li>Name and URL of website:
+												<li>IP Address</li>
+												<li>City</li>
+												<li>Country</li>
+												<li>Latitude</li>
+												<li>Longitude</li>
+											</ul>
+									</div>
+                        </div>
+                    </li>
+                    <li>
+                    <div>
+                            <div class="time">
+                                <p>15<br>
+                                min</p>
+                            </div>
+							<h3>Mapping IP Addresses</h3>
+							<p>Use a paper map to <strong>mark the locations of the IP addresses</strong> for websites you have traced IP addresses for.  Alternatively, you can use a service like Google maps to create your maps digitally.</p>
+								<p><strong>Examine your map</strong> and explore the discussion questions through independent reflection or in a discussion group. </p>
+							
+                    </div>
+                    </li>
+                    <li style="border-bottom:none;">
+                    <div>
+                            <div class="time">
+                                <p>5<br>
+                                min</p>
+                            </div>
+							<h3>Discuss IP Addresses to Reinforce Learning</h3>
+							
+							<p><strong>Do you think an IP Address is personal information?</strong> Why or why not? <em>Discussion Tip: An IP Address is considered personal information by the EU and Canada, but not by the US or the UK. Learners in your group may be aware that sometimes organizations like a school share a single external IP address and argue against an IP address being PI.</em> </p>
+							
+							<p>Were there any websites that you tracked which masked their location information? Why would this be important?</p>
+							<p>Were there any websites that you tracked where the location information, such as the city or country, was different from where you thought the site should be located? <em>Discussion Tip: <strong>Sometimes IP addresses are masked</strong> to appear to be elsewhere. This means that the location of the device or website is made to appear to be elsewhere in the world.</em></p>
+							
+							<p>Can you find any statements on whether an internet company or government agency considers an IP address to be personal information?</p>
+							
+							<p>Have you heard of any <strong>news stories involving IP addresses? What issues were at stake?</strong> <em>Discussion Tip: Numerous news stories involve IP addresses. Some examples from 2014 - 2015 include Netflix’s perspectives on Canadians’ use of foreign IP addresses to access extra content or problematic changes, or vandalism, made to Wikipedia pages from particular IP addresses.</em></p>
+							
+							<p><strong>What steps do people take to keep their IP addresses private?</strong> <em>Discussion Tip: Individuals may choose to use a virtual private network (VPN) or proxy to obscure their IP addresses. </em></p> 
+                    </div>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <footer class="footer">
+            <a href="http://mozilla.github.io/webmaker-curriculum/ProtectingYourData/session01-password-collage.html"><button class="btn literacy-color-webmechanics">Reading the Web: Bad Password Collage</button></a> <!--Licensing Information-->
+
+            <div class="license">
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
