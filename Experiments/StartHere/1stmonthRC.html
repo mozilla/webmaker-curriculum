@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/makerstrap/makerstrap.complete.min.css">
+    <link href="https://stuff.webmaker.org/makerstrap/latest/makerstrap.complete.min.css" rel="stylesheet">
+    <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet">
+    <script src="//mozorg.cdn.mozilla.net/tabzilla/tabzilla.js"></script>
+    <script type="text/javascript" src="../../javascripts/jquery.js"></script>
+
+
+    <title>Your First Months as a Regional Coordinator</title>
+    <script>
+$(document).ready(function() {
+  var animTime = 300,
+    clickPolice = false;
+
+  $(document).on('touchstart click', '.acc-btn', function() {
+    if (!clickPolice) {
+      clickPolice = true;
+
+      var currIndex = $(this).index('.acc-btn'),
+        targetHeight = $('.acc-content-inner').eq(currIndex).outerHeight();
+
+      $('.acc-btn h1').removeClass('selected');
+      $(this).find('h1').addClass('selected');
+
+      $('.acc-content').stop().animate({
+        height: 0
+      }, animTime);
+      $('.acc-content').eq(currIndex).stop().animate({
+        height: targetHeight
+      }, animTime);
+
+      setTimeout(function() {
+        clickPolice = false;
+      }, animTime);
+    }
+
+  });
+
+});
+	</script>
+    <style>
+* { 
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -o-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+html, body {
+  background:#FFFFFF;
+}
+
+.acc-container {
+  width:78%;
+  margin:0px auto 0 auto;
+  overflow:hidden;
+}
+
+.acc-btn { 
+  width:100%;
+  cursor:pointer;
+  font-size: 1.5rem;
+  background-color: #F5F5F5;
+  color: #617886;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 700;
+  transition: background-color 0.5s ease 0s;
+}
+
+.acc-content {
+  height:0px;
+  width:100%;
+  margin:-10px auto;
+  overflow:hidden;
+  background:#FAFAFA;
+}
+
+.acc-content-inner {
+  padding:15px;
+}
+
+.open {
+  height: auto;
+}
+
+.selected{
+  border-top: 2px solid #E78832;
+  padding-top:10px;
+  transition: border-top 0.1s ease-in 0s;
+    transition-property: border-top;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in;
+    transition-delay: 0s;
+}
+h1{
+	color:#617886;
+	font-size:2rem;
+	font-weight:700;
+	padding:20px 15px;
+	
+}
+    </style>
+</head>
+
+<body>
+    <a href="https://www.mozilla.org/" id="tabzilla">mozilla</a>
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Your First Months as a Regional Coordinator</h1>
+
+            <p class="lead"><strong>A regional coordinator is a central role</strong> serving a global community of Mozillians dedicated to teaching the web. We are gracious conveners and authentic learners. <strong>Our goal is to support Mozilla Club captains to teach the web in a locally relevant and sustained way.</strong></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h3>Preamble</h3>
+
+        <p>We are in service to club captains becoming better champions and facilitators of web literacy. Our roles will be <strong>full of reflection and experimentation</strong>. A Regional Coordinator is *not* running lots of clubs. Instead, you are <strong>recruiting, on-boarding, and sustaining club captains</strong> to achieve positive outcomes, a sense of community and purpose, and to further web literacy. Regional coordinators become part of a community of practice with other local leaders around the world.</p>
+
+        <p><strong>Our club captains' success is our success.</strong></p>
+
+        <h3>Outcomes</h3>
+
+        <p>After completing the on-boarding outlined here, you’ll have:</p>
+
+        <ul>
+            <li>A community of peers helping you realize your vision and learn with you.</li>
+
+            <li>Club captains ready to lead learning groups under your mentorship.</li>
+
+            <li>Your personal story for how you empower club captains in your region.</li>
+        </ul>
+	</div>
+        <div class="acc-container">
+            <div class="acc-btn">
+                <h1 class="selected">Publish Your Story</h1>
+            </div>
+
+            <div class="acc-content open">
+                <div class="acc-content-inner">
+                    <p><strong>Craft your story.</strong> Why is web literacy important to you? How will clubs contribute to the change you want to see in the world? Why should people join you? <a href="http://discourse.webmaker.org/category/clubs/stories">Publish it in Discourse.</a></p>
+
+					<p><strong>Introduce yourself to your peers.</strong> Share your story with fellow regional coordinators. Discuss how you want to learn and how your peers can best support you. <a href="http://discourse.webmaker.org/category/clubs">Give feedback and encouragement to others.</a></p>
+                </div>
+            </div>
+
+            <div class="acc-btn">
+                <h1>Reflect Openly and Often</h1>
+            </div>
+
+            <div class="acc-content">
+                <div class="acc-content-inner">
+                    <p><strong>Set up a thread in Discourse.</strong> to reflect regularly on your progress. Read and respond to other regional coordinators. What are the challenges you are facing? Where do you need help? <a href="http://discourse.webmaker.org/category/clubs">Publish your progress.</a>
+					<p><strong>Decide who you want to serve.</strong> Think about the learners you ultimately want to benefit from clubs. Who are the best club captains to reach and teach those learners? What do club captains need and what can you do for them? <a href="http://discourse.webmaker.org/category/clubs">Share your reflections.</a>    
+                    </p>
+                </div>
+            </div>
+
+            <div class="acc-btn">
+                <h1>Find your Club Captains</h1>
+            </div>
+
+            <div class="acc-content">
+                <div class="acc-content-inner">
+                    <p><strong>Practice telling your story.</strong> This is one of the most effective ways to find collaborators. Tell your story to other regional coordinators. How do they respond? How do you feel telling it? <a href="http://discourse.webmaker.org/category/clubs">Share your reflections.</a></p>
+                    <p><strong>Have a conversation with each potential club captain.</strong> Talking to someone 1:1 is very powerful. Tell them your story and how they can make a difference. Invite them to run a club. Also, listen to what they want to achieve and take their insights back into your planning. </p>
+                </div>
+            </div>
+
+            <div class="acc-btn">
+                <h1>Prepare an Orientation</h1>
+            </div>
+
+            <div class="acc-content">
+                <div class="acc-content-inner">
+                    <p><strong>Set a date for an orientation.</strong> Once you have enough club captains, plan a kickoff meeting. The goal will be for them to define their own story and become confident in running their club. Do this in-person, if possible. 
+					<p><strong>Prepare an agenda.</strong> Building on what you learned from your conversations, review [this orientation agenda]. Where needed, adapt it to fit the needs and interests of your club captains, like this [example].</p>
+				</div>
+            </div>
+            
+            <div class="acc-btn">
+                <h1>Host an orientation (repeat #1 - 4 with your club captains)</h1>
+            </div>
+
+            <div class="acc-content">
+                <div class="acc-content-inner">
+                    <p><strong>Review your agenda</strong> beforehand with fellow regional coordinators. Get feedback. Visualize the event and practice how you will run it. </p>
+					<p>Host the orientation. Using [this agenda], on-board your club captains. Invite them to publish their stories of why is web literacy important to them, and how their club will contribute to the change they want to see in the world. <a href="http://discourse.webmaker.org/category/clubs">Publish it in Discourse.</a> </p>
+                </div>
+            </div>
+            <h1 style="margin-left:auto;margin-right:auto;width:241px;color:#E78832;">Let's #TeachTheWeb!</h1>
+        </div>
+</body>
+</html>
