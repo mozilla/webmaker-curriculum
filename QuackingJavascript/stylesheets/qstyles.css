@@ -8,3 +8,27 @@
 .pure-table th, .pure-table td {
     padding: 0.5em 1em;
 }
+
+.step-section ol {
+    counter-reset: step-counter;
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.step-section ol > li::before {
+    align-items: center;
+    border: 2px solid #27aae1;
+    border-radius: 50%;
+    color: #27aae1;
+    content: counter(step-counter, decimal);
+    counter-increment: step-counter;
+    display: flex;
+    font-weight: 700;
+    height: 30px;
+    justify-content: center;
+    left: -60px;
+    padding: 5px;
+    position: absolute;
+    width: 30px;
+    z-index: 5;
+}

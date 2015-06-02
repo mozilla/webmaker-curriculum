@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/makerstrap/makerstrap.complete.min.css">
+    <link rel="stylesheet" href="../stylesheets/styles.css" media="screen">
+    <link rel="stylesheet" href="../stylesheets/print.css" media="print">
+    <link rel="stylesheet" href="stylesheets/qstyles.css" media="screen">
+
+    <title>Javascript Basics | Cook the Web</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-webmaker">
+      <div class="container">
+        <div>
+          <!-- toggle button for mobile -->
+          <button type="button" class="navbar-toggle" ng-click="collapseToggle()">
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+          <!-- logo -->
+          <a href="#" class="logo webmaker-logo"><img src="https://webmaker.org/img/logo.png"></a>
+
+          <ul class="nav navbar-nav navbar-right navbar-collapse text-center-xs collapse">
+            <li>
+              <a href="https://twitter.com/hashtag/teachtheweb">#TeachTheWeb</a>
+            </li>
+
+            <li>
+              <a href="http://discourse.webmaker.org/category/clubs">Discussion</a>
+            </li>
+
+            <li>
+              <a href="https://github.com/mozilla/webmaker-curriculum/">View on Github</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="wrapper">
+      <aside class="aside">
+        <div class="image">
+          <img src="images/dora_the_explorer_square.jpg"><a href="http://digitalducks.org" class="attribution" alt ="http://en.wikipedia.org/wiki/Rubber_duck#/media/File:Rubber_Duck_%288374802487%29.jpg"><i class="fa fa-camera"></i> Eva Rinaldi</a>
+        </div>
+
+        <div class="goals">
+          <div class="literacy">
+            <h4>Web Literacy Competencies</h4><a href="https://webmaker.org/en-US/resources/literacy/weblit-CodingScripting">
+            <button class="btn literacy-color-remixing">
+              Coding / Scripting
+            </button></a><a href="https://webmaker.org/en-US/resources/literacy/weblit-Composing">
+            <button class="btn literacy-color-composing">
+              Composing for the Web
+            </button></a>
+          </div>
+
+          <div class="literacy">
+            <h4>GSCE UK areas</h4><a href="https://github.com/mozilla/webmaker-curriculum/wiki/Map-UK-GCSE-Curriculum-to-Webmaker-Club-curriculum-%28and-Web-Literacy-Map-v1.1%29">
+            <button class="btn literacy-color-remixing">
+              Programming concepts
+            </button></a><a href="https://github.com/mozilla/webmaker-curriculum/wiki/Map-UK-GCSE-Curriculum-to-Webmaker-Club-curriculum-%28and-Web-Literacy-Map-v1.1%29">
+            <button class="btn literacy-color-sharing">
+              Data Types
+            </button></a>
+          </div>
+
+          <h4>Audience</h4>
+          <ul>
+            <li>
+              Newcomers to text coding
+            </li>
+            <li>
+              Experience of visual coding an advantage (eg Scratch)
+            </li>
+            <li>
+              Experience of HTML an advantage
+            </li>
+          </ul>
+
+          <h4>Materials</h4>
+          <ul>
+            <li>
+              Net Connection
+            </li>
+            <li>
+              Computer
+            </li>
+            <li>
+              Web browser
+            </li>
+          </ul>
+
+          <h4>Learning Objective</h4>
+          <ul>
+            <li>
+              Understand programming sequence and basics of HTML
+            </li>
+          </ul>
+
+          <h4>Learning Outcomes</h4>
+          <ul>
+            <li>
+              You understand how variables can be used to store elements of a webpage.
+            </li>
+            <li>
+              You understand and use functions to display contents for webpages.
+            </li>
+            <li>
+              You can create a web page using a series of instructions.
+            </li>
+          </ul>
+
+          <h4>How learners become mentors</h4>
+          <ul>
+            <li>
+              If some students move faster or are more confident in the activity, ask them to peer mentor another group or individuals.
+            </li>
+            <li>
+              Conclude by prompting students to teach this activity to their friends and family.
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <article class="main">
+        <div>
+          <hgroup class="text-light">
+            <h2><a href="http://mozilla.github.io/webmaker-curriculum/QuackingJavascript/">Cooking the Web</a></h2>
+            <br>
+
+            <h3>Quacking JS Sequences</h3>
+
+            <p id="made-by">
+              Original mix by <a href="http://digitalducks.org/">Mick Fuzz</a> with suggestion and contributions by <a href="https://webmaker.org/mentor">Mozilla Webmakers</a>, particularly <a href="https://mousemeredith.makes.org">Meredith from Mouse</a>, <a href="https://twitter.com/ossington">ginger coons</a> and <a href="https://twitter.com/yofiesetiawan">Yofie Setiawan, Mozilla Indonesia</a>.
+            </p>
+
+            <p class="lead">
+              Here we see how we can use a series of Javascript commands to create a series of elements of a web page.
+            </p>
+
+            <p class="leadTime">
+              <i class="fa fa-clock-o"></i> 45 minutes to an hour
+            </p>
+          </hgroup>
+        </div>
+
+        <div class="agenda">
+          <ul>
+            <li>
+              <div>
+                <h3>Preparation</h3>
+
+                <p>
+                  First do the activities on your own to become familiar with them.
+                </p>
+
+                <p>
+                  To complete this session you should know a little bit about HTML the language used to show the contents of web pages. Have a look at the
+                  resources below and think about ways of integrating this into your session if you learners have not come across HTML before.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div>
+                <div class="time">
+                  <p>
+                    10
+                    <br>
+                    min
+                  </p>
+                </div>
+
+                <h3>Introduction</h3>
+
+                <p>
+                  A <b>short introduction about Javascript and creating web pages.</b>
+                </p>
+
+                <div class="well example">
+                  <ul>
+                    <li>
+                      Normally we write the contents of web pages in HTML. This will include text, images, forms etc.
+                    </li>
+
+                    <li>
+                      When creating web pages we can make them more interactive with Javascript.
+                    </li>
+
+                    <li>
+                      We can also use Javascript to create a series of instructions like a recipie to create a web page.
+                    </li>
+                  </ul>
+                </div>
+
+                <p>
+                  In this session we will use variables in Javascript to output one part of the web page after the other. This will teach us about two areas:
+                </p>
+
+                <ul>
+                  <li>
+                    What HTML we need to create simple web pages
+                  </li>
+                  <li>
+                    How we can create a simple program / algorithm (a series of instructions) with Javascript
+                  </li>
+                </ul>
+
+                <p>
+                  &nbsp;
+                </p>
+
+                <p>
+                  <a href = "http://www.bbc.co.uk/education/guides/zsf8d2p/revision"><img src="images/save_strawberry_full.png" alt="image screenshot of BBC bitesize" class="img-example"></a>
+                </p>
+
+                <p>
+                  Hopefully you are good at following instructions because there is a mission to save a strawberry that needs people to pay careful attention.
+
+                  Some instructions are tricky and you have to follow the steps exactly and in the right order. Writing web pages is a lot like this.
+                </p>
+
+                <p>
+                  <a href = "http://www.bbc.co.uk/education/guides/zsf8d2p/revision">Watch the video on this page </a> to find out more about sequences in text-code (like Javascript). If you want to you can read the three pages there later and <a href="http://www.bbc.co.uk/education/guides/zsf8d2p/test">try out the quiz</a> (but you don't need to do that in this session)
+                </p>
+
+                <p>
+                  &nbsp;
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div>
+                <div class="time">
+                  <p>
+                    10
+                    <br>
+                    min
+                  </p>
+                </div>
+
+                <h3>Prepare to be a-Mazed </h3>
+
+                <p>
+                  This activity is good to show you how to make a sequence of instructions.
+                </p>
+
+                <div class="well example">
+                  <ul>
+                    <li>
+                      Point <a href="https://blockly-games.appspot.com/maze?lang=en">your browser here</a>. It's a maze game
+                    </li>
+
+                    <li>
+                      Play the game in pairs for 10 minutes.
+                    </li>
+
+                    <li>
+                      Share back with the group. How far did you get? What mistakes did you make. How did you solve them?
+                    </li>
+                  </ul>
+                </div>
+
+                <p>
+                  <a href = "http://www.bbc.co.uk/education/guides/zsf8d2p/revision"><img src="images/blockly_800.png" alt="image screenshot of Blockly" class="img-example"></a>
+                </p>
+
+                <p>
+                  &nbsp;
+                </p>
+
+                <p>
+                  Blockly is a game which uses block coding to show you how to create a sequence of instructions. When you solve the puzzle it shows you what the instructions would look like in Javascript.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div>
+                <div class="time">
+                  <p>
+                    15
+                    <br>
+                    min
+                  </p>
+                </div>
+
+                <h3>HTML catch up - Research and Physical activities on HTML</h3>
+                <p>
+                  To complete this session you should know a little bit about HTML the language used to show the contents of web pages. You may have done
+                  another session about this. If not here are some activities and online tutorials which can help you get started.
+                </p>
+                <div class="well example">
+                  <ul>
+                    <li>
+                      <a href="http://yopdesign.com/images/webmaker/html-puzzle-box-step-02.jpg">Offline HTML puzzle box activity</a>
+                    </li>
+                    <li>
+                      <a href="https://mozteach.makes.org/thimble/html-cheatsheet/" title="a cheat sheet for html">Mozilla HTML cheat sheet</a>
+                    </li>
+                    <li>
+                      <a href="http://www.codecademy.com/en/tracks/web">Codecademy on HTML</a>
+                    </li>
+                    <li>
+                      <a href="http://people.mozilla.org/~cmills/st-chads/lesson3.html" title="introduction to html">Chris Mills on starting with HTML</a>
+                    </li>
+                    <li>
+                      <a href="http://people.mozilla.org/~cmills/st-chads/lesson4.html">Chris Mills on making links and inputing images using HTML</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <h4>Related Physical Activities</h4>
+
+                <img src="http://yopdesign.com/images/webmaker/html-puzzle-box-step-02.jpg" class="img-example">
+                <p>
+                  &nbsp;
+                </p>
+                <p>
+                  If you have a fun group to work with or if they need something to help them get lively you can use some physical activities to explore the basic make up of an HTML page. Try the ones below:
+                </p>
+                <div class="well example">
+                  <ul>
+                    <li>
+                      <a href="http://mozilla.github.io/webmaker-curriculum/WebLiteracyBasics-I/session02-puzzlebox.html">HTML Puzzle boxes</a>.
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://gingercoons.makes.org/thimble/human-html-tag-puzzle">Human HTML Tag Puzzle Part 1</a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://gingercoons.makes.org/thimble/human-html-tag-puzzle-part-two">Human HTML Tag Puzzle Part 2</a>
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div>
+                <div class="time">
+                  <p>
+                    15
+                    <br>
+                    min
+                  </p>
+                </div>
+
+                <h3>Remix Activity - Use Javascript to create a simple about you page</h3>
+
+                <p>
+                  If you are in a workshop, split learners into <b>groups of 2 or individuals if there enough computers.</b> We will use the console to find out more about how Javascript can write to our web pages.
+                </p>
+
+                <figure>
+
+                  <a href = "https://mchesterman.makes.org/thimble/LTEwMDQ3OTc0NDA=/a-little-about-me-with-js"><img src="images/about_me_1.png" class="img-example" alt="A little about me" ></a>
+                  <figcaption>
+                    Create an about me Page
+                  </figcaption>
+                </figure>
+
+                <!-- Image CC - BY from https://www.flickr.com/photos/shankaronline/7904727288
+                -->
+
+                <p>
+                  &nbsp;
+                </p>
+
+                <p>
+                  Follow these instructions:
+                </p>
+                <div class="well example">
+                  <ul>
+                    <li>
+                      Go to <a href = "https://mchesterman.makes.org/thimble/LTEwMDQ3OTc0NDA=/a-little-about-me-with-js"> About Me activity  -  here </a>
+                    </li>
+                    <li>
+                      click REMIX (green button on the top right)
+                    </li>
+                    <li>
+                      Change the value of variables in the code to create a simple page about you.
+                    </li>
+                    <li>
+                      Change the order of the sections by cutting and pasting the right parts of the code.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div>
+                <div class="time">
+                  <p>
+                    15
+                    <br>
+                    min
+                  </p>
+                </div>
+
+                <h3>Experimental Activity - Use the console to create a page with Javascript</h3>
+
+                <p>
+                  We are going to write to a simple web page in an unusual way using the console. Follow the instructions below.
+                </p>
+
+                <div class="well example">
+                  <ul>
+                    <li>
+                      Open Firefox (or other browser)
+                    </li>
+                    <li>
+                      Point your browser to http://webmaker.org (most any page will do)
+                    </li>
+                    <li>
+                      Press F12 to bring up some tools
+                    </li>
+                    <li>
+                      Click on Console
+                    </li>
+                    <li>
+                      Press F12, find the Console (see image below)
+                    </li>
+                  </ul>
+                </div>
+
+                <p>
+                  If there are messages in the console you can click on Clear to get rid of them.
+                </p>
+                <figure>
+                  <img src="images/console_webmaker_800_2.png" alt="screenshot of console image" class="img-screenshot"></a>
+                  <figcaption>
+                    Find the Console in Firebug or Chrome, press Clear.
+                  </figcaption>
+                </figure>
+                <p>
+                  &nbsp;
+                </p>
+                <p>
+                  Write the following line into the console and press ENTER key.
+                </p>
+                <pre><code>document.write("&lt;h1&gt;A little about Me&lt;/h1&gt;") </code></pre>                                                                                                                                                                                
+
+
+
+
+
+
+                <p>
+                  You should see the result. You have taken over the browser and are writing to the page using a Javascript function.
+                </p>
+
+                <p>
+                  <strong>Function</strong> is a new word for us.
+                  In a nutshell a function is a short cut for doing something in Javascript. This function writes the value or variable between the () brackets
+                  to the web page. In coding we call the web page a document.
+                </p>
+
+                <p>
+                  Let's learn more about hacking and taking control over our browser using Javascript.
+                </p>
+
+            </li>
+            <li>
+              <div class ="step-section">
+                <div class="time">
+                  <p>
+                    30
+                    <br>
+                    min
+                  </p>
+                </div>
+
+                <h3>Remix Activity - Javascript Take Over</h3>
+
+                <p>
+                  &nbsp;
+                </p>
+
+                <ol class ="step-section">
+                  <li>
+                    <p>
+                      <strong><a target="_blank" href="https://mousemeredith.makes.org/thimble/ODg2MTc3Nzky/javascript-takeover-bookmarklet">INSTALL "HEY FRENCH TOAST"</a> EXAMPLE BOOKMARKLET</strong>
+                    </p>
+
+                    <br>
+                    You may have tried out this activity already but this time we will take it further, so try it again.  Just browse to a site with lots of images, like a news-site homepage, or a Google image search results page, then click the “Hey French Toast” link that you just added to your bookmarks.  If everything is working right, all or most of the images on the side should now be pictures of french toast!
+
+                    <br>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>CHOOSE YOUR OWN THEME</strong>
+                    </p>
+                    Now it’s time to make your own! First, you’ll need to pick a new theme for your bookmarklet to replace all of the french toast pictures.  What’s your favorite food or celebrity or TV-show or musician or ANYthing - be creative (but school appropriate, please)!
+                  </li>
+
+                  <li>
+                    <p>
+                      <strong>FIND IMAGES</strong>
+                    </p>
+                    After you’ve got your theme, use Google Image search to find a bunch of images to replace the pictures of french toast in the original code.  You’re going to need a bunch of different images of your theme, as you find them open each in a new tab (or copy/paste the image URLs into a text file.  Here’s what to look for:
+                    <ul>
+                      <li>
+                        5 horizontal or “landscape” images (this means that the picture is wider than it is tall.
+                      </li>
+                      <li>
+                        5 vertical or “portrait” images (taller than it is wide).
+                      </li>
+                      <li>
+                        3 square images (both the height and width are the same).
+                      </li>
+                      <li>
+                        Make sure your images aren’t too big! Try to keep the width and height under 800 pixels each.  Hint: you can use the ‘advanced search’ in Google Images to find ‘medium’ sized images.
+                      </li>
+                      <li>
+                        Your bookmarklet will be more fun if some of your images are animated gifs!
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <p>
+                      <strong>REMIX THE CODE</strong>
+                    </p>
+                    Go to original <a target="_blank" href="https://mousemeredith.makes.org/thimble/ODg2MTc3Nzky/javascript-takeover-bookmarklet">French Toast Thimble link</a> and click “Remix”. Scroll down to Line 72 in the Editor pane on the left to see the first instruction for making your own bookmarklet. All of the instructions to remix the code are inside the editor as comments. The comments will tell you which sections of code to change and which you can leave alone.  Comments look like this:
+                    <ul>
+                      <li>
+                        HTML comments:                         <pre><em><strong> &lt;!-- Hello! I’m an HTML/CSS comment. --&gt; </strong></em></pre>
+                      </li>
+                      <li>
+                        Javascript comments:                         <pre><em><strong>// Hello! I’m a javascript comment.</strong></em></pre>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>TEST</strong>
+                    </p>
+                    To see if your code is working, save and publish your Thimble remix and try to install your new bookmarklet in your browser.  Go to any website and click the bookmark!
+                  </li>
+                </ol>
+                <p>
+                  &nbsp;
+                </p>
+                
+                <iframe src="https://player.vimeo.com/video/121806896" class="img-example" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <p>
+                  <a href="https://vimeo.com/121806896">Javascript Takeover!</a> from <a href="https://vimeo.com/mousesquad">MOUSE Squad</a> on <a href="https://vimeo.com">Vimeo</a>.
+                </p>
+
+              </div>
+            </li>
+            <li style="border-bottom:none;">
+              <div>
+                <div class="time">
+                  <p>
+                    30
+                    <br>
+                    min
+                  </p>
+                </div>
+
+                <h3>Exploring: Create your own series of instructions in a web page</h3>
+
+                <p>
+                  Computer programming is all about creating a list of instructions that you follow exactly.
+
+                  We call this list of instructions a sequence or an algorithm. When we put these sequences together they form a program. We need these skills to create our own web pages.
+                </p>
+                <p>
+                  Thimble is a tool that lets you create web pages online. You type in the code on the left and you can see the result as a web page on the right.
+
+                  We used it when we remixed the About Me page in the above activity.
+                </p>
+
+                <p>
+                  Now it is time to create your own page from scratch. If you are not sure what information to share you could include some of the following:
+                </p>
+
+                <ul>
+                  <li>
+                    Your name:
+                  </li>
+
+                  <li>
+                    Your age:
+                  </li>
+
+                  <li>
+                    Where you live:
+                  </li>
+                  <li>
+                    A picture of your town or favourite person:
+                  </li>
+                </ul>
+
+                <h4>How to create a sequence using variables</h4>
+
+                <p>
+                  &nbsp;
+                </p>
+
+                <p>
+                  The following activity creates a web page using Javascript variables with information about you.
+                </p>
+
+                <p>
+                  To make a sequence of HTML statement we will create a list of variables at the top of the page. And then make a list of commands using the document.write() function to write to our web page.
+
+                  In coding language we say we declare the value of variables first and call the document.write() functions using the variables later.
+                </p>
+
+                <p>
+                  In real life you probably wouldn't create such a simple web page using javascript but it is a good exploring task for us to do this before moving on to more complicated examples.
+                </p>
+
+                <p>
+                  To start with keep it very simple. A first step might look like this:
+                </p>
+
+                <img src="images/thimble_simple.png" alt="let's explore" class="img-example">
+
+                <p>
+                  Keep building this up adding different variables and write functions to your page.
+                  Use this as a way to explore different HTML tags from our <a href="https://mozteach.makes.org/thimble/html-cheatsheet/" title="a cheat sheet for html">HTML cheat sheet</a>
+
+                  <figure>
+                    <img src="images/dora_the_explorer_2.jpg" alt="let's explore" class="img-example">
+                    <figcaption>
+                      Let's Explore
+                    </figcaption>
+                  </figure>
+
+                  <h4>How to add images </h4>
+
+                <p>
+                  &nbsp;
+                </p>
+
+                <p>
+                  To add images to your page you need to add code similar to the following  to your page.
+
+                </p>
+                <p>
+                  <strong>&lt;img src="http://digitalducks.org/chips.png" width = "300"&gt;</strong>
+                </p>
+
+                <p>
+                  IMG stands for Image and SRC is URL source. It is the source of the image on the internet. When you look for images
+                  you can copy the image URL and paste it into your code. When you see an image you want you can right click it and choose Copy Image Location or Copy Image URL.
+                </p>
+
+                <img src="images/saveimageas_2.png" alt="save image URL" class="img-screenshot">
+                <p>
+                  Be careful: If you are using Google Images, if what you copy and paste is very long and doesn't end with a jpg, gif or png then something is not right. When you are previewing images, click on View Image and try again.
+                </p>
+
+                <p>
+                  Also be careful about quotation marks.
+                  We tell javascript that our variable is a String by putting it in quotion marks. The danger is that if there are also quotation marks in our string that we'll make an error. To avoid this we do a thing called escaping quotation marks that we want to keep inside our string and we do this by putting a \ infront of them. See the following image for an example.
+                </p>
+
+                <img src="images/thimble_simple_2.png" alt="save image URL" class="img-example">
+
+                <p>
+                  &nbsp;
+                </p>
+              </div>
+
+            </li>
+
+            <li>
+              <div>
+                <div class="time">
+                  <p>
+                    5
+                    <br>
+                    min
+                  </p>
+                </div>
+
+                <h3>Wrapping up - </h3>
+
+                <p>
+
+                  We have learned the following things.
+                </p>
+
+                <div class="well example">
+                  <ul>
+                    <li>
+                      Web pages are a series of instructions that we write to the web browser screen including text and images.
+                    </li>
+                    <li>
+                      We can write elements of web pages using variable containing data and functions.
+                    </li>
+                    <li>
+                      We have to be very exact about the data and order we put them in for our sequences to work.
+                    </li>
+                    <li>
+                      Sometimes we need to "escape" quotation marks if they are present inside String variables.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </article>
+
+      <footer class="footer">
+        <div class="line" >
+          <p class="lead">
+            <a href="js_loops.html">
+            <button class="btn literacy-color-open-practices">
+              5. Going Loopy
+            </button></a>
+            <a href="selection.html">
+            <button class="btn literacy-color-composing">
+              4. Daddy or Chips
+            </button></a>
+            <a href="sequences.html">
+            <button class="btn literacy-color-remixing">
+              3. Cooking the Web
+            </button></a>
+            <a href="whats_inna_name.html">
+            <button class="btn literacy-color-credibility">
+              2. What's in a Name
+            </button></a>
+            <a href="magic_numbers.html">
+            <button class="btn literacy-color-webmechanics">
+              1.Magic Numbers
+            </button></a>
+          </p>
+        </div>
+
+        <!--Licensing Information-->
+
+        <div class="license">
+          <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+        </div>
+
+      </footer>
+
+    </div>
+  </body>
+</html>
