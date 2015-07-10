@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<!--
+===========================================================
+WELCOME TO THE MOZILLA LEARNING ACTIVITY TEMPLATE!
+Use this template to create your own session or educational
+resource  for learners. Edit the HTML below to add your own
+content, links and images. We're using the 'Kraken the Code'
+activity as an example.
+
+Code comments like these will help with hints and guides.
+Need help? Start here: http://mzl.la/teachingkit-tips
+===========================================================
+-->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/makerstrap/makerstrap.complete.min.css">
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+
+    <!-- ADD YOUR TITLE HERE -->
+    <title>Create a Webmaker Project</title>
+</head>
+
+
+    <!-- IGNORE THIS FIRST BIT - JUST MAKES SURE IT WORKS WELL ON MOBILE DEVICES! -->
+
+<body>
+    <nav class="navbar navbar-webmaker">
+        <div class="container">
+            <div>
+                <button type="button" class="navbar-toggle" ng-click="collapseToggle()"><span class="sr-only">Toggle navigation</span></button> <!-- logo -->
+                 <a href="#" class="logo webmaker-logo"><img src="https://webmaker.org/img/logo.png"></a>
+
+                <ul class="nav navbar-nav navbar-right navbar-collapse text-center-xs collapse">
+                    <li>
+                        <a href="https://twitter.com/hashtag/teachtheweb">#TeachTheWeb</a>
+                    </li>
+
+                    <li>
+                        <a href="http://discourse.webmaker.org/category/clubs">Discussion</a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/mozilla/webmaker-curriculum/blob/master/WebLiteracyBasics-I/session01-credibility.html">View on Github</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- THE SIDEBAR STARTS HERE - GET READY TO EDIT! -->
+
+    <div class="wrapper">
+        <aside class="aside">
+            <div class="image">
+                <!-- ADD YOUR MAIN IMAGE HERE -->
+                <img src="../images/designing-webmaker.jpg"> <a href="https://instagram.com/p/14gVTKJZMO/" class="attribution"><span class="fa fa-camera"></span> Laura de Reynal</a>
+            </div>
+
+            <div class="goals">
+                <div class="literacy">
+                    <!-- LIST THE WEB LITERCY MAP COMPETENCIES YOUR ACTIVITY ALIGNS WITH HERE - SEE http://webmaker.org/resources -->
+                    <h4>Web Literacy Competencies</h4>
+                </div>
+
+	            <!-- LIST THE MATERIALS REQUIRED FOR THE SESSION HERE -->
+                <h4>Materials</h4>
+                <ul>
+                    <li>An Android mobile phone (OS version 4.2 higher)</li>
+                    <li>Some paper and pens</li>
+                    <li><a href="../assets/webmaker-mobile-curriculum-handout.pdf">The Mobile Internet Lesson Handbook (PDF)</a></li>
+                    <li>If available, poster-sized paper or a whiteboard/chalkboard to promote interaction during the discussion portions of this workshop.</li>
+                </ul>
+
+	            <!-- LIST 3-5 LEARNING OBJECTIVES HERE - SEE https://github.com/mozilla/webmaker-curriculum/wiki/How-to-write-Learning-Objectives -->
+                <h4>Learning Objectives</h4>
+                <ul>
+                    <li>A strong grasp of what the Internet is, and the different ways to access it.</li>
+                    <li>Understand the benefits of the Internet, and several different things it can be used for every day.</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- END OF SIDEBAR CONTENT -->
+
+        <!-- THE MAIN CONTENT STARTS HERE -->
+
+        <article class="main">
+            <div>
+                <hgroup class="text-light">
+
+                    <!-- CHANGE THE TITLES (AND LINKS) -->
+                    <h2>The Internet</h2>
+
+                    <!-- ADD YOUR NAME AND A LINK TO YOUR PROFILE -->
+                    <p id="made-by">Made by <a href="https://twitter.com/katiehighet">Katie</a> and remixed for Maker Party by <a href="https://github.com/secretrobotron">Bobby</a>.
+
+                    <!-- EXPLAIN THE BROAD AIM OF YOUR SESSION AND WHAT PARTICIPANTS WILL LEARN -->
+                    <p class="lead">Learners will understand what the Internet is, how to access it, and what it can be used for.</b></p>
+
+                    <p class="leadTime"><i class="fa fa-clock-o"></i> 2 hours</p>
+                </hgroup>
+               <hr>
+            </div>
+
+            <div class="agenda">
+                <ul>
+                    <li>
+                        <div>
+
+                            <!-- EXPLAIN WHAT OTHERS WANTING TO RUN THIS ACTIVITY WILL NEED -->
+                            <h3>Preparation</h3>
+                            <p>The Internet is the giant public network that we connect to with mobile phones, computers, tablets or other devices, and find webpages such as <a href="https://facebook.com">Facebook</a>, <a href="https://google.com">Google</a> and <a href="http://www.bdjobs.com/">Bdjobs</a>. When we talk about the <b>Web</b>, we mean the interconnected system through which we navigate the Internet. You might have heard of the "<b>mobile internet</b>". This term refers to using the Internet with a wireless device &mdash; any device that does not need a cable to access the Internet. Apps (otherwise known as applications) are functions on wireless devices that give us direct access to platforms like Facebook, Viber and Webmaker.</p>
+
+                            <p>In this session we will learn about the Internet and how it can be used to access information conveniently, quickly and accurately.</p>
+
+                            <p>This activity is designed for people who have limited or no experience with the Internet. If learners are familiar with the iIternet as a concept you can skip <a href="setting-up-your-phone.html">a more relevant activity</a>.</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>10<br>min</p>
+                            </div>
+
+                            <!-- ADD DETAILS OF THE INTRODUCTION TO YOUR SESSION -->
+                            <h3>Icebreaker: Zip Zap Zop!</h3>
+
+                            <p>Ask all of the learners to stand in a circle. Have everyone in the group repeat the words "<b>Zip, Zap, Zop</b>" several times, all together so that the pattern of the words becomes familiar.</p>
+
+                            <p>In the circle, explain that you have an imaginary bolt of energy in your hands, and you can send it to anyone in the circle by pointing it at them. You do this by looking someone in the eye, pointing your hands in a forward-pointing prayer position at them, and saying "<b>zip</b>". Then, they have the bolt and can pass it on to someone else in the circle by saying "<b>zap</b>" with the same eye contact and hand motions. That person then uses "<b>zop</b>" – and so on, in the <b>zip</b>, <b>zap</b>, <b>zop</b> pattern. When someone falters, simply have them start again with "zip".</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>30<br>min</p>
+                            </div>
+
+                            <!-- ADD DETAILS OF YOUR MAIN ACTIVITY -->
+
+                            <h3>Role-playing device functions</h3>
+
+                            <p>Have a mentor stick <a href="../assets/webmaker-mobile-curriculum-handout.pdf">pictures</a> of a basic phone, a smartphone and a computer at the front of the class.</p>
+
+                            <p>Then, without speaking, the mentor acts out the various actions listed below in a light-hearted manner. The learners have to watch and guess what the action is – if it is too hard to guess, the mentors might offer a word or two as a hint. Once the class have guessed correctly, as a group they tell the mentor which device(s) they can perform this activity on, and the mentor writes the activity under the corresponding device.</p>
+
+                            <div class="well example">
+                                <p>If there is more than one mentor to assist the facilitator, have them take turns acting out the actions.</p>
+                            </div>
+
+                            <div class="well example">
+                                <p>Actions to act out:</p>
+                                <ul>
+                                    <li>Making a phone call</li>
+                                    <li>Looking at a friend’s Facebook photos</li>
+                                    <li>Sending an SMS</li>
+                                    <li>Listening to the radio</li>
+                                    <li>Getting directions</li>
+                                    <li>Buying a book on amazon</li>
+                                    <li>Ordering MacDonald’s online</li>
+                                    <li>Using an app</li>
+                                    <li>Making a bank transfer</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>60<br>min</p>
+                            </div>
+
+                            <!-- ADD DETAILS OF YOUR MAIN ACTIVITY -->
+
+                            <h3>Adventures with smartphones</h3>
+
+                            <p>Arrange the participants in pairs, and ask them to imagine they have a smartphone (with 3G) in their pocket. Give each pair one of the scenarios from below, and ask them to brainstorm and write out the different actions they could take with their smartphone.</p>
+
+                            <br />
+
+                            <h4>Scenario 1</h4>
+                            <p>You and your dad LOVE cricket, and Bangladesh is playing India at the stadium tonight. He sends you an SMS while you are at work, telling you he has two tickets for the match – but he is not sure the best route to the cricket grounds, and he thinks it may be called off because of the rain – he wonders whether if it is worth the effort. What can you do to convince him you should go together?</p>
+
+                            <br />
+
+                            <div class="well example">
+                                <p>
+                                    <b>Facilitator prompts:</b>
+                                    <br />
+                                    <em>(Use only if participants are having difficulty coming up with their own ideas.)</em>
+                                </p>
+                                <ul>
+                                    <li>Check the weather forecast</li>
+                                    <li>Check the bus timetable</li>
+                                    <li>Look up the biographies of the National Cricket Team</li>
+                                </ul>
+                            </div>
+
+                            <br />
+
+                            <h4>Scenario 2</h4>
+                            <p>You are already running very late for your uncle's retirement party, when your sister calls and says that she forgot to buy him a gift, and you need to bring one for both of them. What can you do? All the shops are almost closed.</p>
+
+                            <br />
+
+                            <div class="well example">
+                                <p>
+                                    <b>Facilitator prompts:</b>
+                                    <br />
+                                    <em>(Use only if participants are having difficulty coming up with their own ideas.)</em>
+                                </p>
+                                <ul>
+                                    <li>Search for a nearby shops open late</li>
+                                    <li>Buy him something online</li>
+                                    <li>Google "what are 70 year olds interested in"</li>
+                                    <li>Get flowers delivered to his house</li>
+                                </ul>
+                            </div>
+
+                            <br />
+
+                            <h4>Scenario 3</h4>
+                            <p>You are waiting to meet your friend at a café, when she sends you an SMS saying that due to a cricket tournament in town, a major road has been closed and there is back-to-back traffic. She will be at least an hour late, maybe more. What can you do?</p>
+
+                            <br />
+
+                            <div class="well example">
+                                <p>
+                                    <b>Facilitator prompts:</b>
+                                    <br />
+                                    <em>(Use only if participants are having difficulty coming up with their own ideas.)</em>
+                                </p>
+                                <ul>
+                                    <li>Look for an alternative route for her to take</li>
+                                    <li>Look for an alternative meeting place</li>
+                                    <li>Find out when the cricket tournament ends</li>
+                                    <li>Find out who is playing in the cricket tournament and arrange to meet there instead!</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li style="border-bottom:none;">
+                        <div>
+                            <div class="time">
+                                <p>20<br>min</p>
+                            </div>
+
+                            <!-- ADD DETAILS OF YOUR MAIN ACTIVITY -->
+
+                            <h3>Checking progress</h3>
+
+                            <p>At the end of the session, give each learner a brief <a href="../assets/webmaker-mobile-curriculum-handout.pdf">evaluation form</a> and ask them to provide them to fill it out and return to you. This will help you ascertain the level of knowledge achieved in the first topic.</p>
+
+                            <div class="well example">
+                                <p>Questions to prompt discussion:</p>
+                                <ul>
+                                    <li>Can all phones access the Internet?</li>
+                                    <li>What are two things you can do with mobile Internet?</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- ADD A LINK TO WHAT COMPETENCY/SESSION PEOPLE MIGHT LIKE TO EXPLORE NEXT! -->
+
+        <footer class="footer">
+            <a href="setting-up-your-phone.html"><button class="btn literacy-color-webmechanics">Next &rarr; Setting Up Your Phone</button></a> <!--Licensing Information-->
+
+            <div class="license">
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
