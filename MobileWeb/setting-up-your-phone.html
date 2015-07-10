@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<!--
+===========================================================
+WELCOME TO THE MOZILLA LEARNING ACTIVITY TEMPLATE!
+Use this template to create your own session or educational
+resource  for learners. Edit the HTML below to add your own
+content, links and images. We're using the 'Kraken the Code'
+activity as an example.
+
+Code comments like these will help with hints and guides.
+Need help? Start here: http://mzl.la/teachingkit-tips
+===========================================================
+-->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/makerstrap/makerstrap.complete.min.css">
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+
+    <!-- ADD YOUR TITLE HERE -->
+    <title>Setting Up Your Phone</title>
+</head>
+
+
+    <!-- IGNORE THIS FIRST BIT - JUST MAKES SURE IT WORKS WELL ON MOBILE DEVICES! -->
+
+<body>
+    <nav class="navbar navbar-webmaker">
+        <div class="container">
+            <div>
+                <button type="button" class="navbar-toggle" ng-click="collapseToggle()"><span class="sr-only">Toggle navigation</span></button> <!-- logo -->
+                 <a href="#" class="logo webmaker-logo"><img src="https://webmaker.org/img/logo.png"></a>
+
+                <ul class="nav navbar-nav navbar-right navbar-collapse text-center-xs collapse">
+                    <li>
+                        <a href="https://twitter.com/hashtag/teachtheweb">#TeachTheWeb</a>
+                    </li>
+
+                    <li>
+                        <a href="http://discourse.webmaker.org/category/clubs">Discussion</a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/mozilla/webmaker-curriculum/blob/master/WebLiteracyBasics-I/session01-credibility.html">View on Github</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- THE SIDEBAR STARTS HERE - GET READY TO EDIT! -->
+
+    <div class="wrapper">
+        <aside class="aside">
+            <div class="image">
+                <!-- ADD YOUR MAIN IMAGE HERE -->
+                <img src="../images/designing-webmaker.jpg"> <a href="https://instagram.com/p/14gVTKJZMO/" class="attribution"><span class="fa fa-camera"></span> Laura de Reynal</a>
+            </div>
+
+            <div class="goals">
+                <div class="literacy">
+                    <!-- LIST THE WEB LITERCY MAP COMPETENCIES YOUR ACTIVITY ALIGNS WITH HERE - SEE http://webmaker.org/resources -->
+                    <h4>Web Literacy Competencies</h4>
+                </div>
+
+	            <!-- LIST THE MATERIALS REQUIRED FOR THE SESSION HERE -->
+                <h4>Materials</h4>
+                <ul>
+                    <li>Android phones (at least one per every two participants)</li>
+                    <li>Internet access</li>
+                    <li><a href="../assets/webmaker-mobile-curriculum-handout.pdf">The Mobile Internet Lesson Handbook (PDF)</a></li>
+                </ul>
+
+	            <!-- LIST 3-5 LEARNING OBJECTIVES HERE - SEE https://github.com/mozilla/webmaker-curriculum/wiki/How-to-write-Learning-Objectives -->
+                <h4>Learning Objectives</h4>
+                <ul>
+                    <li>Clear understanding of the words and phrases outlined in the glossary.</li>
+                    <li>Knowledge and confidence in the set-up and installation process for Webmaker.</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- END OF SIDEBAR CONTENT -->
+
+        <!-- THE MAIN CONTENT STARTS HERE -->
+
+        <article class="main">
+            <div>
+                <hgroup class="text-light">
+
+                    <!-- CHANGE THE TITLES (AND LINKS) -->
+                    <h2>Setting Up Your Phone</h2>
+
+                    <!-- ADD YOUR NAME AND A LINK TO YOUR PROFILE -->
+                    <p id="made-by">Made by <a href="https://twitter.com/katiehighet">Katie</a> and remixed for Maker Party by <a href="https://github.com/secretrobotron">Bobby</a>.
+
+                    <!-- EXPLAIN THE BROAD AIM OF YOUR SESSION AND WHAT PARTICIPANTS WILL LEARN -->
+                    <p class="lead">Learners will understand how to set up their mobile phone, connect to the web and download, install and use apps.</b></p>
+
+                    <p class="leadTime"><i class="fa fa-clock-o"></i> 2.5 hours</p>
+                </hgroup>
+               <hr>
+            </div>
+
+            <div class="agenda">
+                <ul>
+                    <li>
+                        <div>
+
+                            <!-- EXPLAIN WHAT OTHERS WANTING TO RUN THIS ACTIVITY WILL NEED -->
+                            <h3>Preparation</h3>
+                            <p>When you first receive a phone, not all of the apps you might want or need (like WhatsApp or Facebook) will be on your phone. This is why we need to first connect to the Internet in order to install them, and set them up from there &mdash; only then are we ready to use them.</p>
+
+                            <p>This section will explore how we can get apps, programs and activities on our mobile phone, and different parts of the set-up process.  By the end of this session, the participants will be confident about what is needed to install an app, and will have each set up a Webmaker account.</p>
+
+                            <br />
+
+                            <h4>What is Webmaker?</h4>
+                            <p>Most people just use the Internet to consume information, but what if you could help shape the Internet itself, by contributing content that is important to you and your community?</p>
+
+                            <p>Webmaker is a tool built by Mozilla, to enable you to create projects or webpages on the Internet. Through the app on your android smartphone, you can design projects on the Internet with text, photos and other links. These lessons about the webmaker app will give you the skills you need to be an active participant in the Internet.</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>10<br>min</p>
+                            </div>
+
+                            <!-- ADD DETAILS OF THE INTRODUCTION TO YOUR SESSION -->
+                            <h3>Icebreaker: Stand up, sit down</h3>
+
+                            <p>This game is a process of elimination, where the winner is the last one (or last few) standing.</p>
+
+                            <p>Start this game with everyone standing up. After asking the group a question, learners sit down if they don't fit the question's criteria. They stay sitting down unless they can answer affirmatively to a "<b>stand up</b>" question.</p>
+
+                            <p>Start with a test question, like, "Sit down if you were born in Bangladesh". The majority of people will sit down here, so then get everyone to stand up again, and start the game properly.</p>
+
+                            <div class="well example">
+                                <p>These are some sample questions, but feel free to adapt them, or add to them as you go.</p>
+                                <ul>
+                                    <li>Sit down if you are wearing something green</li>
+                                    <li>Sit down if you went to bed after midnight last night</li>
+                                    <li>Sit down if you are out of phone credit/top up</li>
+                                    <li>Stand up if you topped up this week</li>
+                                    <li>Sit down if you went to  school outside of Dhaka</li>
+                                    <li>Sit down if you watched xx soap opera xx last night</li>
+                                    <li>Sit down if you are feeling sleepy</li>
+                                    <li>Sit down if you have a DNET phone</li>
+                                    <li>Sit down if you made a call this morning</li>
+                                    <li>Sit down if you have a Mobitel phone</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>30<br>min</p>
+                            </div>
+
+                            <!-- ADD DETAILS OF YOUR MAIN ACTIVITY -->
+
+                            <h3>Group Discussion</h3>
+
+                            <p><em>This activity is designed for people who have never installed an app. If your learners are familiar with installing apps from Google Play, you can skip to <a href="#set-up-webmaker">Activity 4</a>.</em></p>
+
+                            <p>Explore these words in your group. Are you familiar with them?</p>
+
+                            <p>The meanings of all of these words and phrases are in the glossary (see page 4 of <a href="../assets/webmaker-mobile-curriculum-handout.pdf">the handbook</a>), but there may be more contextually relevant ways to explain these concepts to your learners. Feel free to add narrative to your explanations to make them clearer to the class. The glossary includes definitions for all of the below terms.</p>
+
+                            <div class="well example">
+                                <p>Actions to act out:</p>
+                                <ul>
+                                    <li>Download</li>
+                                    <li>Installation</li>
+                                    <li>App</li>
+                                    <li>Operating system</li>
+                                    <li>Register</li>
+                                    <li>Log in/ sign in</li>
+                                    <li>Password</li>
+                                    <li>3G/ 4G</li>
+                                    <li>Links</li>
+                                    <li>URL</li>
+                                    <li>Open source</li>
+                                    <li>Remixing</li>
+                                    <li>Sharing</li>
+                                    <li>Non-linear navigation</li>
+                                    <li>RGBA and # (tinker mode)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>10<br>min</p>
+                            </div>
+
+                            <!-- ADD DETAILS OF YOUR MAIN ACTIVITY -->
+
+                            <h3>Word matching</h3>
+
+                            <p>Match the word with its definition. (see page 4 of <a href="../assets/webmaker-mobile-curriculum-handout.pdf">the handbook</a>)</p>
+
+                            <p>In small groups of 3-4 people, match the word/phrase with its definition. Use the above matched definitions as a guide.</p>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>40<br>min</p>
+                            </div>
+
+                            <!-- ADD DETAILS OF YOUR MAIN ACTIVITY -->
+
+                            <h3>The human installation process</h3>
+
+                            <p>On nine pieces of paper, write the following steps (1-9). Give each learner one of the steps, and then ask them to stand in a line in numerical order. Starting at step one, have each person read out their step, and then suggest what they think the step involves, and why they think it is important.</p>
+                            <div class="well example">
+                                <ol>
+                                    <li>Connect to internet</li>
+                                    <li>Create email account</li>
+                                    <li>Download/ Install app through Google Play store</li>
+                                    <li>Register for Webmaker with a username, email address and password</li>
+                                    <li>Open the Webmaker app</li>
+                                    <li>Sign in with your email/ username and password</li>
+                                    <li>Explore the Webmaker App by looking at other people's projects in the Discover gallery</li>
+                                    <li>Starting using the Webmaker App</li>
+                                    <li>Share what you have done (through Webmaker) with your friends, family and community.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <a name="set-up-webmaker"></a>
+                            <div class="time">
+                                <p>40<br>min</p>
+                            </div>
+
+                            <!-- ADD DETAILS OF YOUR MAIN ACTIVITY -->
+
+                            <h3>Setting up Webmaker</h3>
+
+                            <p>Ideally, participants will work alone here, but this will depend on the number of android phones you have available. Please use the below guidelines, depending on the phone/ person ratio.</p>
+
+                            <p><b>One phone per participant:</b>  Each participant works individually to go through the set-up/ installation process on their phone, creating a webmaker account on their smartphone.</p>
+
+                            <p><b>One phone per 2/3 participants:</b> Participants work in small groups of 2-3 people, setting-up/ installing the app together, alternating the person performing each step, so everyone is involved. This option is also useful where technical confidence/ competence is low amongst the participants.</p>
+
+                            <p><b>One phone in the group:</b> Depending on the size of the group (if larger than 8 people, you might want to have everyone watch/take turns in the installation process, and then divide the group in half again and  give people the opportunity to create email addresses/logins and login for themselves with the one app.  Alternatively, you could have one person (a participant or a mentor) performing each action while others explain how/what to do.</p>
+
+                            <br />
+
+                            <p>Build an account for yourself or your group reviewing the steps above, recreate the process on your smartphone.</p>
+
+                            <div class="well example">
+                                <p>What do I need to open a Webmaker account?</p>
+                                <ul>
+                                    <li>Android mobile phone</li>
+                                    <li>Email address</li>
+                                    <li>Internet connection (wifi or 3G)</li>
+                                </ul>
+                            </div>
+
+                            <div class="well example">
+                                <p><b>Why do I need an email address?</b> When you register with your email address, it means that Webmaker can get in touch with you to confirm that you want to create an account, and help you reset your password in case you forget it. Also, when it comes to sharing things that you create or discover on the internet, an email address is an important piece of the puzzle!</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li style="border-bottom:none;">
+                        <div>
+                            <div class="time">
+                                <p>20<br>min</p>
+                            </div>
+
+                            <!-- ADD DETAILS OF YOUR MAIN ACTIVITY -->
+
+                            <h3>Checking progress</h3>
+
+                            <p>With each individual from the group, pull out two words/phrases from the eight steps, and ask the participant to explain them, ensuring they have a reasonable grasp of the process.</p>
+
+                            <p>Additionally, closely observe as the group builds accounts for themselves, watching for any uncertain/ problem areas. If there is a particular area which proved difficult for several members, it would be good to run through that step in greater detail.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- ADD A LINK TO WHAT COMPETENCY/SESSION PEOPLE MIGHT LIKE TO EXPLORE NEXT! -->
+
+        <footer class="footer">
+            <a href="setting-up-your-phone.html"><button class="btn literacy-color-webmechanics">Next &rarr; Setting Up Your Phone</button></a> <!--Licensing Information-->
+
+            <div class="license">
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
