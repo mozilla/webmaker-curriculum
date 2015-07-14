@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<!--
+===========================================================
+WELCOME TO THE MOZILLA LEARNING ACTIVITY TEMPLATE!
+Use this template to create your own session or educational
+resource  for learners. Edit the HTML below to add your own
+content, links and images. We're using the 'Kraken the Code'
+activity as an example.
+
+Code comments like these will help with hints and guides.
+Need help? Start here: http://mzl.la/teachingkit-tips
+===========================================================
+-->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/makerstrap/makerstrap.complete.min.css">
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+
+    <!-- ADD YOUR TITLE HERE -->
+    <title>Creating a Webmaker Project</title>
+</head>
+
+
+    <!-- IGNORE THIS FIRST BIT - JUST MAKES SURE IT WORKS WELL ON MOBILE DEVICES! -->
+
+<body>
+    <nav class="navbar navbar-webmaker">
+        <div class="container">
+            <div>
+                <button type="button" class="navbar-toggle" ng-click="collapseToggle()"><span class="sr-only">Toggle navigation</span></button> <!-- logo -->
+                 <a href="#" class="logo webmaker-logo"><img src="https://webmaker.org/img/logo.png"></a>
+
+                <ul class="nav navbar-nav navbar-right navbar-collapse text-center-xs collapse">
+                    <li>
+                        <a href="https://twitter.com/hashtag/teachtheweb">#TeachTheWeb</a>
+                    </li>
+
+                    <li>
+                        <a href="http://discourse.webmaker.org/category/clubs">Discussion</a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/mozilla/webmaker-curriculum/blob/master/WebLiteracyBasics-I/session01-credibility.html">View on Github</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- THE SIDEBAR STARTS HERE - GET READY TO EDIT! -->
+
+    <div class="wrapper">
+        <aside class="aside">
+            <div class="image">
+                <!-- ADD YOUR MAIN IMAGE HERE -->
+                <img src="../images/designing-webmaker.jpg"> <a href="https://instagram.com/p/14gVTKJZMO/" class="attribution"><span class="fa fa-camera"></span> Laura de Reynal</a>
+            </div>
+
+            <div class="goals">
+                <div class="literacy">
+                    <!-- LIST THE WEB LITERCY MAP COMPETENCIES YOUR ACTIVITY ALIGNS WITH HERE - SEE http://webmaker.org/resources -->
+                    <h4>Web Literacy Competencies</h4>
+                    <a href="https://webmaker.org/en-US/resources/literacy/weblit-Remixing"><button class="btn literacy-color-remixing">Remixing</button></a>
+                    <a href="https://webmaker.org/en-US/resources/literacy/weblit-Designing"><button class="btn literacy-color-designing">Designing</button></a>
+                    <a href="https://webmaker.org/en-US/resources/literacy/weblit-Composing"><button class="btn literacy-color-composing">Composing</button></a>
+                </div>
+
+	            <!-- LIST THE MATERIALS REQUIRED FOR THE SESSION HERE -->
+                <h4>Materials</h4>
+                <ul>
+                    <li><a href="https://mozilla.github.io/webmaker-launch/ideas.html">Webmaker content ideas</a></li>
+                    <li>Paper (<a href="http://www.papersizes.org/a-paper-sizes.htm">A4 works best</a>)</li>
+                    <li>Post-it notes</li>
+                    <li>Pens, pencils, and markers</li>
+                    <li>Android phone with Internet connection</li>
+                </ul>
+
+	            <!-- LIST 3-5 LEARNING OBJECTIVES HERE - SEE https://github.com/mozilla/webmaker-curriculum/wiki/How-to-write-Learning-Objectives -->
+                <h4>Learning Objectives</h4>
+                <ul>
+                    <li>Design original, relevant content.</li>
+                    <li>Share the results with others.</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- END OF SIDEBAR CONTENT -->
+
+        <!-- THE MAIN CONTENT STARTS HERE -->
+
+        <article class="main">
+            <div>
+                <hgroup class="text-light">
+
+                    <!-- CHANGE THE TITLES (AND LINKS) -->
+                    <h2>Read, Write, and Participate with Webmaker</h2>
+                    <br>
+                    <h3>Create a Webmaker Project</h3>
+
+                    <!-- ADD YOUR NAME AND A LINK TO YOUR PROFILE -->
+                    <p id="made-by">Made by <a href="https://github.com/LauraReynal">Laura</a> and remixed for Maker Party by <a href="https://github.com/secretrobotron">Bobby</a>.
+
+                    <!-- EXPLAIN THE BROAD AIM OF YOUR SESSION AND WHAT PARTICIPANTS WILL LEARN -->
+                    <p class="lead">Learners will create original web content by making projects with Webmaker.</b></p>
+
+                    <p class="leadTime"><i class="fa fa-clock-o"></i> 2-3 hours</p>
+                </hgroup>
+               <hr>
+            </div>
+
+            <div class="agenda">
+                <ul>
+                    <li>
+                        <div>
+
+                          <!-- EXPLAIN WHAT OTHERS WANTING TO RUN THIS ACTIVITY WILL NEED -->
+                          <h3>Preparation</h3>
+                          <ul>
+                            <li>
+                              <b>Do the activity on your own</b> to become familiar with it.
+                            </li>
+                            <li>
+                              <b><a href="https://play.google.com/store/apps/details?id=org.mozilla.webmaker">Install Webmaker</a></b> on an Android phone running 4.0.4 (or greater).
+                            </li>
+                          </ul>
+
+                          <h5>If you're interested in contributing to Webmaker product and research efforts...</h5>
+                          <ul>
+                            <li>
+                              <b>Complete the <a href="http://mzl.la/feedback">Webmaker feedback questionnaire</a></b> for yourself and pass it on to your learners once they've completed the activity.
+                            </li>
+                          </ul>
+
+                          <br>
+
+                          <h4>Keep in mind...</h4>
+                          <p>While Webmaker is on <a href="https://play.google.com/store/apps/details?id=org.mozilla.webmaker">Google Play</a>, it's always under development and receives regular updates. If you or your participants encounter bugs or have feedback about the design or overall experience, <a href="mailto:help@webmaker.org">please tell us</a>. We will try to address concerns as quickly as possible, so please do your best as a facilitator to curb any frustration by finding workarounds with your participants and having them be a part of the bug/feedback documentation process.</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>15<br>min</p>
+                            </div>
+
+                            <!-- ADD DETAILS OF THE INTRODUCTION TO YOUR SESSION -->
+                            <h3>Introduction</h3>
+
+                            <p>In a circle, have everyone introduce themselves.</p>
+
+                            <p>To get everyone in the right frame of mind, ask each participant a question about themself or their experience. Reference back to responses here to assist when thinking about designing and creating later.</p>
+                            <div class="well example">
+                                <ul>
+                                    <li>"The last thing I made was _________."</li>
+                                    <li>"The internet is not the same as the web because ___________."</li>
+                                    <li>"My favorite way to create and share on the web is ____________."</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>10<br>min</p>
+                            </div>
+
+                            <!-- ADD DETAILS OF YOUR MAIN ACTIVITY -->
+
+                            <h3>Explore Webmaker</h3>
+
+                            <p>Introduce Webmaker to the participants by showing them the app.</p>
+
+                            <div class="well example">
+                                <ul>
+                                    <li>Discuss what Webmaker is for: discovering, creating, and sharing.</li>
+                                    <li>Explore the Discover gallery <em>(see image to the right)</em> together to see what other people have made.</li>
+                                </ul>
+                            </div>
+
+
+                            <img class="img-example" src="../images/explore-webmaker-discover.jpg">
+                            <a href="https://www.flickr.com/photos/laura_nk/" class="attribution"><span class="fa fa-camera"></span> Laura de Reynal</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>10<br>min</p>
+                            </div>
+
+                            <!-- ADD DETAILS OF YOUR MAIN ACTIVITY -->
+
+                            <h3>Plan your own project</h3>
+                            <a name="plan-your-own-project"></a>
+
+                            <br>
+
+                            <div class="well">
+                                <p><b>Note:</b> This section and the <a href="#sketch-your-ideas">Sketch your ideas</a> section can be substituted with a much more in-depth ideation exercise. Check out the <a href="design-webmaker-project.html">Design a Story for the Web</a> activity for more.</p>
+                            </div>
+
+                            <p>Generate some ideas about the projects that participants will create. Let people talk about their interests and how they can be expressed with Webmaker.</p>
+
+                            <div class="well example">
+                                <ul>
+                                    <li>Webmaker is a good story-telling platform.</li>
+                                    <li>Pages can be arranged in a non-linear fashion to build projects with interesting or meaningful layouts.</li>
+                                    <li>Imagine building another website &mdash; maybe your own &mdash; without any code.</li>
+                                    <li>Look at the <a href="https://mozilla.github.io/webmaker-launch/ideas.html">Project Ideas</a> page for inspiration.</li>
+                                    <li>Find 3 examples from the Discover gallery that are interesting and perhaps worth remixing.</li>
+                                </ul>
+                            </div>
+
+                            <p>Engage users in thinking about what they want to create and prompt with ideas for those who are lost.</p>
+
+                            <div class="well example">
+                                <ul>
+                                    <li>Imagine building another website &mdash; maybe your own &mdash; without any code.</li>
+                                    <li>Look at the <a href="https://mozilla.github.io/webmaker-launch/ideas.html">Project Ideas</a> page for inspiration.</li>
+                                    <li>Find 3 examples from the Discover gallery that are interesting and perhaps worth remixing.</li>
+                                </ul>
+                            </div>
+
+                            <img class="img-example" src="../images/plan-webmaker-project-1.jpg">
+                            <a href="https://www.flickr.com/photos/laura_nk/" class="attribution"><span class="fa fa-camera"></span> Laura de Reynal</a>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>20<br>min</p>
+                            </div>
+
+                            <!-- ADD DETAILS OF YOUR MAIN ACTIVITY -->
+
+                            <h3>Sketch your ideas</h3>
+                            <a name="sketch-your-ideas"></a>
+
+                            <br>
+
+                            <div class="well">
+                                <p><b>Note:</b> This section and the <a href="#plan-your-own-project">Plan your own project</a> section can be substituted with a much more in-depth ideation exercise. Check out the <a href="design-webmaker-project.html">Design a Story for the Web</a> activity for more.</p>
+                            </div>
+
+                            <p>Before making projects with Webmaker on a phone, take some time to sketch out ideas on paper.</p>
+
+                            <p>Use pieces of paper (A4 works best) to represent pages in Webmaker, and post-it notes to represent elements on those pages. On each post-it, briefly sketch ideas for elements and stick them to pages.</p>
+
+                            <div class="well example">
+                                <ul>
+                                    <li>Remember, the elements you can use to create Webmaker projects are <b>Text</b>, <b>Images</b>, and <b>Links</b> &mdash; the fundamental building-blocks of the web.</li>
+                                    <li>Position post-it notes how you want &mdash; think position, rotation, and scale &mdash; just as you would with elements on pages in the app.</li>
+                                </ul>
+                            </div>
+
+
+                            <img class="img-example" src="../images/sketch-webmaker-project-1.jpg">
+                            <a href="https://www.flickr.com/photos/laura_nk/" class="attribution"><span class="fa fa-camera"></span> Laura de Reynal</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>30<br>min</p>
+                            </div>
+
+                            <!-- ADD DETAILS OF HOW YOUR MAIN ACTIVITY -->
+                            <h3>Create your project in Webmaker</h3>
+
+                            <p>Using sketches from the previous step as a guide, have participants create Webmaker projects.</p>
+
+                            <p>During this phase, try to monitor progress and chat with participants to understand what they make, why they're making it, and the difficulties and successes they encounter.</p>
+
+                            <div class="well example">
+                                <p>To encourage peer-teaching and feedback, try "<b>making out loud</b>" and have people talk about their discovery and creation process as they work with Webmaker. This might require some prompting, like, "What are you tinkering with right now?" or, "Has anyone discovered anything interesting?"</p>
+                                <ul>
+                                    <li>"Oh, I just noticed the edit button. Looks like I can change my images that way."</li>
+                                    <li>"How do I copy &amp; paste?"</li>
+                                    <li>"What's this lightning bolt? Oh, I can pick my own colors now!"</li>
+                                </ul>
+                            </div>
+
+                            <p><b>Research Contribution Opportunity</b></p>
+                            <p>Engage participants to gather feedback about their experience using the app. Bugs and general feedback is always welcome. Just create an issue <a href="https://github.com/mozilla/webmaker-android">on github</a>, where Webmaker is developed, or simply email <a href="mailto:help@webmaker.org">help@webmaker.org</a>.</p>
+
+
+                            <img class="img-example" src="../images/make-webmaker-project-1.jpg">
+                            <a href="https://www.flickr.com/photos/laura_nk/" class="attribution"><span class="fa fa-camera"></span> Laura de Reynal</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>10<br>min</p>
+                            </div>
+
+                            <!-- ADD DETAILS OF HOW YOUR MAIN ACTIVITY -->
+                            <h3>Check and Reflect</h3>
+
+                            <p>Pause the workshop and ask a few questions. Participants can share their progress and gather input from each other. Encourage them to go outside, take their creation to the next level.</p>
+
+                            <div class="well example">
+                                <p>Questions:</p>
+                                <ul>
+                                    <li>What are you making?</li>
+                                    <li>How are you feeling?</li>
+                                    <li>Do you need help?</li>
+                                    <li>Do you want to continue?</li>
+                                    <li>What else do you need to make your project?</li>
+                                    <li>How can you connect your project to other things that you're working on?</li>
+                                    <li>What do you think about the app?</li>
+                                </ul>
+                            </div>
+
+                            <img class="img-example" src="../images/check-webmaker-project.jpg">
+                            <a href="https://www.flickr.com/photos/laura_nk/" class="attribution"><span class="fa fa-camera"></span> Laura de Reynal</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>40<br>min</p>
+                            </div>
+
+                            <!-- ADD DETAILS OF HOW YOUR MAIN ACTIVITY -->
+                            <h3>Continue Making</h3>
+
+                            <p>Let participants finish their projects. While this happens, continue to monitor progress and chat with them about what they're doing.</p>
+
+                            <div class="well example">
+                                <p>When participants finish their project, ask them to think about with whom they want to share it.</p>
+                                <p>When they are ready, have each participant use the <b>Share</b> feature to send their project to someone they know, or post it on their favourite social network.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>40<br>min</p>
+                            </div>
+
+                            <!-- ADD DETAILS OF HOW YOUR MAIN ACTIVITY -->
+                            <h3>Share and Discuss</h3>
+
+                            <p>Give each participant some time to share their project with the group. Talk about what went well, what was problematic, and what each participant learned.</p>
+
+                            <div class="well example">
+                                <p>If participants haven't finished their project, discuss what they can do to complete it later.</p>
+                                <p>For participants that are finished, discuss what they can do next:</p>
+                                <ul>
+                                    <li>Make another more ambitious project, building on their experience.</li>
+                                    <li>Host their own workshop using this activity.</li>
+                                    <li>Contribute to Webmaker through code, design, research, product development, and more.</li>
+                                </ul>
+                            </div>
+
+                            <p>Be sure to share any particularly creative or inspiring projects with <a href="https://twitter.com/webmaker">@webmaker</a> or <a href="mailto:help@webmaker.org">help@webmaker.org</a>.</p>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>20<br>min</p>
+                            </div>
+
+                            <!-- ADD DETAILS OF HOW YOUR MAIN ACTIVITY -->
+                            <h3>Provide Feedback</h3>
+                            <h4>Bonus: Research Contribution Opportunity</h4>
+
+                            <p>Let each participant complete the <a href="http://mzl.la/feedback">Webmaker feedback questionnaire</a>.</p>
+
+                            <p>If anybody has more direct feedback to give the Webmaker team, feel free to contact us:</p>
+                            <div class="well example">
+                                <ul>
+                                    <li>Email: <a href="mailto:help@webmaker.org">help@webmaker.org</a></li>
+                                    <li>Twitter: <a href="https://twitter.com/webmaker">@webmaker</a></li>
+                                    <li>Facebook: <a href="https://www.facebook.com/mozillawebmaker">facebook.com/mozillawebmaker</a></li>
+                                    <li>GitHub: <a href="https://github.com/mozilla/webmaker-android">github.com/mozilla/webmaker-androidr</a></li>
+                                    <li>IRC: <a href="https://irc.mozilla.org">irc.mozilla.org, #webmaker</a></li>
+                                </ul>
+                            </div>
+
+                            <img class="img-example" src="../images/provide-webmaker-feedback.jpg">
+                            <a href="https://www.flickr.com/photos/laura_nk/" class="attribution"><span class="fa fa-camera"></span> Laura de Reynal</a>
+                        </div>
+                    </li>
+                    <li style="border-bottom:none;">
+                        <div>
+                            <div class="time">
+                                <p>10<br>min</p>
+                            </div>
+
+                            <!-- ADD DETAILS OF HOW YOUR MAIN ACTIVITY -->
+                            <h3>Encourage Participation</h3>
+
+                            <p>Finally, mentorship and leadership skills are important tenets of Web Literacy and Mozilla. Encourage your participants to deepen their engagement by running their own version of this workshop.</p>
+
+                            <p>Offer your perspective as a workshop leader and give participants a chance to ask questions about your experience and your involvement with Web Literacy, Webmaker, Mozilla, etc.</p>
+
+                            <img class="img-example" src="../images/share-webmaker-projects.jpg">
+                            <a href="https://www.flickr.com/photos/laura_nk/" class="attribution"><span class="fa fa-camera"></span> Laura de Reynal</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- ADD A LINK TO WHAT COMPETENCY/SESSION PEOPLE MIGHT LIKE TO EXPLORE NEXT! -->
+
+        <footer class="footer">
+            <!--Licensing Information-->
+
+            <div class="license">
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
