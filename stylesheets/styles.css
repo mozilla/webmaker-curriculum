@@ -4,7 +4,6 @@
 
 .wrapper {
   display: -webkit-box;
-  display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;  
@@ -17,6 +16,8 @@
 
 .wrapper > * {
   flex: 1 100%;
+  -ms-flex: 1 100%;
+  -webkit-flex: 1 100%;
 }
 
 .footer {
@@ -248,11 +249,19 @@ figcaption{
 }
 
 @media all and (min-width: 600px) {
-  .aside { flex: 1 auto; }
+  .aside { 
+    flex: 1 auto; 
+    -ms-flex: 1 auto; 
+    -webkit-flex: 1 auto; 
+  }
 }
 
 @media all and (min-width: 800px) {
-  .main    { flex: 3 0px; }
+  .main    { 
+    flex: 3 0px; 
+    -ms-flex: 3 0px;
+    -webkit-flex: 3 0px;
+  }
   .aside-1 { order: 1; } 
   .main    { order: 2; }
   .footer  { order: 3; }
