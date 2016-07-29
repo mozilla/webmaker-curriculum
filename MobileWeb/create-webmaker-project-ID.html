@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<!--
+===========================================================
+WELCOME TO THE MOZILLA LEARNING ACTIVITY TEMPLATE!
+Use this template to create your own session or educational
+resource  for learners. Edit the HTML below to add your own
+content, links and images. We're using the 'Kraken the Code'
+activity as an example.
+
+Code comments like these will help with hints and guides.
+Need help? Start here: http://mzl.la/teachingkit-tips
+===========================================================
+-->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/makerstrap/makerstrap.complete.min.css">
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+
+    <!-- ADD YOUR TITLE HERE -->
+    <title>Buat Sebuah Proyek Webmaker</title>
+</head>
+
+
+    <!-- IGNORE THIS FIRST BIT - JUST MAKES SURE IT WORKS WELL ON MOBILE DEVICES! -->
+
+<body>
+    <nav class="navbar navbar-webmaker">
+        <div class="container">
+            <div>
+                <button type="button" class="navbar-toggle" ng-click="collapseToggle()"><span class="sr-only">Alihkan Navigasi</span></button> <!-- logo -->
+                 <a href="#" class="logo webmaker-logo"><img src="https://webmaker.org/img/logo.png"></a>
+
+                <ul class="nav navbar-nav navbar-right navbar-collapse text-center-xs collapse">
+                    <li>
+                        <a href="https://twitter.com/hashtag/teachtheweb">#TeachTheWeb</a>
+                    </li>
+
+                    <li>
+                        <a href="http://discourse.webmaker.org/category/clubs">Diskusi</a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/mozilla/webmaker-curriculum/blob/master/WebLiteracyBasics-I/session01-credibility.html">Tampilkan di Github</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- THE SIDEBAR STARTS HERE - GET READY TO EDIT! -->
+
+    <div class="wrapper">
+        <aside class="aside">
+            <div class="image">
+                <!-- ADD YOUR MAIN IMAGE HERE -->
+                <img src="../images/designing-webmaker.jpg"> <a href="https://instagram.com/p/14gVTKJZMO/" class="attribution"><span class="fa fa-camera"></span> Laura de Reynal</a>
+            </div>
+
+            <div class="goals">
+                <div class="literacy">
+                    <!-- LIST THE WEB LITERCY MAP COMPETENCIES YOUR ACTIVITY ALIGNS WITH HERE - SEE http://webmaker.org/resources -->
+                    <h4>Kompetensi Literasi Web</h4>
+                    <a href="https://webmaker.org/en-US/resources/literacy/weblit-Remixing"><button class="btn literacy-color-remixing">Mengolah-ulang</button></a>
+                    <a href="https://webmaker.org/en-US/resources/literacy/weblit-Designing"><button class="btn literacy-color-designing">Merancang</button></a>
+                    <a href="https://webmaker.org/en-US/resources/literacy/weblit-Composing"><button class="btn literacy-color-composing">Menyusun</button></a>
+                </div>
+
+	            <!-- LIST THE MATERIALS REQUIRED FOR THE SESSION HERE -->
+                <h4>Peralatan</h4>
+                <ul>
+                    <li><a href="https://mozilla.github.io/webmaker-launch/ideas.html">Gagasan konten Webmaker</a></li>
+                    <li>Kertas (<a href="http://www.papersizes.org/a-paper-sizes.htm">ukuran A4</a>)</li>
+                    <li>Kertas Post-it</li>
+                    <li>Pena, pensil, and spidol</li>
+                    <li>Ponsel Android dengan koneksi internet</li>
+                </ul>
+
+	            <!-- LIST 3-5 LEARNING OBJECTIVES HERE - SEE https://github.com/mozilla/webmaker-curriculum/wiki/How-to-write-Learning-Objectives -->
+                <h4>Tujuan Pembelajaran</h4>
+                <ul>
+                    <li>Merancang konten yang orisinal dan relevan.</li>
+                    <li>Membagikan hasilnya kepada lainnya.</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- END OF SIDEBAR CONTENT -->
+
+        <!-- THE MAIN CONTENT STARTS HERE -->
+
+        <article class="main">
+            <div>
+                <hgroup class="text-light">
+
+                    <!-- CHANGE THE TITLES (AND LINKS) -->
+                    <h2>Membaca, Menulis, dan Berpartisipasi dengan Webmaker</h2>
+                    <br>
+                    <h3>Buat sebuah Proyek Webmaker</h3>
+
+                    <!-- ADD YOUR NAME AND A LINK TO YOUR PROFILE -->
+                    <p id="made-by">Dibuat oleh<a href="https://github.com/LauraReynal">Laura</a> diolah-ulang untuk Maker Party oleh <a href="https://github.com/secretrobotron">Bobby</a>.
+
+                    <!-- EXPLAIN THE BROAD AIM OF YOUR SESSION AND WHAT PARTICIPANTS WILL LEARN -->
+                    <p class="lead">Dengan membuat proyek melalui Webmaker, kamu akan membuat konten web orisinal.</b></p>
+
+                    <p class="leadTime"><i class="fa fa-clock-o"></i> 2-3 jam</p>
+                </hgroup>
+               <hr>
+            </div>
+
+            <div class="agenda">
+                <ul>
+                    <li>
+                        <div>
+
+                          <!-- EXPLAIN WHAT OTHERS WANTING TO RUN THIS ACTIVITY WILL NEED -->
+                          <h3>Persiapan</h3>
+                          <ul>
+                            <li>
+                              <b>Lakukan aktivitas oleh diri masing-masing</b> agar lebih mengenal.
+                            </li>
+                            <li>
+                              <b><a href="https://play.google.com/store/apps/details?id=org.mozilla.webmaker">Pasang Webmaker</a></b> pada ponsel Android 4.0.4 (atau selanjutnya).
+                            </li>
+                          </ul>
+
+                          <h5>Jika Anda tertarik untuk berkontribusi ke produk Webmaker dan upaya penelitian...</h5>
+                          <ul>
+                            <li>
+                              <b>Lengkapi <a href="http://mzl.la/feedback">kuisioner ump[an balik Webmaker</a></b> untuk dirimu sendiri dan sebarkan kepada lainnya jika mereka telah menyelesaikan aktivitasnya.
+                            </li>
+                          </ul>
+
+                          <br>
+
+                          <h4>Ingat selalu...</h4>
+                          <p>Selagi Webmaker ada di <a href="https://play.google.com/store/apps/details?id=org.mozilla.webmaker">Google Play</a>,  maka ia akan selalu dikembangkan dan kamu akan menerima pembaruan secara rutin. Jika kamu atau pesertamu menemukan bug atau memiliki umpan balik tentang desain atau pengalaman keseluruhan, <a href="mailto:help@webmaker.org">tolong beritahu kami</a>. Kami akan mencoba mengatasinya secepat mungkin, jadi tolong lakukan yang terbaik sebagai fasilitator untuk membatasi rasa frustasi melalui kerja sama dengan para peserta dan menjadikan mereka bagian dari proses dokumentasi kutu/umpan balik.</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>15<br>menit</p>
+                            </div>
+
+                            <!-- ADD DETAILS OF THE INTRODUCTION TO YOUR SESSION -->
+                            <h3>Perkenalan</h3>
+
+                            <p>Dalam sebuah lingkaran, perkenalkan diri masing-masing.</p>
+
+                            <p>Supaya setiap peserta memiliki kerangka berpikir yang sama, tanyakan setiap peserta sebuah pertanyaan tentang dirinya sendiri atau pengalaman pribadinya. Referensikan kembali tanggapan tersebut untuk membantunya berpikir tentang perancangan dan pembuatan di aktifitas selanjutnya.</p>
+                            <div class="well example">
+                                <ul>
+                                    <li>"Hal terakhir yang saya buat adalah _________."</li>
+                                    <li>"Internet tidak sama dengan web karena ___________."</li>
+                                    <li>"Cara yang saya sukai untuk membuat dan berbagi di web adalah ____________."</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>10<br>menit</p>
+                            </div>
+
+                            <!-- ADD DETAILS OF YOUR MAIN ACTIVITY -->
+
+                            <h3>Jelajahi Webmaker</h3>
+
+                            <p>Perkenalkan Webmaker ke peserta dengan menunjukan aplikasinya</p>
+
+                            <div class="well example">
+                                <ul>
+                                    <li>Diskusikan tentang tujuan Webmaker: menemukan, membuat, dan berbagi.</li>
+                                    <li>Jelajahi galeri Discover<em>(lihat gambar di sebelah kanan)</em> bersama-sama untuk melihat apa yang orang lain telah buat.</li>
+                                </ul>
+                            </div>
+
+
+                            <img class="img-example" src="../images/explore-webmaker-discover.jpg">
+                            <a href="https://www.flickr.com/photos/laura_nk/" class="attribution"><span class="fa fa-camera"></span> Laura de Reynal</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>10<br>menit</p>
+                            </div>
+
+                            <!-- ADD DETAILS OF YOUR MAIN ACTIVITY -->
+
+                            <h3>Rencanakan proyekmu</h3>
+                            <a name="plan-your-own-project"></a>
+
+                            <br>
+
+                            <div class="well">
+                                <p><b>Catatan:</b> Sesi ini dan sesi <a href="#sketch-your-ideas">Sketsa gagasan kamu</a> dapat digantikan dengan pelatihan pengonsepan gagasan yang lebih mendalam. Lihat sesi aktivitas <a href="design-webmaker-project.html">Merancang sebuah Cerita untuk Web</a> lebih lanjut.</p>
+                            </div>
+
+                            <p>Ciptakan beberapa gagasan mengenai proyek yang akan dibuat peserta. Ajak mereka berdiskusi tentang minat mereka dan bagaimana minat tersebut diekspresikan dengan Webmaker.</p>
+
+                            <div class="well example">
+                                <ul>
+                                    <li>Webmaker adalah platform yang baik untuk bercerita.</li>
+                                    <li>Halaman dapat disusun dalam bentuk non-linear untuk membangun proyek dengan tata letak yang menarik atau bermakna.</li>
+                                    <li>Bayangkan seperti membangun situs web lainnya &mdash; mungkin milik Anda &mdash; tanpa kode sedikitpun.</li>
+                                    <li>Lihat laman <a href="https://mozilla.github.io/webmaker-launch/ideas.html">Gagasan Proyek</a> untuk inspirasi.</li>
+                                    <li>Cari 3 contoh dari galeri Discover yang menarik dan mungkin berharga untuk diutakatik ulang.</li>
+                                </ul>
+                            </div>
+
+                            <p>Ikut sertakan pengguna dalam memikirkan tentang apa yang ingin mereka buat dan mendorongnya dengan gagasan untuk mereka yang mengalami kesulitan.</p>
+
+                            <div class="well example">
+                                <ul>
+                                  <li>Bayangkan seperti membangun situs web lainnya &mdash; mungkin milik Anda &mdash; tanpa kode sedikitpun.</li>
+                                  <li>Lihat laman <a href="https://mozilla.github.io/webmaker-launch/ideas.html">Gagasan Proyek</a> untuk inspirasi.</li>
+                                  <li>Cari 3 contoh dari galeri Discover yang menarik dan mungkin berharga untuk diutakatik ulang.</li>
+                                </ul>
+                            </div>
+
+                            <img class="img-example" src="../images/plan-webmaker-project-1.jpg">
+                            <a href="https://www.flickr.com/photos/laura_nk/" class="attribution"><span class="fa fa-camera"></span> Laura de Reynal</a>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>20<br>menit</p>
+                            </div>
+
+                            <!-- ADD DETAILS OF YOUR MAIN ACTIVITY -->
+
+                            <h3>Sketsa gagasan kamu</h3>
+                            <a name="sketch-your-ideas"></a>
+
+                            <br>
+
+                            <div class="well">
+                                <p><b>Catatan:</b> Sesi ini dan sesi <a href="#sketch-your-ideas">Sketsa gagasan kamu</a> dapat digantikan dengan pelatihan pengonsepan gagasan yang lebih mendalam. Lihat sesi aktivitas <a href="design-webmaker-project.html">Merancang sebuah Cerita untuk Web</a> lebih lanjut.</p>
+                            </div>
+
+                            <p>Sebelum membuat proyek dengan Webmaker di ponsel, gunakan waktumu untuk mensketsa gagasan di atas kertas.</p>
+
+                            <p>Gunakan kertas (A4 lebih baik) untuk menggambarkan halaman di Webmaker, dan catatan post-it untuk menggambarkan elemen-elemen dari halaman-halaman tersebut. Dalam setiap post-it, gambarkan secara sketsa gagasan sketsa untuk elemen dan tempelkan di halaman-halaman tersebut.</p>
+
+                            <div class="well example">
+                                <ul>
+                                    <li>Ingat, elemen yang dapat kamu gunakan untuk membuat proyek Webmaker adalah <b>Teks</b>, <b>Gambar</b>, and <b>Tautan</b> &mdash; blok-blok dasar dalam pembangunan Web</li>
+                                    <li>Letakkan catatan post-it bagaimana yang Anda inginkan &mdash; pikirkan posisi, rotasi dan skala &mdash; seperti kamu lakukan dengan elemen dalam halaman di dalam aplikasi.</li>
+                                </ul>
+                            </div>
+
+
+                            <img class="img-example" src="../images/sketch-webmaker-project-1.jpg">
+                            <a href="https://www.flickr.com/photos/laura_nk/" class="attribution"><span class="fa fa-camera"></span> Laura de Reynal</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>30<br>menit</p>
+                            </div>
+
+                            <!-- ADD DETAILS OF HOW YOUR MAIN ACTIVITY -->
+                            <h3>Membuat proyek Anda di Webmaker</h3>
+
+                            <p>Menggunakan sketsa dari langkah sebelumnya sebagai panduan, buat peserta menciptakan proyek Webmaker.</p>
+
+                            <p>Selama fase ini, coba untuk memantau perkembangan dan berbicara dengan peserta untuk memahami apa yang mereka bua, mengapa mereka membuatnya, dan kesulitan dan kemudahan yang mereka alami.</p>
+
+                            <div class="well example">
+                                <p>Untuk mendorong belajar dan mengajar bersama, coba adakan sesi "<b>ceritakan pengalamanmu</b>" di mana para peserta dapat menceritakan hal-hal yang mereka temukan dan proses kreatif mereka saat menggunakan Webmaker. Ini mungkin membutuhkan beberapa dorongan, seperti "Apa yang sedang kamu utak-atik saat ini?" atau, "Adakah di sini yang telah menemukan sesuatu yang menarik?"</p>
+                                <ul>
+                                    <li>"Oh, saya baru saja melihat tombol ubah. Sepertinya saya dapt mengubah gambar saya dengan itu."</li>
+                                    <li>"Bagaimana saya menyalin &amp; menempelkan?"</li>
+                                    <li>"Apa logo petir ini? Oh, saya bisa memilih warna saya sendiri sekarang!"</li>
+                                </ul>
+                            </div>
+
+                            <p><b>Peluang Kontribusi Riset</b></p>
+                            <p>Ajak peserta untuk mengumpulkan umpan balik tentang pengalaman menggunakan aplikasi. Kutu dan umpan balik umum selalu terbuka untuk diterima. Cukup membuat sebuah isu <a href="https://github.com/mozilla/webmaker-android">di github</a>, di mana Webmaker dikembangkan, atau cukup kirim surel ke <a href="mailto:help@webmaker.org">help@webmaker.org</a>.</p>
+
+
+                            <img class="img-example" src="../images/make-webmaker-project-1.jpg">
+                            <a href="https://www.flickr.com/photos/laura_nk/" class="attribution"><span class="fa fa-camera"></span> Laura de Reynal</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>10<br>min</p>
+                            </div>
+
+                            <!-- ADD DETAILS OF HOW YOUR MAIN ACTIVITY -->
+                            <h3>Periksa dan Refleksikan</h3>
+
+                            <p>Hentikan workshop sementara dan tanyakan beberapa pertanyaan. Peserta dapat membagikan perkembangan mereka dan kumpulkan masukkan dari masing-masing mereka. Dorong mereka untuk keluar, bawa kreasi mereka ke tingkat selanjutnya.</p>
+
+                            <div class="well example">
+                                <p>Pertanyaan:</p>
+                                <ul>
+                                    <li>Apa yang kamu buat?</li>
+                                    <li>Bagaimana perasaanmu?</li>
+                                    <li>Apakah kamu membutuhkan bantuan?</li>
+                                    <li>Apakah kamu ingin melanjutkan?</li>
+                                    <li>Apa saja yang kamu butuhkan untuk membuat proyekmu?</li>
+                                    <li>Bagaimana kamu dapat menghubungkan proyekmu dengan berbagai hal yang sedang kamu kerjakan?</li>
+                                    <li>Apa pendapatanmu mengenai aplikasi tersebut?</li>
+                                </ul>
+                            </div>
+
+                            <img class="img-example" src="../images/check-webmaker-project.jpg">
+                            <a href="https://www.flickr.com/photos/laura_nk/" class="attribution"><span class="fa fa-camera"></span> Laura de Reynal</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>40<br>menit</p>
+                            </div>
+
+                            <!-- ADD DETAILS OF HOW YOUR MAIN ACTIVITY -->
+                            <h3>Lanjutkan Membuat</h3>
+
+                            <p>Persilakan peserta untuk menyelesaikan proyek mereka. Ketika ini terjadi, terus pantau perkembangan dan berbicara dengan mereka tentang apa yang mereka sedang lakukan.</p>
+
+                            <div class="well example">
+                                <p>Ketika peserta menyelesaikan proyeknya, tanya mereka untuk berpikir kepada siapakah mereka akan berbagi proyeknya.</p>
+                                <p>Ketika mereka siap, buat masing-masing peserta memakai fitur <b>Bagikan</b> untuk mengirimkan proyek mereka kepada seseorang mereka kenal, atau tuliskan di media sosial favorit mereka.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>40<br>menit</p>
+                            </div>
+
+                            <!-- ADD DETAILS OF HOW YOUR MAIN ACTIVITY -->
+                            <h3>Bagi dan Diskusikan</h3>
+
+                            <p>Beri masing-masing peserta waktu untuk membagikan proyek mereka kepada grup. Bicarakan tentang apakah semua berjalan lancar, apa saja pemasalahannya, dan apa saja yang dipelajari oleh peserta.</p>
+
+                            <div class="well example">
+                                <p>Jika peserta belum menyelesaikan proyeknya, diskusi apa yang bisa mereka lakukan untuk menyelesaikannya kemudian.</p>
+                                <p>Untuk peserta yang telah selesai, diskusikan apa yang bisa mereka lakukan selanjutnya:</p>
+                                <ul>
+                                    <li>Buat proyek lainnya yang lebih ambisius, membangun pengalaman mereka.</li>
+                                    <li>Adakan workshop mereka sendiri menggunakan aktivitas ini.</li>
+                                    <li>Berkontribusi kepada Webmaker melalui kode, desain, riset, pengembangan produk, dan masih banyak lagi.</li>
+                                </ul>
+                            </div>
+
+                            <p>Pastikan untuk membagikan beberapa proyek kreatif atau yang menginspirasi kepada <a href="https://twitter.com/webmaker">@webmaker</a> atau <a href="mailto:help@webmaker.org">help@webmaker.org</a>.</p>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="time">
+                                <p>20<br>menit</p>
+                            </div>
+
+                            <!-- ADD DETAILS OF HOW YOUR MAIN ACTIVITY -->
+                            <h3>Memberikan Umpan Balik</h3>
+                            <h4>Tambahan: Peluang Kontribusi Riset</h4>
+
+                            <p>Ajak masing-masing peserta untuk melengkapi <a href="http://mzl.la/feedback">kuesioner umpan balik Webmaker</a>.</p>
+
+                            <p>Jika ada yang memiliki umpan balik langsung ditujukan bagi tim Webmaker, silakan untuk menghubung kami:</p>
+                            <div class="well example">
+                                <ul>
+                                    <li>Surel: <a href="mailto:help@webmaker.org">help@webmaker.org</a></li>
+                                    <li>Twitter: <a href="https://twitter.com/webmaker">@webmaker</a></li>
+                                    <li>Facebook: <a href="https://www.facebook.com/mozillawebmaker">facebook.com/mozillawebmaker</a></li>
+                                    <li>GitHub: <a href="https://github.com/mozilla/webmaker-android">github.com/mozilla/webmaker-androidr</a></li>
+                                    <li>IRC: <a href="https://irc.mozilla.org">irc.mozilla.org, #webmaker</a></li>
+                                </ul>
+                            </div>
+
+                            <img class="img-example" src="../images/provide-webmaker-feedback.jpg">
+                            <a href="https://www.flickr.com/photos/laura_nk/" class="attribution"><span class="fa fa-camera"></span> Laura de Reynal</a>
+                        </div>
+                    </li>
+                    <li style="border-bottom:none;">
+                        <div>
+                            <div class="time">
+                                <p>10<br>menit</p>
+                            </div>
+
+                            <!-- ADD DETAILS OF HOW YOUR MAIN ACTIVITY -->
+                            <h3>Mendorong Partisipasi</h3>
+
+                            <p>Akhirnya, kemampuan membimbing dan kepemimpinan adalah ajaran penting Literasi Web dan Mozilla. Dorong peserta untuk memperdalam keikutsertaan mereka dengan menjalankan pelatihan versi mereka sendiri.</p>
+
+                            <p>Tawarkan perspektif Anda sebagai pemimpin pelatihan dan berikan peserta kesempatan untuk bertanya tentang pengalaman dan keterlibatan Anda dengan Literasi Web, Webmaker, Mozilla, dll.</p>
+
+                            <img class="img-example" src="../images/share-webmaker-projects.jpg">
+                            <a href="https://www.flickr.com/photos/laura_nk/" class="attribution"><span class="fa fa-camera"></span> Laura de Reynal</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- ADD A LINK TO WHAT COMPETENCY/SESSION PEOPLE MIGHT LIKE TO EXPLORE NEXT! -->
+
+        <footer class="footer">
+            <!--Licensing Information-->
+
+            <div class="license">
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
